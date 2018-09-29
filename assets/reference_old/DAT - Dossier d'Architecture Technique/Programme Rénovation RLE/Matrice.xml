@@ -1,0 +1,892 @@
+<Scrib>
+
+<!-- Informations sur la matrice -->
+  <ExpertVersion value="0" />
+  <StructureVersion value="1" />
+  <ExcelDate value="27/10/2017 08:27:47" />
+  <ExcelName value="Matrice.xls" />
+  <CompileDate value="27/10/2017 10:30:28" />
+  <Reference value="model_DAT_SCRIB.docx" />
+  <ToolVersion value="1.17.10.26" />
+  <Summary value="Connaisseur : Antoine Pernon" />
+
+<!-- Liste des lots -->
+  <Lot lot="10" text="Lot Basique" />
+
+<!-- Liste des entêtes de colonne -->
+  <Matrix column="A" name="Regroupements et champs" />
+  <Matrix column="B" name="Type" />
+  <Matrix column="C" name="Obligatoire" />
+  <Matrix column="D" name="Valeur
+par d&#233;faut" />
+  <Matrix column="E" name="Nom unique du champ" />
+  <Matrix column="F" name="1er" />
+  <Matrix column="G" name="2&#232;me" />
+  <Matrix column="H" name="3&#232;me" />
+  <Matrix column="I" name="Nom Unique du champ &#39;Case&#39; d&#39;activation" />
+  <Matrix column="J" name="Message d&#39;aide" />
+  <Matrix column="K" name="Suffixe" />
+  <Matrix column="L" name="R&#233;serv&#233;" />
+  <Matrix column="Q" name="Lien" />
+  <Matrix column="R" name="Libell&#233;" />
+
+<!-- Liste des onglets. -->
+  <Tab tab="1" name="Pr&#233;ambule" />
+  <Tab tab="2" name="Description G&#233;n&#233;rale" />
+  <Tab tab="3" name="Etat des lieux" />
+  <Tab tab="4" name="Etude d&#39;architecture du RLEn" />
+  <Tab tab="5" name="Politique de connexion au RLE des &#233;quipements informatique" />
+  <Tab tab="6" name="Architecture" />
+  <Tab tab="7" name="Adressage IP" />
+  <Tab tab="8" name="Lot de maintenance" />
+
+<!-- Liste des champs. -->
+  <Field field="1-1" tab="1" required="Yes" type="TextInput" text="R&#233;dacteur" />
+  <Matrix field="1-1" column="A" value="R&#233;dacteur" />
+  <Matrix field="1-1" column="B" value="Texte" />
+  <Matrix field="1-1" column="C" value="x" />
+  <Field field="1-2" tab="1" required="Yes" type="TextInput" text="Site" />
+  <Matrix field="1-2" column="A" value="Site" />
+  <Matrix field="1-2" column="B" value="Texte" />
+  <Matrix field="1-2" column="C" value="x" />
+  <Field field="1-3" tab="1" required="Yes" type="TextInput" text="Trigramme de site" />
+  <Matrix field="1-3" column="A" value="Trigramme de site" />
+  <Matrix field="1-3" column="B" value="Texte" />
+  <Matrix field="1-3" column="C" value="x" />
+  <Field field="2-1" tab="2" type="Information" text="Contexte de r&#233;alisation" color="#0070C0" fonttype="BU" />
+  <Field field="2-2" tab="2" type="TextInput" text="Indiquer le contexte entrainant la n&#233;cessit&#233; de r&#233;novation et justifiant la solution retenue (criticit&#233; du site, d&#233;m&#233;nagement, arriv&#233;e ToIP…)" parameter2="5" />
+  <Matrix field="2-2" column="A" value="Indiquer le contexte entrainant la n&#233;cessit&#233; de r&#233;novation et justifiant la solution retenue (criticit&#233; du site, d&#233;m&#233;nagement, arriv&#233;e ToIP…)" />
+  <Matrix field="2-2" column="B" value="Texte" />
+  <Matrix field="2-2" column="G" value="5" />
+  <Field field="2-3" tab="2" type="Spacing" />
+  <Field field="2-4" tab="2" type="Information" text="Contraintes de r&#233;alisation" color="#0070C0" fonttype="BU" />
+  <Field field="2-5" tab="2" type="TextInput" text="Indiquer les contraintes m&#233;tiers applicables au site r&#233;nov&#233;" parameter2="5" tooltiptext="Exemple :\nLe RLE est le support de base au bon fonctionnement du SI des sites &#224; r&#233;nover. On peut consid&#233;rer qu’une coupure du RLE entra&#238;ne, hors activit&#233; particuli&#232;re (par exemple arr&#234;t de tranche pour un CNPE), un arr&#234;t des activit&#233;s tertiaires du site." />
+  <Matrix field="2-5" column="A" value="Indiquer les contraintes m&#233;tiers applicables au site r&#233;nov&#233;" />
+  <Matrix field="2-5" column="B" value="Texte" />
+  <Matrix field="2-5" column="G" value="5" />
+  <Matrix field="2-5" column="J" value="Exemple :
+Le RLE est le support de base au bon fonctionnement du SI des sites &#224; r&#233;nover. On peut consid&#233;rer qu’une coupure du RLE entra&#238;ne, hors activit&#233; particuli&#232;re (par exemple arr&#234;t de tranche pour un CNPE), un arr&#234;t des activit&#233;s tertiaires du site." />
+  <Field field="2-6" tab="2" type="TextInput" text="Indiquer les contraintes d’horaires d’intervention applicables au site r&#233;nov&#233;" parameter2="5" tooltiptext="Exemple :\nLe fonctionnement du RLE doit &#234;tre, dans la mesure du possible, maintenu op&#233;rationnel 24h/24 7j/7. Les manipulations critiques sont effectu&#233;es en dehors des heures ouvrables avec une possibilit&#233; de retour &#224; l’&#233;tat initial en cas de dysfonctionnement afin d’en limiter les impacts sur les utilisateurs. Il peut &#234;tre envisag&#233; de r&#233;aliser des op&#233;rations de migration d’utilisateurs en heure ouvrable sous r&#233;serve d’un accord pr&#233;alable avec la ma&#238;trise d’ouvrage." />
+  <Matrix field="2-6" column="A" value="Indiquer les contraintes d’horaires d’intervention applicables au site r&#233;nov&#233;" />
+  <Matrix field="2-6" column="B" value="Texte" />
+  <Matrix field="2-6" column="G" value="5" />
+  <Matrix field="2-6" column="J" value="Exemple :
+Le fonctionnement du RLE doit &#234;tre, dans la mesure du possible, maintenu op&#233;rationnel 24h/24 7j/7. Les manipulations critiques sont effectu&#233;es en dehors des heures ouvrables avec une possibilit&#233; de retour &#224; l’&#233;tat initial en cas de dysfonctionnement afin d’en limiter les impacts sur les utilisateurs. Il peut &#234;tre envisag&#233; de r&#233;aliser des op&#233;rations de migration d’utilisateurs en heure ouvrable sous r&#233;serve d’un accord pr&#233;alable avec la ma&#238;trise d’ouvrage." />
+  <Field field="2-7" tab="2" type="TextInput" text="Indiquer les contraintes techniques applicables au site r&#233;nov&#233;" parameter2="5" tooltiptext="Exemple :\nLa principale contrainte tient &#224; la difficult&#233; de r&#233;nover l’infrastructure optique et capillaire. D’autres contraintes existent, li&#233;es &#224; l’infrastructure informatique et l’environnement d’accueil des &#233;quipements actifs dans les locaux techniques, telles que :\n• l’impact sur l’infrastructure informatique (Active Directory, Serveur DHCP, serveurs m&#233;tiers) ;\n• la place disponible dans les baies devant accueillir du mat&#233;riel r&#233;seau ;\n• la mise &#224; disposition d’alimentation secourue ;\n• l’absence de climatisation ;\n• la non s&#233;curisation des acc&#232;s aux locaux t&#233;l&#233;com\nD’autre part, le choix a &#233;t&#233; fait de migrer d’un RLEa (RLE ancien) utilisant un plan d’adressage public vers un RLEn (nouveau RLE) utilisant un plan d’adressage priv&#233; (conforme &#224; la RFC 1918). Cette migration entraine les contraintes suivantes :\n• changement d’adresse IP des serveurs, postes techniques, imprimantes, postes utilisateurs… ;\n• mise en place de plages de NAT afin de pouvoir atteindre les &#233;quipements r&#233;seau et informatiques situ&#233;s sur les r&#233;seaux tiers tels que le RLI, Wi-Fi Presta… positionn&#233;s derri&#232;re des pare-feux\n\nD’autres contraintes existent, li&#233;es &#224; l’infrastructure informatique et l’environnement d’accueil des &#233;quipements actifs dans les locaux techniques, telles que :\n• l’impact sur l’infrastructure informatique (Active Directory, Serveur DHCP, serveurs m&#233;tiers) ;\n• la place disponible dans les baies devant accueillir du mat&#233;riel r&#233;seau ;\n• la mise &#224; disposition d’alimentation secourue ;\n• l’absence de climatisation ;\n• la non s&#233;curisation des acc&#232;s aux locaux t&#233;l&#233;com\nD’autre part, le choix a &#233;t&#233; fait de migrer d’un RLEa (RLE ancien) utilisant un plan d’adressage public vers un RLEn (nouveau RLE) utilisant un plan d’adressage priv&#233; (conforme &#224; la RFC 1918). Cette migration entraine les contraintes suivantes :\n• changement d’adresse IP des serveurs, postes techniques, imprimantes, postes utilisateurs… ;\n• mise en place de plages de NAT afin de pouvoir atteindre les &#233;quipements r&#233;seau et informatiques situ&#233;s sur les r&#233;seaux tiers tels que le RLI, Wi-Fi Presta… positionn&#233;s derri&#232;re des pare-feux." />
+  <Matrix field="2-7" column="A" value="Indiquer les contraintes techniques applicables au site r&#233;nov&#233;" />
+  <Matrix field="2-7" column="B" value="Texte" />
+  <Matrix field="2-7" column="G" value="5" />
+  <Matrix field="2-7" column="J" value="Exemple :
+La principale contrainte tient &#224; la difficult&#233; de r&#233;nover l’infrastructure optique et capillaire. D’autres contraintes existent, li&#233;es &#224; l’infrastructure informatique et l’environnement d’accueil des &#233;quipements actifs dans les locaux techniques, telles que :
+• l’impact sur l’infrastructure informatique (Active Directory, Serveur DHCP, serveurs m&#233;tiers) ;
+• la place disponible dans les baies devant accueillir du mat&#233;riel r&#233;seau ;
+• la mise &#224; disposition d’alimentation secourue ;
+• l’absence de climatisation ;
+• la non s&#233;curisation des acc&#232;s aux locaux t&#233;l&#233;com
+D’autre part, le choix a &#233;t&#233; fait de migrer d’un RLEa (RLE ancien) utilisant un plan d’adressage public vers un RLEn (nouveau RLE) utilisant un plan d’adressage priv&#233; (conforme &#224; la RFC 1918). Cette migration entraine les contraintes suivantes :
+• changement d’adresse IP des serveurs, postes techniques, imprimantes, postes utilisateurs… ;
+• mise en place de plages de NAT afin de pouvoir atteindre les &#233;quipements r&#233;seau et informatiques situ&#233;s sur les r&#233;seaux tiers tels que le RLI, Wi-Fi Presta… positionn&#233;s derri&#232;re des pare-feux
+
+D’autres contraintes existent, li&#233;es &#224; l’infrastructure informatique et l’environnement d’accueil des &#233;quipements actifs dans les locaux techniques, telles que :
+• l’impact sur l’infrastructure informatique (Active Directory, Serveur DHCP, serveurs m&#233;tiers) ;
+• la place disponible dans les baies devant accueillir du mat&#233;riel r&#233;seau ;
+• la mise &#224; disposition d’alimentation secourue ;
+• l’absence de climatisation ;
+• la non s&#233;curisation des acc&#232;s aux locaux t&#233;l&#233;com
+D’autre part, le choix a &#233;t&#233; fait de migrer d’un RLEa (RLE ancien) utilisant un plan d’adressage public vers un RLEn (nouveau RLE) utilisant un plan d’adressage priv&#233; (conforme &#224; la RFC 1918). Cette migration entraine les contraintes suivantes :
+• changement d’adresse IP des serveurs, postes techniques, imprimantes, postes utilisateurs… ;
+• mise en place de plages de NAT afin de pouvoir atteindre les &#233;quipements r&#233;seau et informatiques situ&#233;s sur les r&#233;seaux tiers tels que le RLI, Wi-Fi Presta… positionn&#233;s derri&#232;re des pare-feux." />
+  <Field field="2-8" tab="2" type="TextInput" text="Indiquer les contraintes li&#233;es &#224; la reprise en exploitation" parameter2="5" tooltiptext="Exemple :\nIl est n&#233;cessaire de s’assurer des comp&#233;tences des exploitants par rapport aux technologies qui seront impl&#233;ment&#233;es, et de pr&#233;voir, le cas &#233;ch&#233;ant, une formation associ&#233;e alliant th&#233;orie et pratique. Cette formation aborde la configuration, la gestion des nouveaux mat&#233;riels ou protocoles ainsi que la r&#233;solution d’incidents de niveau 1 &#224; 4 sur le RLEn. \nLe mode de formation retenu est une formation de 5 jours des exploitants sur la maquette RLE situ&#233;e au sein du CCN RLE. Cette formation est assur&#233;e par l’int&#233;grateur en charge de la configuration et du d&#233;ploiement des &#233;quipements r&#233;seau dans le cadre du Programme de R&#233;novation RLE. Un support de formation est disponible sur la base Notes du programme RLE. \nLa solution install&#233;e s’int&#232;gre dans l’organisation existante en terme de maintenance et supervision.\nPour ce qui est de l’administration des &#233;quipements actifs qui composent l’architecture du RLEn, elle est assur&#233;e par un outil d’administration correspondant au mat&#233;riel d&#233;ploy&#233; sur les sites. Cet outil permet :\n• d’effectuer les actes d’administration de mani&#232;re graphique ;\n• de r&#233;aliser la sauvegarde p&#233;riodique des configurations des &#233;quipements ;\n• d’avoir un &#233;tat des lieux complet du parc install&#233; (R&#233;f&#233;rences mat&#233;riels, version OS…).\nD’autre part, il pourra &#234;tre envisag&#233; que les exploitants r&#233;seau puissent participer au stagging des &#233;quipements lorsque cela s’av&#232;rera possible." />
+  <Matrix field="2-8" column="A" value="Indiquer les contraintes li&#233;es &#224; la reprise en exploitation" />
+  <Matrix field="2-8" column="B" value="Texte" />
+  <Matrix field="2-8" column="G" value="5" />
+  <Matrix field="2-8" column="J" value="Exemple :
+Il est n&#233;cessaire de s’assurer des comp&#233;tences des exploitants par rapport aux technologies qui seront impl&#233;ment&#233;es, et de pr&#233;voir, le cas &#233;ch&#233;ant, une formation associ&#233;e alliant th&#233;orie et pratique. Cette formation aborde la configuration, la gestion des nouveaux mat&#233;riels ou protocoles ainsi que la r&#233;solution d’incidents de niveau 1 &#224; 4 sur le RLEn. 
+Le mode de formation retenu est une formation de 5 jours des exploitants sur la maquette RLE situ&#233;e au sein du CCN RLE. Cette formation est assur&#233;e par l’int&#233;grateur en charge de la configuration et du d&#233;ploiement des &#233;quipements r&#233;seau dans le cadre du Programme de R&#233;novation RLE. Un support de formation est disponible sur la base Notes du programme RLE. 
+La solution install&#233;e s’int&#232;gre dans l’organisation existante en terme de maintenance et supervision.
+Pour ce qui est de l’administration des &#233;quipements actifs qui composent l’architecture du RLEn, elle est assur&#233;e par un outil d’administration correspondant au mat&#233;riel d&#233;ploy&#233; sur les sites. Cet outil permet :
+• d’effectuer les actes d’administration de mani&#232;re graphique ;
+• de r&#233;aliser la sauvegarde p&#233;riodique des configurations des &#233;quipements ;
+• d’avoir un &#233;tat des lieux complet du parc install&#233; (R&#233;f&#233;rences mat&#233;riels, version OS…).
+D’autre part, il pourra &#234;tre envisag&#233; que les exploitants r&#233;seau puissent participer au stagging des &#233;quipements lorsque cela s’av&#232;rera possible." />
+  <Field field="3-1" tab="3" type="TextInput" text="Indiquer le type d’architecture r&#233;seau du RLEa" parameter2="5" tooltiptext="Exemple :\nL’architecture r&#233;seau actuelle se compose de deux couches d’&#233;quipements interconnect&#233;s par des liaisons de niveau 2 entre les cœurs de r&#233;seau et les &#233;quipements d’acc&#232;s situ&#233;s en LTE." />
+  <Matrix field="3-1" column="A" value="Indiquer le type d’architecture r&#233;seau du RLEa" />
+  <Matrix field="3-1" column="B" value="Texte" />
+  <Matrix field="3-1" column="G" value="5" />
+  <Matrix field="3-1" column="J" value="Exemple :
+L’architecture r&#233;seau actuelle se compose de deux couches d’&#233;quipements interconnect&#233;s par des liaisons de niveau 2 entre les cœurs de r&#233;seau et les &#233;quipements d’acc&#232;s situ&#233;s en LTE." />
+  <Field field="3-2" tab="3" type="ImageInput" text="Ins&#233;rer le sch&#233;ma du RLEa" parameter1="0" parameter2="0" tooltiptext="Seuls les formats *.emf; *.wmf; *.jpg; *.jpeg; *.jfif; *.jpe; *png; *.bmp; *.dib; *.rle; *. Gif; *.emz; * .w&#249;mz; *.pcz; *.tif; *.tiff; * .eps; *.pct; *.pict; *.wpg sont accept&#233;s." />
+  <Matrix field="3-2" column="A" value="Ins&#233;rer le sch&#233;ma du RLEa" />
+  <Matrix field="3-2" column="B" value="Image" />
+  <Matrix field="3-2" column="J" value="Seuls les formats *.emf; *.wmf; *.jpg; *.jpeg; *.jfif; *.jpe; *png; *.bmp; *.dib; *.rle; *. Gif; *.emz; * .w&#249;mz; *.pcz; *.tif; *.tiff; * .eps; *.pct; *.pict; *.wpg sont accept&#233;s." />
+  <Field field="3-3" tab="3" type="ImageInput" text="Ins&#233;rer un sch&#233;ma" parameter1="0" parameter2="0" tooltiptext="Plusieurs sch&#233;mas peuvent &#234;tre ajout&#233;s : Bureautique, OTC, Simu, etc…" />
+  <Matrix field="3-3" column="A" value="Ins&#233;rer un sch&#233;ma" />
+  <Matrix field="3-3" column="B" value="Image" />
+  <Matrix field="3-3" column="J" value="Plusieurs sch&#233;mas peuvent &#234;tre ajout&#233;s : Bureautique, OTC, Simu, etc…" />
+  <Field field="3-4" tab="3" type="ImageInput" text="Ins&#233;rer un sch&#233;ma" parameter1="0" parameter2="0" />
+  <Matrix field="3-4" column="A" value="Ins&#233;rer un sch&#233;ma" />
+  <Matrix field="3-4" column="B" value="Image" />
+  <Field field="3-5" tab="3" type="ImageInput" text="Ins&#233;rer un sch&#233;ma" parameter1="0" parameter2="0" />
+  <Matrix field="3-5" column="A" value="Ins&#233;rer un sch&#233;ma" />
+  <Matrix field="3-5" column="B" value="Image" />
+  <Field field="3-6" tab="3" type="ImageInput" text="Ins&#233;rer un sch&#233;ma" parameter1="0" parameter2="0" />
+  <Matrix field="3-6" column="A" value="Ins&#233;rer un sch&#233;ma" />
+  <Matrix field="3-6" column="B" value="Image" />
+  <Field field="3-7" tab="3" type="Spacing" />
+  <Field field="3-8" tab="3" type="TextInput" text="Indiquer la liste des diff&#233;rents mat&#233;riels actifs utilis&#233;s sur le RLEa ainsi que le nombre total de port cuivres pouvant &#234;tre fournis par ces &#233;quipements" parameter2="5" />
+  <Matrix field="3-8" column="A" value="Indiquer la liste des diff&#233;rents mat&#233;riels actifs utilis&#233;s sur le RLEa ainsi que le nombre total de port cuivres pouvant &#234;tre fournis par ces &#233;quipements" />
+  <Matrix field="3-8" column="B" value="Texte" />
+  <Matrix field="3-8" column="G" value="5" />
+  <Field field="3-9" tab="3" type="TextInput" text="Indiquer le type de cat&#233;gorie install&#233;e et les travaux pr&#233;vus lors de la r&#233;novation" parameter2="5" />
+  <Matrix field="3-9" column="A" value="Indiquer le type de cat&#233;gorie install&#233;e et les travaux pr&#233;vus lors de la r&#233;novation" />
+  <Matrix field="3-9" column="B" value="Texte" />
+  <Matrix field="3-9" column="G" value="5" />
+  <Field field="3-10" tab="3" type="TextInput" text="Indiquer le type de Fibre Optique install&#233;e et les travaux pr&#233;vus lors de la r&#233;novation" parameter2="5" />
+  <Matrix field="3-10" column="A" value="Indiquer le type de Fibre Optique install&#233;e et les travaux pr&#233;vus lors de la r&#233;novation" />
+  <Matrix field="3-10" column="B" value="Texte" />
+  <Matrix field="3-10" column="G" value="5" />
+  <Field field="3-11" tab="3" type="TextInput" text="Indiquer le type de PA RIN install&#233; sur le site (Niveau de s&#233;curisation du PA, vitesse, type d’&#233;quipement, localisation et m&#233;thode de raccordement au cœur de r&#233;seau)" parameter2="5" />
+  <Matrix field="3-11" column="A" value="Indiquer le type de PA RIN install&#233; sur le site (Niveau de s&#233;curisation du PA, vitesse, type d’&#233;quipement, localisation et m&#233;thode de raccordement au cœur de r&#233;seau)" />
+  <Matrix field="3-11" column="B" value="Texte" />
+  <Matrix field="3-11" column="G" value="5" />
+  <Field field="3-12" tab="3" type="TextInput" text="Indiquer l’organisation mise en place pour assurer les actes d’administration, supervision et MCO" parameter2="5" />
+  <Matrix field="3-12" column="A" value="Indiquer l’organisation mise en place pour assurer les actes d’administration, supervision et MCO" />
+  <Matrix field="3-12" column="B" value="Texte" />
+  <Matrix field="3-12" column="G" value="5" />
+  <Field field="4-1" tab="4" type="Information" text="Type de site " color="#0070C0" fonttype="BU" />
+  <Field field="4-2" tab="4" type="TextInput" text="Indiquer le type d’architecture retenue pour le site." parameter2="5" tooltiptext="Exemple : \n- SD non rout&#233; \n- SD rout&#233;\n- HD2\n- HD3\n- si autre, veuillez pr&#233;ciser les diff&#233;rence par rapport aux architectures r&#233;f&#233;renc&#233;s" />
+  <Matrix field="4-2" column="A" value="Indiquer le type d’architecture retenue pour le site." />
+  <Matrix field="4-2" column="B" value="Texte" />
+  <Matrix field="4-2" column="G" value="5" />
+  <Matrix field="4-2" column="J" value="Exemple : 
+- SD non rout&#233; 
+- SD rout&#233;
+- HD2
+- HD3
+- si autre, veuillez pr&#233;ciser les diff&#233;rence par rapport aux architectures r&#233;f&#233;renc&#233;s" />
+  <Field field="4-3" tab="4" type="ImageInput" text="Ins&#233;rer le sch&#233;ma type retenu" parameter1="0" parameter2="0" tooltiptext="Seuls les formats *.emf; *.wmf; *.jpg; *.jpeg; *.jfif; *.jpe; *png; *.bmp; *.dib; *.rle; *. Gif; *.emz; * .w&#249;mz; *.pcz; *.tif; *.tiff; * .eps; *.pct; *.pict; *.wpg sont accept&#233;s." />
+  <Matrix field="4-3" column="A" value="Ins&#233;rer le sch&#233;ma type retenu" />
+  <Matrix field="4-3" column="B" value="Image" />
+  <Matrix field="4-3" column="J" value="Seuls les formats *.emf; *.wmf; *.jpg; *.jpeg; *.jfif; *.jpe; *png; *.bmp; *.dib; *.rle; *. Gif; *.emz; * .w&#249;mz; *.pcz; *.tif; *.tiff; * .eps; *.pct; *.pict; *.wpg sont accept&#233;s." />
+  <Field field="4-4" tab="4" type="Information" text="Briques fonctionneles impl&#233;ment&#233;es" color="#0070C0" fonttype="BU" />
+  <Field field="4-5" tab="4" type="TextInput" text="Indiquer les briques fonctionnelles impl&#233;ment&#233;es sur le site r&#233;nov&#233;" parameter2="5" tooltiptext="Exemple:\nBrique de base + s&#233;curit&#233; + QOS\nBrique Virtualisation\nBrique ZAT + PIV\nBrique Multicast\nBrique Mobilit&#233;\n" />
+  <Matrix field="4-5" column="A" value="Indiquer les briques fonctionnelles impl&#233;ment&#233;es sur le site r&#233;nov&#233;" />
+  <Matrix field="4-5" column="B" value="Texte" />
+  <Matrix field="4-5" column="G" value="5" />
+  <Matrix field="4-5" column="J" value="Exemple:
+Brique de base + s&#233;curit&#233; + QOS
+Brique Virtualisation
+Brique ZAT + PIV
+Brique Multicast
+Brique Mobilit&#233;
+" />
+  <Field field="4-6" tab="4" type="Information" text="Interconnexion des r&#233;seaux tiers avec le RLEn" color="#0070C0" fonttype="BU" />
+  <Field field="4-7" tab="4" type="TextInput" text="Indiquer quels sont les r&#233;seaux tiers pr&#233;sents sur le site, d&#233;tailler le mode d’interconnexion retenu (utilisation d’un /31 ou /30) ainsi que les besoin d’adresses IP pour r&#233;aliser du NAT" parameter2="5" tooltiptext="Exemple pour REGATE :\nLes r&#233;seaux tiers existants ou futurs doivent parfois s’interconnecter avec le RLE afin de pouvoir acc&#233;der au RIN ou &#224; des &#233;quipements situ&#233;s sur le RLE. Voici la liste des r&#233;seaux sp&#233;cifiques rencontr&#233;s jusqu’&#224; pr&#233;sent :\n• le RLI (R&#233;seau Local Industriel) ;\n• le r&#233;seau GIPSI ;\n• le R&#233;seau Mistral (R&#233;seau utilis&#233; pour les outils de simulation en CNPE) ;\n• la Zone Technique (incluant plusieurs r&#233;seaux comme SPP…) ;\n• le r&#233;seau WiFi Presta (SWIT).\nL’interconnexion de ces r&#233;seaux tiers au RLE est r&#233;alis&#233;e &#224; travers de la ZAT + PIV." />
+  <Matrix field="4-7" column="A" value="Indiquer quels sont les r&#233;seaux tiers pr&#233;sents sur le site, d&#233;tailler le mode d’interconnexion retenu (utilisation d’un /31 ou /30) ainsi que les besoin d’adresses IP pour r&#233;aliser du NAT" />
+  <Matrix field="4-7" column="B" value="Texte" />
+  <Matrix field="4-7" column="G" value="5" />
+  <Matrix field="4-7" column="J" value="Exemple pour REGATE :
+Les r&#233;seaux tiers existants ou futurs doivent parfois s’interconnecter avec le RLE afin de pouvoir acc&#233;der au RIN ou &#224; des &#233;quipements situ&#233;s sur le RLE. Voici la liste des r&#233;seaux sp&#233;cifiques rencontr&#233;s jusqu’&#224; pr&#233;sent :
+• le RLI (R&#233;seau Local Industriel) ;
+• le r&#233;seau GIPSI ;
+• le R&#233;seau Mistral (R&#233;seau utilis&#233; pour les outils de simulation en CNPE) ;
+• la Zone Technique (incluant plusieurs r&#233;seaux comme SPP…) ;
+• le r&#233;seau WiFi Presta (SWIT).
+L’interconnexion de ces r&#233;seaux tiers au RLE est r&#233;alis&#233;e &#224; travers de la ZAT + PIV." />
+  <Field field="4-8" tab="4" type="Information" text="Interconnexion du RLEn avec le RIN" color="#0070C0" fonttype="BU" />
+  <Field field="4-9" tab="4" type="TextInput" text="Indiquer quel type de PA RIN sera install&#233; &#224; la cible (en cas d’upgrade de PA). " parameter2="5" tooltiptext="Exemple : IMS30" />
+  <Matrix field="4-9" column="A" value="Indiquer quel type de PA RIN sera install&#233; &#224; la cible (en cas d’upgrade de PA). " />
+  <Matrix field="4-9" column="B" value="Texte" />
+  <Matrix field="4-9" column="G" value="5" />
+  <Matrix field="4-9" column="J" value="Exemple : IMS30" />
+  <Field field="4-10" tab="4" type="Spacing" />
+  <Field field="4-11" tab="4" type="Information" text="R&#233;sumer dans le tableau suivant l’utilisation des ports des &#233;quipements de cœur &#224; utiliser pour effectuer le raccordement aux routeurs RIN" color="#0070C0" fonttype="B" />
+  <Field field="4-12" tab="4" type="TableColumn" parameter1="3" parameter2="10" parameter3="1" tooltiptext="En terme de brassage, le tableau suivant synth&#233;tise l’utilisation des ports des &#233;quipements de cœur &#224; utiliser pour effectuer le raccordement aux routeurs RIN." />
+  <Matrix field="4-12" column="B" value="TableauColonne" />
+  <Matrix field="4-12" column="F" value="3" />
+  <Matrix field="4-12" column="G" value="10" />
+  <Matrix field="4-12" column="H" value="1" />
+  <Matrix field="4-12" column="J" value="En terme de brassage, le tableau suivant synth&#233;tise l’utilisation des ports des &#233;quipements de cœur &#224; utiliser pour effectuer le raccordement aux routeurs RIN." />
+  <Field tableId="4-12" field="4-12-0-1" tab="4" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="4-12" field="4-12-1-1" tab="4" type="TextInput" text="Site" />
+  <Field tableId="4-12" field="4-12-2-1" tab="4" type="TextInput" text="Type d&#39;&#233;quipement en cœur de r&#233;seau" value="Ch&#226;ssis" />
+  <Field tableId="4-12" field="4-12-3-1" tab="4" type="TextInput" text="Interface &#224; utiliser si PA RIN sans interfaces optiques (en attente  de RIN4)" value="Gi5/3 de RSX et RSY" />
+  <Field tableId="4-12" field="4-12-0-2" tab="4" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="4-12" field="4-12-1-2" tab="4" type="TextInput" text="Site" />
+  <Field tableId="4-12" field="4-12-2-2" tab="4" type="TextInput" text="Type d&#39;&#233;quipement en cœur de r&#233;seau" value="Ch&#226;ssis" />
+  <Field tableId="4-12" field="4-12-3-2" tab="4" type="TextInput" text="Interface &#224; utiliser si PA RIN sans interfaces optiques (en attente  de RIN4)" value="Gi5/3 de RSX et RSY" />
+  <Field tableId="4-12" field="4-12-0-3" tab="4" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="4-12" field="4-12-1-3" tab="4" type="TextInput" text="Site" />
+  <Field tableId="4-12" field="4-12-2-3" tab="4" type="TextInput" text="Type d&#39;&#233;quipement en cœur de r&#233;seau" value="Ch&#226;ssis" />
+  <Field tableId="4-12" field="4-12-3-3" tab="4" type="TextInput" text="Interface &#224; utiliser si PA RIN sans interfaces optiques (en attente  de RIN4)" value="Gi5/3 de RSX et RSY" />
+  <Field tableId="4-12" field="4-12-0-4" tab="4" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="4-12" field="4-12-1-4" tab="4" type="TextInput" text="Site" />
+  <Field tableId="4-12" field="4-12-2-4" tab="4" type="TextInput" text="Type d&#39;&#233;quipement en cœur de r&#233;seau" value="Ch&#226;ssis" />
+  <Field tableId="4-12" field="4-12-3-4" tab="4" type="TextInput" text="Interface &#224; utiliser si PA RIN sans interfaces optiques (en attente  de RIN4)" value="Gi5/3 de RSX et RSY" />
+  <Field tableId="4-12" field="4-12-0-5" tab="4" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="4-12" field="4-12-1-5" tab="4" type="TextInput" text="Site" />
+  <Field tableId="4-12" field="4-12-2-5" tab="4" type="TextInput" text="Type d&#39;&#233;quipement en cœur de r&#233;seau" value="Ch&#226;ssis" />
+  <Field tableId="4-12" field="4-12-3-5" tab="4" type="TextInput" text="Interface &#224; utiliser si PA RIN sans interfaces optiques (en attente  de RIN4)" value="Gi5/3 de RSX et RSY" />
+  <Field tableId="4-12" field="4-12-0-6" tab="4" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="4-12" field="4-12-1-6" tab="4" type="TextInput" text="Site" />
+  <Field tableId="4-12" field="4-12-2-6" tab="4" type="TextInput" text="Type d&#39;&#233;quipement en cœur de r&#233;seau" value="Ch&#226;ssis" />
+  <Field tableId="4-12" field="4-12-3-6" tab="4" type="TextInput" text="Interface &#224; utiliser si PA RIN sans interfaces optiques (en attente  de RIN4)" value="Gi5/3 de RSX et RSY" />
+  <Field tableId="4-12" field="4-12-0-7" tab="4" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="4-12" field="4-12-1-7" tab="4" type="TextInput" text="Site" />
+  <Field tableId="4-12" field="4-12-2-7" tab="4" type="TextInput" text="Type d&#39;&#233;quipement en cœur de r&#233;seau" value="Ch&#226;ssis" />
+  <Field tableId="4-12" field="4-12-3-7" tab="4" type="TextInput" text="Interface &#224; utiliser si PA RIN sans interfaces optiques (en attente  de RIN4)" value="Gi5/3 de RSX et RSY" />
+  <Field tableId="4-12" field="4-12-0-8" tab="4" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="4-12" field="4-12-1-8" tab="4" type="TextInput" text="Site" />
+  <Field tableId="4-12" field="4-12-2-8" tab="4" type="TextInput" text="Type d&#39;&#233;quipement en cœur de r&#233;seau" value="Ch&#226;ssis" />
+  <Field tableId="4-12" field="4-12-3-8" tab="4" type="TextInput" text="Interface &#224; utiliser si PA RIN sans interfaces optiques (en attente  de RIN4)" value="Gi5/3 de RSX et RSY" />
+  <Field tableId="4-12" field="4-12-0-9" tab="4" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="4-12" field="4-12-1-9" tab="4" type="TextInput" text="Site" />
+  <Field tableId="4-12" field="4-12-2-9" tab="4" type="TextInput" text="Type d&#39;&#233;quipement en cœur de r&#233;seau" value="Ch&#226;ssis" />
+  <Field tableId="4-12" field="4-12-3-9" tab="4" type="TextInput" text="Interface &#224; utiliser si PA RIN sans interfaces optiques (en attente  de RIN4)" value="Gi5/3 de RSX et RSY" />
+  <Field tableId="4-12" field="4-12-0-10" tab="4" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="4-12" field="4-12-1-10" tab="4" type="TextInput" text="Site" />
+  <Field tableId="4-12" field="4-12-2-10" tab="4" type="TextInput" text="Type d&#39;&#233;quipement en cœur de r&#233;seau" value="Ch&#226;ssis" />
+  <Field tableId="4-12" field="4-12-3-10" tab="4" type="TextInput" text="Interface &#224; utiliser si PA RIN sans interfaces optiques (en attente  de RIN4)" value="Gi5/3 de RSX et RSY" />
+  <Field field="5-1" tab="5" type="Information" text="Postes utilisateurs" color="#0070C0" fonttype="BU" tooltiptext="Indiquer le mode (half/full/auto) et la vitesse (10/100/1000Mb/s) retenus en fonction des pr&#233;conisations." />
+  <Field field="5-2" tab="5" type="ComboBox" text="Mode" parameter1="Hall;Full;Auto" />
+  <Matrix field="5-2" column="A" value="Mode" />
+  <Matrix field="5-2" column="B" value="ListeChoix" />
+  <Matrix field="5-2" column="F" value="Hall;Full;Auto" />
+  <Field field="5-3" tab="5" type="ComboBox" text="Vitesse" parameter1="Auto;10Mb/s;100Mb/s;1000Mb/s" />
+  <Matrix field="5-3" column="A" value="Vitesse" />
+  <Matrix field="5-3" column="B" value="ListeChoix" />
+  <Matrix field="5-3" column="F" value="Auto;10Mb/s;100Mb/s;1000Mb/s" />
+  <Field field="5-4" tab="5" type="Information" text="Imprimantes" color="#0070C0" fonttype="BU" tooltiptext="Indiquer le mode (half/full/auto) et la vitesse (10/100/1000Mb/s) retenus en fonction des pr&#233;conisations." />
+  <Field field="5-5" tab="5" type="ComboBox" text="Mode" parameter1="Hall;Full;Auto" />
+  <Matrix field="5-5" column="A" value="Mode" />
+  <Matrix field="5-5" column="B" value="ListeChoix" />
+  <Matrix field="5-5" column="F" value="Hall;Full;Auto" />
+  <Field field="5-6" tab="5" type="ComboBox" text="Vitesse" parameter1="Auto;10Mb/s;100Mb/s;1000Mb/s" />
+  <Matrix field="5-6" column="A" value="Vitesse" />
+  <Matrix field="5-6" column="B" value="ListeChoix" />
+  <Matrix field="5-6" column="F" value="Auto;10Mb/s;100Mb/s;1000Mb/s" />
+  <Field field="5-7" tab="5" type="Information" text="Postes techniques" color="#0070C0" fonttype="BU" tooltiptext="Indiquer le mode (half/full/auto) et la vitesse (10/100/1000Mb/s) retenus en fonction des pr&#233;conisations." />
+  <Field field="5-8" tab="5" type="ComboBox" text="Mode" parameter1="Hall;Full;Auto" />
+  <Matrix field="5-8" column="A" value="Mode" />
+  <Matrix field="5-8" column="B" value="ListeChoix" />
+  <Matrix field="5-8" column="F" value="Hall;Full;Auto" />
+  <Field field="5-9" tab="5" type="ComboBox" text="Vitesse" parameter1="Auto;10Mb/s;100Mb/s;1000Mb/s" />
+  <Matrix field="5-9" column="A" value="Vitesse" />
+  <Matrix field="5-9" column="B" value="ListeChoix" />
+  <Matrix field="5-9" column="F" value="Auto;10Mb/s;100Mb/s;1000Mb/s" />
+  <Field field="5-10" tab="5" type="Information" text="Serveurs" color="#0070C0" fonttype="BU" tooltiptext="Indiquer le mode (half/full/auto) et la vitesse (10/100/1000Mb/s) retenus en fonction des pr&#233;conisations." />
+  <Field field="5-11" tab="5" type="ComboBox" text="Mode" parameter1="Hall;Full;Auto" />
+  <Matrix field="5-11" column="A" value="Mode" />
+  <Matrix field="5-11" column="B" value="ListeChoix" />
+  <Matrix field="5-11" column="F" value="Hall;Full;Auto" />
+  <Field field="5-12" tab="5" type="ComboBox" text="Vitesse" parameter1="Auto;10Mb/s;100Mb/s;1000Mb/s" />
+  <Matrix field="5-12" column="A" value="Vitesse" />
+  <Matrix field="5-12" column="B" value="ListeChoix" />
+  <Matrix field="5-12" column="F" value="Auto;10Mb/s;100Mb/s;1000Mb/s" />
+  <Field field="5-13" tab="5" type="Information" text="Infrastructure physique" color="#0070C0" fonttype="BU" />
+  <Field field="5-14" tab="5" type="Spacing" color="#0070C0" fonttype="BU" />
+  <Field field="5-15" tab="5" type="Information" text="Indiquer dans le tableau suivant quelles sont les technologies (type de lien, type de la FO utilis&#233;, type de connectique utilis&#233;, vitesse) utilis&#233;es sur les liens de transmission entre les diff&#233;rents niveaux de l’architecture du RLEn" color="#0070C0" fonttype="B" />
+  <Field field="5-16" tab="5" type="TableColumn" parameter1="3" parameter2="10" parameter3="2" color="#0070C0" fonttype="B" />
+  <Matrix field="5-16" column="B" value="TableauColonne" />
+  <Matrix field="5-16" column="F" value="3" />
+  <Matrix field="5-16" column="G" value="10" />
+  <Matrix field="5-16" column="H" value="2" />
+  <Field tableId="5-16" field="5-16-0-1" tab="5" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-16" field="5-16-1-1" tab="5" type="TextInput" text="Etage de transmission" tooltiptext="Indiquer les transmissions : Routeurs RIN - Cœur ; Cœur -Cœur ; Cœurs - Serveurs ; Cœurs - Distributions , Distributions - Acc&#232;s ; Cœurs - ZAT" />
+  <Field tableId="5-16" field="5-16-2-1" tab="5" type="TextInput" text="Type de lien" />
+  <Field tableId="5-16" field="5-16-3-1" tab="5" type="TextInput" text="Remarques" />
+  <Field tableId="5-16" field="5-16-0-2" tab="5" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-16" field="5-16-1-2" tab="5" type="TextInput" text="Etage de transmission" tooltiptext="Indiquer les transmissions : Routeurs RIN - Cœur ; Cœur -Cœur ; Cœurs - Serveurs ; Cœurs - Distributions , Distributions - Acc&#232;s ; Cœurs - ZAT" />
+  <Field tableId="5-16" field="5-16-2-2" tab="5" type="TextInput" text="Type de lien" />
+  <Field tableId="5-16" field="5-16-3-2" tab="5" type="TextInput" text="Remarques" />
+  <Field tableId="5-16" field="5-16-0-3" tab="5" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-16" field="5-16-1-3" tab="5" type="TextInput" text="Etage de transmission" tooltiptext="Indiquer les transmissions : Routeurs RIN - Cœur ; Cœur -Cœur ; Cœurs - Serveurs ; Cœurs - Distributions , Distributions - Acc&#232;s ; Cœurs - ZAT" />
+  <Field tableId="5-16" field="5-16-2-3" tab="5" type="TextInput" text="Type de lien" />
+  <Field tableId="5-16" field="5-16-3-3" tab="5" type="TextInput" text="Remarques" />
+  <Field tableId="5-16" field="5-16-0-4" tab="5" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-16" field="5-16-1-4" tab="5" type="TextInput" text="Etage de transmission" tooltiptext="Indiquer les transmissions : Routeurs RIN - Cœur ; Cœur -Cœur ; Cœurs - Serveurs ; Cœurs - Distributions , Distributions - Acc&#232;s ; Cœurs - ZAT" />
+  <Field tableId="5-16" field="5-16-2-4" tab="5" type="TextInput" text="Type de lien" />
+  <Field tableId="5-16" field="5-16-3-4" tab="5" type="TextInput" text="Remarques" />
+  <Field tableId="5-16" field="5-16-0-5" tab="5" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-16" field="5-16-1-5" tab="5" type="TextInput" text="Etage de transmission" tooltiptext="Indiquer les transmissions : Routeurs RIN - Cœur ; Cœur -Cœur ; Cœurs - Serveurs ; Cœurs - Distributions , Distributions - Acc&#232;s ; Cœurs - ZAT" />
+  <Field tableId="5-16" field="5-16-2-5" tab="5" type="TextInput" text="Type de lien" />
+  <Field tableId="5-16" field="5-16-3-5" tab="5" type="TextInput" text="Remarques" />
+  <Field tableId="5-16" field="5-16-0-6" tab="5" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-16" field="5-16-1-6" tab="5" type="TextInput" text="Etage de transmission" tooltiptext="Indiquer les transmissions : Routeurs RIN - Cœur ; Cœur -Cœur ; Cœurs - Serveurs ; Cœurs - Distributions , Distributions - Acc&#232;s ; Cœurs - ZAT" />
+  <Field tableId="5-16" field="5-16-2-6" tab="5" type="TextInput" text="Type de lien" />
+  <Field tableId="5-16" field="5-16-3-6" tab="5" type="TextInput" text="Remarques" />
+  <Field tableId="5-16" field="5-16-0-7" tab="5" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-16" field="5-16-1-7" tab="5" type="TextInput" text="Etage de transmission" tooltiptext="Indiquer les transmissions : Routeurs RIN - Cœur ; Cœur -Cœur ; Cœurs - Serveurs ; Cœurs - Distributions , Distributions - Acc&#232;s ; Cœurs - ZAT" />
+  <Field tableId="5-16" field="5-16-2-7" tab="5" type="TextInput" text="Type de lien" />
+  <Field tableId="5-16" field="5-16-3-7" tab="5" type="TextInput" text="Remarques" />
+  <Field tableId="5-16" field="5-16-0-8" tab="5" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-16" field="5-16-1-8" tab="5" type="TextInput" text="Etage de transmission" tooltiptext="Indiquer les transmissions : Routeurs RIN - Cœur ; Cœur -Cœur ; Cœurs - Serveurs ; Cœurs - Distributions , Distributions - Acc&#232;s ; Cœurs - ZAT" />
+  <Field tableId="5-16" field="5-16-2-8" tab="5" type="TextInput" text="Type de lien" />
+  <Field tableId="5-16" field="5-16-3-8" tab="5" type="TextInput" text="Remarques" />
+  <Field tableId="5-16" field="5-16-0-9" tab="5" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-16" field="5-16-1-9" tab="5" type="TextInput" text="Etage de transmission" tooltiptext="Indiquer les transmissions : Routeurs RIN - Cœur ; Cœur -Cœur ; Cœurs - Serveurs ; Cœurs - Distributions , Distributions - Acc&#232;s ; Cœurs - ZAT" />
+  <Field tableId="5-16" field="5-16-2-9" tab="5" type="TextInput" text="Type de lien" />
+  <Field tableId="5-16" field="5-16-3-9" tab="5" type="TextInput" text="Remarques" />
+  <Field tableId="5-16" field="5-16-0-10" tab="5" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-16" field="5-16-1-10" tab="5" type="TextInput" text="Etage de transmission" tooltiptext="Indiquer les transmissions : Routeurs RIN - Cœur ; Cœur -Cœur ; Cœurs - Serveurs ; Cœurs - Distributions , Distributions - Acc&#232;s ; Cœurs - ZAT" />
+  <Field tableId="5-16" field="5-16-2-10" tab="5" type="TextInput" text="Type de lien" />
+  <Field tableId="5-16" field="5-16-3-10" tab="5" type="TextInput" text="Remarques" />
+  <Field field="6-1" tab="6" type="TextInput" text="Indiquer le type d’architecture retenue pour le site concern&#233;" parameter2="5" tooltiptext="Exemple pour un CNPE 4 tranches :\n• Cœur, il s’agit de deux commutateurs de niveau 3 interconnect&#233;s sur lesquels viennent se connecter les routeurs RIN, les &#233;quipements de distribution, les &#233;quipements desservant les serveurs ainsi que les &#233;quipements de ZAT. Les &#233;quipements de cœurs sont impl&#233;ment&#233;s en LTS ;\n• Distribution, il s’agit de six commutateurs de niveau 3 regroup&#233;s logiquement par paire faisant l’interface entre le niveau 3 et le niveau 2. Les &#233;quipements d’acc&#232;s et de cœur s’y raccordent. Les &#233;quipements de distribution sont implant&#233;s en LTD ;\n• Acc&#232;s, il s’agit de commutateurs de niveau 2 rattach&#233;s aux deux &#233;quipements de distribution par deux fibres optiques (pouvant comporter des modes communs). Les &#233;quipements d’acc&#232;s desservent diff&#233;rents types de mat&#233;riel informatique et t&#233;l&#233;com pr&#233;sents sur le site via c&#226;blage cuivre. Les &#233;quipements d’acc&#232;s sont implant&#233;s en LTA ;\n• Serveurs, il s’agit de commutateurs de niveau 3 rattach&#233;s aux &#233;quipements de cœur de r&#233;seau. Les &#233;quipements serveurs sont situ&#233; en LTS, LTD ou LTA." />
+  <Matrix field="6-1" column="A" value="Indiquer le type d’architecture retenue pour le site concern&#233;" />
+  <Matrix field="6-1" column="B" value="Texte" />
+  <Matrix field="6-1" column="G" value="5" />
+  <Matrix field="6-1" column="J" value="Exemple pour un CNPE 4 tranches :
+• Cœur, il s’agit de deux commutateurs de niveau 3 interconnect&#233;s sur lesquels viennent se connecter les routeurs RIN, les &#233;quipements de distribution, les &#233;quipements desservant les serveurs ainsi que les &#233;quipements de ZAT. Les &#233;quipements de cœurs sont impl&#233;ment&#233;s en LTS ;
+• Distribution, il s’agit de six commutateurs de niveau 3 regroup&#233;s logiquement par paire faisant l’interface entre le niveau 3 et le niveau 2. Les &#233;quipements d’acc&#232;s et de cœur s’y raccordent. Les &#233;quipements de distribution sont implant&#233;s en LTD ;
+• Acc&#232;s, il s’agit de commutateurs de niveau 2 rattach&#233;s aux deux &#233;quipements de distribution par deux fibres optiques (pouvant comporter des modes communs). Les &#233;quipements d’acc&#232;s desservent diff&#233;rents types de mat&#233;riel informatique et t&#233;l&#233;com pr&#233;sents sur le site via c&#226;blage cuivre. Les &#233;quipements d’acc&#232;s sont implant&#233;s en LTA ;
+• Serveurs, il s’agit de commutateurs de niveau 3 rattach&#233;s aux &#233;quipements de cœur de r&#233;seau. Les &#233;quipements serveurs sont situ&#233; en LTS, LTD ou LTA." />
+  <Field field="6-2" tab="6" type="Information" text="tableau &#224; remplir dans le fichier word" />
+  <Field field="6-3" tab="6" type="ImageInput" text="Indiquer sur un sch&#233;ma la localisation des &#233;quipements actifs, interconnexion ainsi que les types de supports utilis&#233;s" parameter1="0" parameter2="0" tooltiptext="Seuls les formats *.emf; *.wmf; *.jpg; *.jpeg; *.jfif; *.jpe; *png; *.bmp; *.dib; *.rle; *. Gif; *.emz; * .w&#249;mz; *.pcz; *.tif; *.tiff; * .eps; *.pct; *.pict; *.wpg sont accept&#233;s." />
+  <Matrix field="6-3" column="A" value="Indiquer sur un sch&#233;ma la localisation des &#233;quipements actifs, interconnexion ainsi que les types de supports utilis&#233;s" />
+  <Matrix field="6-3" column="B" value="Image" />
+  <Matrix field="6-3" column="J" value="Seuls les formats *.emf; *.wmf; *.jpg; *.jpeg; *.jfif; *.jpe; *png; *.bmp; *.dib; *.rle; *. Gif; *.emz; * .w&#249;mz; *.pcz; *.tif; *.tiff; * .eps; *.pct; *.pict; *.wpg sont accept&#233;s." />
+  <Field field="6-4" tab="6" type="TextInput" text="Indiquer la configuration logique des diff&#233;rents types d’&#233;quipements constituant l’architecture du RLEn. Indiquer en fonction du site si le routage est port&#233; par le RLE ou le PA RIN" parameter2="5" tooltiptext="Exemple d’un site de type CNPE :\nL’architecture logique se composera de :\n• VLAN g&#233;ographiques regroupant l’ensemble des &#233;quipements informatiques d’un LTA ou d’un groupe de LTA tout en veillant &#224; rester en dessous des limites de 200 ports Ethernet soit pas plus de 4 &#233;quipements d’acc&#232;s ;\n• Aire OSPF 0 regroupant les &#233;quipements de cœur, distribution, serveur et ZAT ;\n• Session eBGP avec les PA RIN et iBGP entre les &#233;quipements de cœur de r&#233;seau ;\n• AS BGP 650XX donn&#233; par le CCN RLE apr&#232;s validation du DAT site en ITR" />
+  <Matrix field="6-4" column="A" value="Indiquer la configuration logique des diff&#233;rents types d’&#233;quipements constituant l’architecture du RLEn. Indiquer en fonction du site si le routage est port&#233; par le RLE ou le PA RIN" />
+  <Matrix field="6-4" column="B" value="Texte" />
+  <Matrix field="6-4" column="G" value="5" />
+  <Matrix field="6-4" column="J" value="Exemple d’un site de type CNPE :
+L’architecture logique se composera de :
+• VLAN g&#233;ographiques regroupant l’ensemble des &#233;quipements informatiques d’un LTA ou d’un groupe de LTA tout en veillant &#224; rester en dessous des limites de 200 ports Ethernet soit pas plus de 4 &#233;quipements d’acc&#232;s ;
+• Aire OSPF 0 regroupant les &#233;quipements de cœur, distribution, serveur et ZAT ;
+• Session eBGP avec les PA RIN et iBGP entre les &#233;quipements de cœur de r&#233;seau ;
+• AS BGP 650XX donn&#233; par le CCN RLE apr&#232;s validation du DAT site en ITR" />
+  <Field field="6-5" tab="6" type="ImageInput" text="Sch&#233;ma de l&#39;architecture logique" parameter1="0" parameter2="0" tooltiptext="Seuls les formats *.emf; *.wmf; *.jpg; *.jpeg; *.jfif; *.jpe; *png; *.bmp; *.dib; *.rle; *. Gif; *.emz; * .w&#249;mz; *.pcz; *.tif; *.tiff; * .eps; *.pct; *.pict; *.wpg sont accept&#233;s." />
+  <Matrix field="6-5" column="A" value="Sch&#233;ma de l&#39;architecture logique" />
+  <Matrix field="6-5" column="B" value="Image" />
+  <Matrix field="6-5" column="J" value="Seuls les formats *.emf; *.wmf; *.jpg; *.jpeg; *.jfif; *.jpe; *png; *.bmp; *.dib; *.rle; *. Gif; *.emz; * .w&#249;mz; *.pcz; *.tif; *.tiff; * .eps; *.pct; *.pict; *.wpg sont accept&#233;s." />
+  <Field field="6-6" tab="6" type="TextInput" text="Indiquer les types d’alimentation qui seront mis &#224; disposition des &#233;quipements du RLEn" parameter2="5" tooltiptext="Exemple d’un site de type CNPE :\nLes &#233;quipements r&#233;seau de cœur, distribution, serveurs devront &#234;tre aliment&#233;s sur deux sources &#233;lectriques distinctes :\nEquipements de cœur et distribution :\n• Une source d’alimentation normale ;\n• Une source d’alimentation secourue.\nEquipements serveurs :\n• Une source d’alimentation secourue ;\n• Une source d’alimentation par RPS.\nEquipements de ZAT :\n• Une source d’alimentation normale ou secourue si possible.\nEquipements d’acc&#232;s :\n• Une source d’alimentation normale ou secourue si possible.\n" />
+  <Matrix field="6-6" column="A" value="Indiquer les types d’alimentation qui seront mis &#224; disposition des &#233;quipements du RLEn" />
+  <Matrix field="6-6" column="B" value="Texte" />
+  <Matrix field="6-6" column="G" value="5" />
+  <Matrix field="6-6" column="J" value="Exemple d’un site de type CNPE :
+Les &#233;quipements r&#233;seau de cœur, distribution, serveurs devront &#234;tre aliment&#233;s sur deux sources &#233;lectriques distinctes :
+Equipements de cœur et distribution :
+• Une source d’alimentation normale ;
+• Une source d’alimentation secourue.
+Equipements serveurs :
+• Une source d’alimentation secourue ;
+• Une source d’alimentation par RPS.
+Equipements de ZAT :
+• Une source d’alimentation normale ou secourue si possible.
+Equipements d’acc&#232;s :
+• Une source d’alimentation normale ou secourue si possible.
+" />
+  <Field field="6-7" tab="6" type="Information" text="Indiquer dans le tableau suivant le nom et la localisation des locaux techniques" color="#0070C0" fonttype="B" />
+  <Field field="6-8" tab="6" type="TableColumn" parameter1="3" parameter2="10" parameter3="2" color="#0070C0" fonttype="B" />
+  <Matrix field="6-8" column="B" value="TableauColonne" />
+  <Matrix field="6-8" column="F" value="3" />
+  <Matrix field="6-8" column="G" value="10" />
+  <Matrix field="6-8" column="H" value="2" />
+  <Field tableId="6-8" field="6-8-0-1" tab="6" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-8" field="6-8-1-1" tab="6" type="TextInput" text="Nom " />
+  <Field tableId="6-8" field="6-8-2-1" tab="6" type="TextInput" text="Location" />
+  <Field tableId="6-8" field="6-8-3-1" tab="6" type="TextInput" text="Remarques" />
+  <Field tableId="6-8" field="6-8-0-2" tab="6" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-8" field="6-8-1-2" tab="6" type="TextInput" text="Nom " />
+  <Field tableId="6-8" field="6-8-2-2" tab="6" type="TextInput" text="Location" />
+  <Field tableId="6-8" field="6-8-3-2" tab="6" type="TextInput" text="Remarques" />
+  <Field tableId="6-8" field="6-8-0-3" tab="6" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-8" field="6-8-1-3" tab="6" type="TextInput" text="Nom " />
+  <Field tableId="6-8" field="6-8-2-3" tab="6" type="TextInput" text="Location" />
+  <Field tableId="6-8" field="6-8-3-3" tab="6" type="TextInput" text="Remarques" />
+  <Field tableId="6-8" field="6-8-0-4" tab="6" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-8" field="6-8-1-4" tab="6" type="TextInput" text="Nom " />
+  <Field tableId="6-8" field="6-8-2-4" tab="6" type="TextInput" text="Location" />
+  <Field tableId="6-8" field="6-8-3-4" tab="6" type="TextInput" text="Remarques" />
+  <Field tableId="6-8" field="6-8-0-5" tab="6" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-8" field="6-8-1-5" tab="6" type="TextInput" text="Nom " />
+  <Field tableId="6-8" field="6-8-2-5" tab="6" type="TextInput" text="Location" />
+  <Field tableId="6-8" field="6-8-3-5" tab="6" type="TextInput" text="Remarques" />
+  <Field tableId="6-8" field="6-8-0-6" tab="6" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-8" field="6-8-1-6" tab="6" type="TextInput" text="Nom " />
+  <Field tableId="6-8" field="6-8-2-6" tab="6" type="TextInput" text="Location" />
+  <Field tableId="6-8" field="6-8-3-6" tab="6" type="TextInput" text="Remarques" />
+  <Field tableId="6-8" field="6-8-0-7" tab="6" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-8" field="6-8-1-7" tab="6" type="TextInput" text="Nom " />
+  <Field tableId="6-8" field="6-8-2-7" tab="6" type="TextInput" text="Location" />
+  <Field tableId="6-8" field="6-8-3-7" tab="6" type="TextInput" text="Remarques" />
+  <Field tableId="6-8" field="6-8-0-8" tab="6" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-8" field="6-8-1-8" tab="6" type="TextInput" text="Nom " />
+  <Field tableId="6-8" field="6-8-2-8" tab="6" type="TextInput" text="Location" />
+  <Field tableId="6-8" field="6-8-3-8" tab="6" type="TextInput" text="Remarques" />
+  <Field tableId="6-8" field="6-8-0-9" tab="6" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-8" field="6-8-1-9" tab="6" type="TextInput" text="Nom " />
+  <Field tableId="6-8" field="6-8-2-9" tab="6" type="TextInput" text="Location" />
+  <Field tableId="6-8" field="6-8-3-9" tab="6" type="TextInput" text="Remarques" />
+  <Field tableId="6-8" field="6-8-0-10" tab="6" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-8" field="6-8-1-10" tab="6" type="TextInput" text="Nom " />
+  <Field tableId="6-8" field="6-8-2-10" tab="6" type="TextInput" text="Location" />
+  <Field tableId="6-8" field="6-8-3-10" tab="6" type="TextInput" text="Remarques" />
+  <Field field="7-1" tab="7" type="TextInput" text=" Indiquer la taille de la plage d’adresse IP souhait&#233;e pour le site r&#233;nov&#233;" parameter2="2" tooltiptext="Exemple :\n10.B.0.0/32\n" />
+  <Matrix field="7-1" column="A" value=" Indiquer la taille de la plage d’adresse IP souhait&#233;e pour le site r&#233;nov&#233;" />
+  <Matrix field="7-1" column="B" value="Texte" />
+  <Matrix field="7-1" column="G" value="2" />
+  <Matrix field="7-1" column="J" value="Exemple :
+10.B.0.0/32
+" />
+  <Field field="7-2" tab="7" type="Information" text="Plan d&#39;adressage (&#224; remplir dans le fichier word)" />
+  <Field field="7-3" tab="7" type="Information" text="Indiquer dans le tableau suivent le d&#233;tail de l’&#233;tendue des VLAN sur les diff&#233;rents &#233;quipements serveurs" color="#0070C0" fonttype="B" />
+  <Field field="7-4" tab="7" type="TableColumn" parameter1="2" parameter2="20" parameter3="1" />
+  <Matrix field="7-4" column="B" value="TableauColonne" />
+  <Matrix field="7-4" column="F" value="2" />
+  <Matrix field="7-4" column="G" value="20" />
+  <Matrix field="7-4" column="H" value="1" />
+  <Field tableId="7-4" field="7-4-0-1" tab="7" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-1" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-1" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-2" tab="7" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-2" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-2" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-3" tab="7" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-3" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-3" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-4" tab="7" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-4" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-4" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-5" tab="7" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-5" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-5" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-6" tab="7" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-6" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-6" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-7" tab="7" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-7" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-7" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-8" tab="7" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-8" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-8" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-9" tab="7" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-9" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-9" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-10" tab="7" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-10" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-10" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-11" tab="7" type="Information" text="El&#233;ment 11 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-11" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-11" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-12" tab="7" type="Information" text="El&#233;ment 12 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-12" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-12" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-13" tab="7" type="Information" text="El&#233;ment 13 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-13" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-13" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-14" tab="7" type="Information" text="El&#233;ment 14 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-14" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-14" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-15" tab="7" type="Information" text="El&#233;ment 15 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-15" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-15" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-16" tab="7" type="Information" text="El&#233;ment 16 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-16" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-16" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-17" tab="7" type="Information" text="El&#233;ment 17 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-17" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-17" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-18" tab="7" type="Information" text="El&#233;ment 18 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-18" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-18" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-19" tab="7" type="Information" text="El&#233;ment 19 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-19" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-19" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field tableId="7-4" field="7-4-0-20" tab="7" type="Information" text="El&#233;ment 20 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-4" field="7-4-1-20" tab="7" type="TextInput" text="Description  " />
+  <Field tableId="7-4" field="7-4-2-20" tab="7" type="TextInput" text="VLANs port&#233;" />
+  <Field field="7-5" tab="7" type="Spacing" color="Red" />
+  <Field field="7-6" tab="7" type="TextInput" text="Indiquer le d&#233;tail des particularit&#233;s sp&#233;cifiques au site r&#233;nov&#233;. Il peut s’agir d’&#233;quipements informatique ne pouvant pas subir une migration d’adressage IP ou d’&#233;quipement RLE devant supporter des r&#232;gles de filtrage" parameter2="3" tooltiptext="\n" />
+  <Matrix field="7-6" column="A" value="Indiquer le d&#233;tail des particularit&#233;s sp&#233;cifiques au site r&#233;nov&#233;. Il peut s’agir d’&#233;quipements informatique ne pouvant pas subir une migration d’adressage IP ou d’&#233;quipement RLE devant supporter des r&#232;gles de filtrage" />
+  <Matrix field="7-6" column="B" value="Texte" />
+  <Matrix field="7-6" column="G" value="3" />
+  <Field field="7-7" tab="7" type="TextInput" text="Indiquer le mode de fonctionnement r&#233;gional de la supervision dans lequel viendra s’inscrire le site r&#233;nov&#233;" parameter2="3" tooltiptext="\n" />
+  <Matrix field="7-7" column="A" value="Indiquer le mode de fonctionnement r&#233;gional de la supervision dans lequel viendra s’inscrire le site r&#233;nov&#233;" />
+  <Matrix field="7-7" column="B" value="Texte" />
+  <Matrix field="7-7" column="G" value="3" />
+  <Field field="7-8" tab="7" type="TextInput" text="Indiquer dans cette section le mode de fonctionnement r&#233;gional de l’administration dans lequel viendra s’inscrire le site r&#233;nov&#233;" parameter2="3" tooltiptext="Exemple : \nL’administration du r&#233;seau est r&#233;alis&#233;e par l’entit&#233; r&#233;gionale dont d&#233;pend le site r&#233;nov&#233;. L’acc&#232;s aux diff&#233;rentes fonctions de configuration et de param&#233;trage est conditionn&#233; par un login associ&#233; &#224; un mot de passe. Cette identification et authentification est r&#233;alis&#233;e gr&#226;ce au protocole Radius ou par authentification locale en cas de d&#233;faut de l’authentification Radius.\nLes protocoles activ&#233;s pour l’administration sont SSH v2 et SNMP v3.\nLes autres protocoles (HTTP et HTTPS) d’administration ne sont pas activ&#233;s.\n" />
+  <Matrix field="7-8" column="A" value="Indiquer dans cette section le mode de fonctionnement r&#233;gional de l’administration dans lequel viendra s’inscrire le site r&#233;nov&#233;" />
+  <Matrix field="7-8" column="B" value="Texte" />
+  <Matrix field="7-8" column="G" value="3" />
+  <Matrix field="7-8" column="J" value="Exemple : 
+L’administration du r&#233;seau est r&#233;alis&#233;e par l’entit&#233; r&#233;gionale dont d&#233;pend le site r&#233;nov&#233;. L’acc&#232;s aux diff&#233;rentes fonctions de configuration et de param&#233;trage est conditionn&#233; par un login associ&#233; &#224; un mot de passe. Cette identification et authentification est r&#233;alis&#233;e gr&#226;ce au protocole Radius ou par authentification locale en cas de d&#233;faut de l’authentification Radius.
+Les protocoles activ&#233;s pour l’administration sont SSH v2 et SNMP v3.
+Les autres protocoles (HTTP et HTTPS) d’administration ne sont pas activ&#233;s.
+" />
+  <Field field="7-9" tab="7" type="TextInput" text="Comptes d&#39;administration" parameter2="3" tooltiptext="Exemple : \nDurant la phase de d&#233;ploiement un compte g&#233;n&#233;rique local T&#233;lindus est configur&#233; sur les &#233;quipements actifs, lors de la reprise en exploitation ce compte local T&#233;lindus sera supprim&#233; et la gestion des acc&#232;s aux &#233;quipements actifs via Radius sera configur&#233;e &#224; la cible (mise en place des mots de passe cibles).\n" />
+  <Matrix field="7-9" column="A" value="Comptes d&#39;administration" />
+  <Matrix field="7-9" column="B" value="Texte" />
+  <Matrix field="7-9" column="G" value="3" />
+  <Matrix field="7-9" column="J" value="Exemple : 
+Durant la phase de d&#233;ploiement un compte g&#233;n&#233;rique local T&#233;lindus est configur&#233; sur les &#233;quipements actifs, lors de la reprise en exploitation ce compte local T&#233;lindus sera supprim&#233; et la gestion des acc&#232;s aux &#233;quipements actifs via Radius sera configur&#233;e &#224; la cible (mise en place des mots de passe cibles).
+" />
+  <Field field="7-10" tab="7" type="TextInput" text="Indiquer les param&#232;tres NTP" parameter2="3" />
+  <Matrix field="7-10" column="A" value="Indiquer les param&#232;tres NTP" />
+  <Matrix field="7-10" column="B" value="Texte" />
+  <Matrix field="7-10" column="G" value="3" />
+  <Field field="7-11" tab="7" type="TextInput" text="Indiquer les param&#232;tres DNS" parameter2="3" />
+  <Matrix field="7-11" column="A" value="Indiquer les param&#232;tres DNS" />
+  <Matrix field="7-11" column="B" value="Texte" />
+  <Matrix field="7-11" column="G" value="3" />
+  <Field field="7-12" tab="7" type="TextInput" text=" Indiquer les param&#232;tres DHCP" parameter2="3" tooltiptext="Exemple :\nLes adresses IP des serveurs DHCP nationaux &#224; renseigner sont les suivantes :\n• 10.203.48.14\n• 163.114.1.16\n• 10.121.1.104\n" />
+  <Matrix field="7-12" column="A" value=" Indiquer les param&#232;tres DHCP" />
+  <Matrix field="7-12" column="B" value="Texte" />
+  <Matrix field="7-12" column="G" value="3" />
+  <Matrix field="7-12" column="J" value="Exemple :
+Les adresses IP des serveurs DHCP nationaux &#224; renseigner sont les suivantes :
+• 10.203.48.14
+• 163.114.1.16
+• 10.121.1.104
+" />
+  <Field field="7-13" tab="7" type="TextInput" text="Indiquer les param&#232;tres li&#233;s &#224; l’envoi de log vers le ou les serveurs de la PDSR" parameter2="3" />
+  <Matrix field="7-13" column="A" value="Indiquer les param&#232;tres li&#233;s &#224; l’envoi de log vers le ou les serveurs de la PDSR" />
+  <Matrix field="7-13" column="B" value="Texte" />
+  <Matrix field="7-13" column="G" value="3" />
+  <Field field="7-14" tab="7" type="Spacing" />
+  <Field field="7-15" tab="7" type="Information" text="Indiquer dans la tableau suivant les param&#232;tres SNMP v3 sysContact et sysLocation" color="#0070C0" fonttype="B" />
+  <Field field="7-16" tab="7" type="TableColumn" parameter1="2" parameter2="10" parameter3="1" />
+  <Matrix field="7-16" column="B" value="TableauColonne" />
+  <Matrix field="7-16" column="F" value="2" />
+  <Matrix field="7-16" column="G" value="10" />
+  <Matrix field="7-16" column="H" value="1" />
+  <Field tableId="7-16" field="7-16-0-1" tab="7" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-16" field="7-16-1-1" tab="7" type="TextInput" text="Info SNMP" />
+  <Field tableId="7-16" field="7-16-2-1" tab="7" type="TextInput" text="R&#232;gle" />
+  <Field tableId="7-16" field="7-16-0-2" tab="7" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-16" field="7-16-1-2" tab="7" type="TextInput" text="Info SNMP" />
+  <Field tableId="7-16" field="7-16-2-2" tab="7" type="TextInput" text="R&#232;gle" />
+  <Field tableId="7-16" field="7-16-0-3" tab="7" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-16" field="7-16-1-3" tab="7" type="TextInput" text="Info SNMP" />
+  <Field tableId="7-16" field="7-16-2-3" tab="7" type="TextInput" text="R&#232;gle" />
+  <Field tableId="7-16" field="7-16-0-4" tab="7" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-16" field="7-16-1-4" tab="7" type="TextInput" text="Info SNMP" />
+  <Field tableId="7-16" field="7-16-2-4" tab="7" type="TextInput" text="R&#232;gle" />
+  <Field tableId="7-16" field="7-16-0-5" tab="7" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-16" field="7-16-1-5" tab="7" type="TextInput" text="Info SNMP" />
+  <Field tableId="7-16" field="7-16-2-5" tab="7" type="TextInput" text="R&#232;gle" />
+  <Field tableId="7-16" field="7-16-0-6" tab="7" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-16" field="7-16-1-6" tab="7" type="TextInput" text="Info SNMP" />
+  <Field tableId="7-16" field="7-16-2-6" tab="7" type="TextInput" text="R&#232;gle" />
+  <Field tableId="7-16" field="7-16-0-7" tab="7" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-16" field="7-16-1-7" tab="7" type="TextInput" text="Info SNMP" />
+  <Field tableId="7-16" field="7-16-2-7" tab="7" type="TextInput" text="R&#232;gle" />
+  <Field tableId="7-16" field="7-16-0-8" tab="7" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-16" field="7-16-1-8" tab="7" type="TextInput" text="Info SNMP" />
+  <Field tableId="7-16" field="7-16-2-8" tab="7" type="TextInput" text="R&#232;gle" />
+  <Field tableId="7-16" field="7-16-0-9" tab="7" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-16" field="7-16-1-9" tab="7" type="TextInput" text="Info SNMP" />
+  <Field tableId="7-16" field="7-16-2-9" tab="7" type="TextInput" text="R&#232;gle" />
+  <Field tableId="7-16" field="7-16-0-10" tab="7" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-16" field="7-16-1-10" tab="7" type="TextInput" text="Info SNMP" />
+  <Field tableId="7-16" field="7-16-2-10" tab="7" type="TextInput" text="R&#232;gle" />
+  <Field field="8-1" tab="8" type="TextInput" text="Indiquer dans cette section quel type de maintenance a &#233;t&#233; retenu pour les &#233;quipements actifs du RLEn" parameter2="5" tooltiptext="Exemple CNPE :\nLes &#233;quipements de Cœur, Distribution et Serveurs sont sous un contrat de Temps de R&#233;tablissement sur site de 4h en heures ouvrables.\nLes &#233;quipements d’acc&#232;s quand &#224; eux b&#233;n&#233;ficient d’un &#233;change standard sous 3 jours en heures ouvrables. Ce type de maintenance n&#233;cessite la mise en place d’un lot d’&#233;quipements de spare sous tension.\nPolitique de maintenance mat&#233;rielle et de support chez les int&#233;grateurs\n" />
+  <Matrix field="8-1" column="A" value="Indiquer dans cette section quel type de maintenance a &#233;t&#233; retenu pour les &#233;quipements actifs du RLEn" />
+  <Matrix field="8-1" column="B" value="Texte" />
+  <Matrix field="8-1" column="G" value="5" />
+  <Matrix field="8-1" column="J" value="Exemple CNPE :
+Les &#233;quipements de Cœur, Distribution et Serveurs sont sous un contrat de Temps de R&#233;tablissement sur site de 4h en heures ouvrables.
+Les &#233;quipements d’acc&#232;s quand &#224; eux b&#233;n&#233;ficient d’un &#233;change standard sous 3 jours en heures ouvrables. Ce type de maintenance n&#233;cessite la mise en place d’un lot d’&#233;quipements de spare sous tension.
+Politique de maintenance mat&#233;rielle et de support chez les int&#233;grateurs
+" />
+
+<!-- Correspondances Lot/Champ. -->
+  <Link lot="10" field="1-1" />
+  <Link lot="10" field="1-2" />
+  <Link lot="10" field="1-3" />
+  <Link lot="10" field="2-1" />
+  <Link lot="10" field="2-2" />
+  <Link lot="10" field="2-3" />
+  <Link lot="10" field="2-4" />
+  <Link lot="10" field="2-5" />
+  <Link lot="10" field="2-6" />
+  <Link lot="10" field="2-7" />
+  <Link lot="10" field="2-8" />
+  <Link lot="10" field="3-1" />
+  <Link lot="10" field="3-2" />
+  <Link lot="10" field="3-3" />
+  <Link lot="10" field="3-4" />
+  <Link lot="10" field="3-5" />
+  <Link lot="10" field="3-6" />
+  <Link lot="10" field="3-7" />
+  <Link lot="10" field="3-8" />
+  <Link lot="10" field="3-9" />
+  <Link lot="10" field="3-10" />
+  <Link lot="10" field="3-11" />
+  <Link lot="10" field="3-12" />
+  <Link lot="10" field="4-1" />
+  <Link lot="10" field="4-2" />
+  <Link lot="10" field="4-3" />
+  <Link lot="10" field="4-4" />
+  <Link lot="10" field="4-5" />
+  <Link lot="10" field="4-6" />
+  <Link lot="10" field="4-7" />
+  <Link lot="10" field="4-8" />
+  <Link lot="10" field="4-9" />
+  <Link lot="10" field="4-10" />
+  <Link lot="10" field="4-11" />
+  <Link lot="10" field="4-12" />
+  <Link lot="10" field="4-12-0-1" />
+  <Link lot="10" field="4-12-0-2" />
+  <Link lot="10" field="4-12-0-3" />
+  <Link lot="10" field="4-12-0-4" />
+  <Link lot="10" field="4-12-0-5" />
+  <Link lot="10" field="4-12-0-6" />
+  <Link lot="10" field="4-12-0-7" />
+  <Link lot="10" field="4-12-0-8" />
+  <Link lot="10" field="4-12-0-9" />
+  <Link lot="10" field="4-12-0-10" />
+  <Link lot="10" field="4-12-1-1" />
+  <Link lot="10" field="4-12-2-1" />
+  <Link lot="10" field="4-12-3-1" />
+  <Link lot="10" field="4-12-1-2" />
+  <Link lot="10" field="4-12-2-2" />
+  <Link lot="10" field="4-12-3-2" />
+  <Link lot="10" field="4-12-1-3" />
+  <Link lot="10" field="4-12-2-3" />
+  <Link lot="10" field="4-12-3-3" />
+  <Link lot="10" field="4-12-1-4" />
+  <Link lot="10" field="4-12-2-4" />
+  <Link lot="10" field="4-12-3-4" />
+  <Link lot="10" field="4-12-1-5" />
+  <Link lot="10" field="4-12-2-5" />
+  <Link lot="10" field="4-12-3-5" />
+  <Link lot="10" field="4-12-1-6" />
+  <Link lot="10" field="4-12-2-6" />
+  <Link lot="10" field="4-12-3-6" />
+  <Link lot="10" field="4-12-1-7" />
+  <Link lot="10" field="4-12-2-7" />
+  <Link lot="10" field="4-12-3-7" />
+  <Link lot="10" field="4-12-1-8" />
+  <Link lot="10" field="4-12-2-8" />
+  <Link lot="10" field="4-12-3-8" />
+  <Link lot="10" field="4-12-1-9" />
+  <Link lot="10" field="4-12-2-9" />
+  <Link lot="10" field="4-12-3-9" />
+  <Link lot="10" field="4-12-1-10" />
+  <Link lot="10" field="4-12-2-10" />
+  <Link lot="10" field="4-12-3-10" />
+  <Link lot="10" field="5-1" />
+  <Link lot="10" field="5-2" />
+  <Link lot="10" field="5-3" />
+  <Link lot="10" field="5-4" />
+  <Link lot="10" field="5-5" />
+  <Link lot="10" field="5-6" />
+  <Link lot="10" field="5-7" />
+  <Link lot="10" field="5-8" />
+  <Link lot="10" field="5-9" />
+  <Link lot="10" field="5-10" />
+  <Link lot="10" field="5-11" />
+  <Link lot="10" field="5-12" />
+  <Link lot="10" field="5-13" />
+  <Link lot="10" field="5-14" />
+  <Link lot="10" field="5-15" />
+  <Link lot="10" field="5-16" />
+  <Link lot="10" field="5-16-0-1" />
+  <Link lot="10" field="5-16-0-2" />
+  <Link lot="10" field="5-16-0-3" />
+  <Link lot="10" field="5-16-0-4" />
+  <Link lot="10" field="5-16-0-5" />
+  <Link lot="10" field="5-16-0-6" />
+  <Link lot="10" field="5-16-0-7" />
+  <Link lot="10" field="5-16-0-8" />
+  <Link lot="10" field="5-16-0-9" />
+  <Link lot="10" field="5-16-0-10" />
+  <Link lot="10" field="5-16-1-1" />
+  <Link lot="10" field="5-16-2-1" />
+  <Link lot="10" field="5-16-3-1" />
+  <Link lot="10" field="5-16-1-2" />
+  <Link lot="10" field="5-16-2-2" />
+  <Link lot="10" field="5-16-3-2" />
+  <Link lot="10" field="5-16-1-3" />
+  <Link lot="10" field="5-16-2-3" />
+  <Link lot="10" field="5-16-3-3" />
+  <Link lot="10" field="5-16-1-4" />
+  <Link lot="10" field="5-16-2-4" />
+  <Link lot="10" field="5-16-3-4" />
+  <Link lot="10" field="5-16-1-5" />
+  <Link lot="10" field="5-16-2-5" />
+  <Link lot="10" field="5-16-3-5" />
+  <Link lot="10" field="5-16-1-6" />
+  <Link lot="10" field="5-16-2-6" />
+  <Link lot="10" field="5-16-3-6" />
+  <Link lot="10" field="5-16-1-7" />
+  <Link lot="10" field="5-16-2-7" />
+  <Link lot="10" field="5-16-3-7" />
+  <Link lot="10" field="5-16-1-8" />
+  <Link lot="10" field="5-16-2-8" />
+  <Link lot="10" field="5-16-3-8" />
+  <Link lot="10" field="5-16-1-9" />
+  <Link lot="10" field="5-16-2-9" />
+  <Link lot="10" field="5-16-3-9" />
+  <Link lot="10" field="5-16-1-10" />
+  <Link lot="10" field="5-16-2-10" />
+  <Link lot="10" field="5-16-3-10" />
+  <Link lot="10" field="6-1" />
+  <Link lot="10" field="6-2" />
+  <Link lot="10" field="6-3" />
+  <Link lot="10" field="6-4" />
+  <Link lot="10" field="6-5" />
+  <Link lot="10" field="6-6" />
+  <Link lot="10" field="6-7" />
+  <Link lot="10" field="6-8" />
+  <Link lot="10" field="6-8-0-1" />
+  <Link lot="10" field="6-8-0-2" />
+  <Link lot="10" field="6-8-0-3" />
+  <Link lot="10" field="6-8-0-4" />
+  <Link lot="10" field="6-8-0-5" />
+  <Link lot="10" field="6-8-0-6" />
+  <Link lot="10" field="6-8-0-7" />
+  <Link lot="10" field="6-8-0-8" />
+  <Link lot="10" field="6-8-0-9" />
+  <Link lot="10" field="6-8-0-10" />
+  <Link lot="10" field="6-8-1-1" />
+  <Link lot="10" field="6-8-2-1" />
+  <Link lot="10" field="6-8-3-1" />
+  <Link lot="10" field="6-8-1-2" />
+  <Link lot="10" field="6-8-2-2" />
+  <Link lot="10" field="6-8-3-2" />
+  <Link lot="10" field="6-8-1-3" />
+  <Link lot="10" field="6-8-2-3" />
+  <Link lot="10" field="6-8-3-3" />
+  <Link lot="10" field="6-8-1-4" />
+  <Link lot="10" field="6-8-2-4" />
+  <Link lot="10" field="6-8-3-4" />
+  <Link lot="10" field="6-8-1-5" />
+  <Link lot="10" field="6-8-2-5" />
+  <Link lot="10" field="6-8-3-5" />
+  <Link lot="10" field="6-8-1-6" />
+  <Link lot="10" field="6-8-2-6" />
+  <Link lot="10" field="6-8-3-6" />
+  <Link lot="10" field="6-8-1-7" />
+  <Link lot="10" field="6-8-2-7" />
+  <Link lot="10" field="6-8-3-7" />
+  <Link lot="10" field="6-8-1-8" />
+  <Link lot="10" field="6-8-2-8" />
+  <Link lot="10" field="6-8-3-8" />
+  <Link lot="10" field="6-8-1-9" />
+  <Link lot="10" field="6-8-2-9" />
+  <Link lot="10" field="6-8-3-9" />
+  <Link lot="10" field="6-8-1-10" />
+  <Link lot="10" field="6-8-2-10" />
+  <Link lot="10" field="6-8-3-10" />
+  <Link lot="10" field="7-1" />
+  <Link lot="10" field="7-3" />
+  <Link lot="10" field="7-4" />
+  <Link lot="10" field="7-4-0-1" />
+  <Link lot="10" field="7-4-0-2" />
+  <Link lot="10" field="7-4-0-3" />
+  <Link lot="10" field="7-4-0-4" />
+  <Link lot="10" field="7-4-0-5" />
+  <Link lot="10" field="7-4-0-6" />
+  <Link lot="10" field="7-4-0-7" />
+  <Link lot="10" field="7-4-0-8" />
+  <Link lot="10" field="7-4-0-9" />
+  <Link lot="10" field="7-4-0-10" />
+  <Link lot="10" field="7-4-0-11" />
+  <Link lot="10" field="7-4-0-12" />
+  <Link lot="10" field="7-4-0-13" />
+  <Link lot="10" field="7-4-0-14" />
+  <Link lot="10" field="7-4-0-15" />
+  <Link lot="10" field="7-4-0-16" />
+  <Link lot="10" field="7-4-0-17" />
+  <Link lot="10" field="7-4-0-18" />
+  <Link lot="10" field="7-4-0-19" />
+  <Link lot="10" field="7-4-0-20" />
+  <Link lot="10" field="7-4-1-1" />
+  <Link lot="10" field="7-4-2-1" />
+  <Link lot="10" field="7-4-1-2" />
+  <Link lot="10" field="7-4-2-2" />
+  <Link lot="10" field="7-4-1-3" />
+  <Link lot="10" field="7-4-2-3" />
+  <Link lot="10" field="7-4-1-4" />
+  <Link lot="10" field="7-4-2-4" />
+  <Link lot="10" field="7-4-1-5" />
+  <Link lot="10" field="7-4-2-5" />
+  <Link lot="10" field="7-4-1-6" />
+  <Link lot="10" field="7-4-2-6" />
+  <Link lot="10" field="7-4-1-7" />
+  <Link lot="10" field="7-4-2-7" />
+  <Link lot="10" field="7-4-1-8" />
+  <Link lot="10" field="7-4-2-8" />
+  <Link lot="10" field="7-4-1-9" />
+  <Link lot="10" field="7-4-2-9" />
+  <Link lot="10" field="7-4-1-10" />
+  <Link lot="10" field="7-4-2-10" />
+  <Link lot="10" field="7-4-1-11" />
+  <Link lot="10" field="7-4-2-11" />
+  <Link lot="10" field="7-4-1-12" />
+  <Link lot="10" field="7-4-2-12" />
+  <Link lot="10" field="7-4-1-13" />
+  <Link lot="10" field="7-4-2-13" />
+  <Link lot="10" field="7-4-1-14" />
+  <Link lot="10" field="7-4-2-14" />
+  <Link lot="10" field="7-4-1-15" />
+  <Link lot="10" field="7-4-2-15" />
+  <Link lot="10" field="7-4-1-16" />
+  <Link lot="10" field="7-4-2-16" />
+  <Link lot="10" field="7-4-1-17" />
+  <Link lot="10" field="7-4-2-17" />
+  <Link lot="10" field="7-4-1-18" />
+  <Link lot="10" field="7-4-2-18" />
+  <Link lot="10" field="7-4-1-19" />
+  <Link lot="10" field="7-4-2-19" />
+  <Link lot="10" field="7-4-1-20" />
+  <Link lot="10" field="7-4-2-20" />
+  <Link lot="10" field="7-5" />
+  <Link lot="10" field="7-6" />
+  <Link lot="10" field="7-7" />
+  <Link lot="10" field="7-8" />
+  <Link lot="10" field="7-9" />
+  <Link lot="10" field="7-10" />
+  <Link lot="10" field="7-11" />
+  <Link lot="10" field="7-12" />
+  <Link lot="10" field="7-13" />
+  <Link lot="10" field="7-14" />
+  <Link lot="10" field="7-15" />
+  <Link lot="10" field="7-16" />
+  <Link lot="10" field="7-16-0-1" />
+  <Link lot="10" field="7-16-0-2" />
+  <Link lot="10" field="7-16-0-3" />
+  <Link lot="10" field="7-16-0-4" />
+  <Link lot="10" field="7-16-0-5" />
+  <Link lot="10" field="7-16-0-6" />
+  <Link lot="10" field="7-16-0-7" />
+  <Link lot="10" field="7-16-0-8" />
+  <Link lot="10" field="7-16-0-9" />
+  <Link lot="10" field="7-16-0-10" />
+  <Link lot="10" field="7-16-1-1" />
+  <Link lot="10" field="7-16-2-1" />
+  <Link lot="10" field="7-16-1-2" />
+  <Link lot="10" field="7-16-2-2" />
+  <Link lot="10" field="7-16-1-3" />
+  <Link lot="10" field="7-16-2-3" />
+  <Link lot="10" field="7-16-1-4" />
+  <Link lot="10" field="7-16-2-4" />
+  <Link lot="10" field="7-16-1-5" />
+  <Link lot="10" field="7-16-2-5" />
+  <Link lot="10" field="7-16-1-6" />
+  <Link lot="10" field="7-16-2-6" />
+  <Link lot="10" field="7-16-1-7" />
+  <Link lot="10" field="7-16-2-7" />
+  <Link lot="10" field="7-16-1-8" />
+  <Link lot="10" field="7-16-2-8" />
+  <Link lot="10" field="7-16-1-9" />
+  <Link lot="10" field="7-16-2-9" />
+  <Link lot="10" field="7-16-1-10" />
+  <Link lot="10" field="7-16-2-10" />
+  <Link lot="10" field="8-1" />
+
+<!-- Correspondances Lot/Onglet. -->
+  <LinkTab lot="10" tab="1" />
+  <LinkTab lot="10" tab="2" />
+  <LinkTab lot="10" tab="3" />
+  <LinkTab lot="10" tab="4" />
+  <LinkTab lot="10" tab="5" />
+  <LinkTab lot="10" tab="6" />
+  <LinkTab lot="10" tab="7" />
+  <LinkTab lot="10" tab="8" />
+
+<!-- Fin de la matrice -->
+
+</Scrib>

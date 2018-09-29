@@ -1,0 +1,1825 @@
+<Scrib>
+
+<!-- Informations sur la matrice -->
+  <ExpertVersion value="1" />
+  <StructureVersion value="1" />
+  <ExcelDate value="31/01/2018 17:42:02" />
+  <ExcelName value="Matrice.xls" />
+  <CompileDate value="01/02/2018 08:49:57" />
+  <Reference value="Modele-ENO-CCTP-March&#233;-MAET-LotA-V0.doc" />
+  <ToolVersion value="1.18.1.26" />
+  <Summary value="Connaisseur : Ludovic Dumont" />
+
+<!-- Liste des lots -->
+  <Lot lot="10" text="4 - March&#233; Appui Projet D&#233;ploiement et Expertise T&#233;l&#233;com – Lot A" />
+
+<!-- Liste des entêtes de colonne -->
+  <Matrix column="A" name="Regroupements et champs" />
+  <Matrix column="B" name="Type" />
+  <Matrix column="C" name="Obligatoire" />
+  <Matrix column="D" name="Valeur
+par d&#233;faut" />
+  <Matrix column="E" name="Nom unique du champ" />
+  <Matrix column="F" name="1er" />
+  <Matrix column="G" name="2&#232;me" />
+  <Matrix column="H" name="3&#232;me" />
+  <Matrix column="I" name="Nom Unique du champ &#39;Case&#39; d&#39;activation &amp; &#39;CaseInclure&#39;" />
+  <Matrix column="J" name="Message d&#39;aide" />
+  <Matrix column="K" name="Suffixe" />
+  <Matrix column="L" name="R&#233;serv&#233;" />
+  <Matrix column="Q" name="Lien" />
+  <Matrix column="R" name="Libell&#233;" />
+
+<!-- Liste des onglets. -->
+  <Tab tab="1" name="Introduction / Pr&#233;ambule" />
+  <Tab tab="2" name="Contexte de la prestation Partie 1" />
+  <Tab tab="3" name="Contexte de la prestation Partie 2" />
+  <Tab tab="4" name="Contexte de la prestation Partie 3" />
+  <Tab tab="5" name="Prestations attendues" />
+  <Tab tab="6" name="Phase d&#39;initialisation" />
+  <Tab tab="7" name="Phase de r&#233;versibilit&#233; " />
+  <Tab tab="8" name="Continuit&#233; de service" />
+  <Tab tab="9" name="Contrainte technique" />
+  <Tab tab="10" name="S&#233;curit&#233;" />
+
+<!-- Liste des champs. -->
+  <Field field="1-1" tab="1" required="Yes" type="TextInput" text="Libell&#233; de la prestation" color="#0070C0" fonttype="BU" />
+  <Matrix field="1-1" column="A" value="Libell&#233; de la prestation" />
+  <Matrix field="1-1" column="B" value="Texte" />
+  <Matrix field="1-1" column="C" value="X" />
+  <Field field="1-2" tab="1" required="Yes" type="Date" text="Date du jour" />
+  <Matrix field="1-2" column="A" value="Date du jour" />
+  <Matrix field="1-2" column="B" value="Date" />
+  <Matrix field="1-2" column="C" value="X" />
+  <Field field="1-3" tab="1" required="Yes" type="TextInput" text="R&#233;f&#233;rence N&#176; chrono" />
+  <Matrix field="1-3" column="A" value="R&#233;f&#233;rence N&#176; chrono" />
+  <Matrix field="1-3" column="B" value="Texte" />
+  <Matrix field="1-3" column="C" value="X" />
+  <Field field="1-4" tab="1" required="Yes" type="ComboBox" text="Agence" parameter1="ENO; ATL; AZURA; IDF" />
+  <Matrix field="1-4" column="A" value="Agence" />
+  <Matrix field="1-4" column="B" value="ListeChoix" />
+  <Matrix field="1-4" column="C" value="X" />
+  <Matrix field="1-4" column="F" value="ENO; ATL; AZURA; IDF" />
+  <Field field="1-5" tab="1" required="Yes" type="TextInput" text="P&#244;le" />
+  <Matrix field="1-5" column="A" value="P&#244;le" />
+  <Matrix field="1-5" column="B" value="Texte" />
+  <Matrix field="1-5" column="C" value="X" />
+  <Field field="1-6" tab="1" required="Yes" type="TextInput" text="Auteur" />
+  <Matrix field="1-6" column="A" value="Auteur" />
+  <Matrix field="1-6" column="B" value="Texte" />
+  <Matrix field="1-6" column="C" value="X" />
+  <Field field="1-7" tab="1" required="Yes" type="TextInput" text="Nom du Prescripteur" />
+  <Matrix field="1-7" column="A" value="Nom du Prescripteur" />
+  <Matrix field="1-7" column="B" value="Texte" />
+  <Matrix field="1-7" column="C" value="X" />
+  <Field field="1-8" tab="1" required="Yes" type="TextInput" text="Nom du manager" />
+  <Matrix field="1-8" column="A" value="Nom du manager" />
+  <Matrix field="1-8" column="B" value="Texte" />
+  <Matrix field="1-8" column="C" value="X" />
+  <Field field="1-9" tab="1" type="Information" text="R&#233;sum&#233; " />
+  <Field field="1-10" tab="1" required="Yes" type="RadioButton" text="Cet appel &#224; prestation est &#224; prendre en compte dans le contexte du Lot A &#171;&#160;Appui Projet D&#233;ploiement&#160;&#187; sous-cat&#233;gorie &#171;&#160;Prestation d’appui pilotage projet&#160;&#187; de ce march&#233; de prestation." />
+  <Matrix field="1-10" column="A" value="Cet appel &#224; prestation est &#224; prendre en compte dans le contexte du Lot A &#171;&#160;Appui Projet D&#233;ploiement&#160;&#187; sous-cat&#233;gorie &#171;&#160;Prestation d’appui pilotage projet&#160;&#187; de ce march&#233; de prestation." />
+  <Matrix field="1-10" column="B" value="Bouton" />
+  <Matrix field="1-10" column="C" value="X" />
+  <Field field="1-11" tab="1" required="Yes" type="RadioButton" text="Cet appel &#224; prestation est &#224; prendre en compte dans le contexte du Lot A &#171; Appui Projet D&#233;ploiement &#187; sous-cat&#233;gorie &#171; Prestation d’appui d&#233;ploiement et int&#233;gration &#187; de ce march&#233; de prestation." />
+  <Matrix field="1-11" column="A" value="Cet appel &#224; prestation est &#224; prendre en compte dans le contexte du Lot A &#171; Appui Projet D&#233;ploiement &#187; sous-cat&#233;gorie &#171; Prestation d’appui d&#233;ploiement et int&#233;gration &#187; de ce march&#233; de prestation." />
+  <Matrix field="1-11" column="B" value="Bouton" />
+  <Matrix field="1-11" column="C" value="X" />
+  <Field field="1-12" tab="1" required="Yes" type="RadioButton" text="Cet appel &#224; prestation est &#224; prendre en compte dans le contexte du Lot A &#171; Appui Projet D&#233;ploiement &#187; sous-cat&#233;gories &#171; Prestation d’appui d&#233;ploiement et int&#233;gration &#187; et &#171; Prestation d’appui d&#233;ploiement et int&#233;gration &#187; de ce march&#233; de prestation." />
+  <Matrix field="1-12" column="A" value="Cet appel &#224; prestation est &#224; prendre en compte dans le contexte du Lot A &#171; Appui Projet D&#233;ploiement &#187; sous-cat&#233;gories &#171; Prestation d’appui d&#233;ploiement et int&#233;gration &#187; et &#171; Prestation d’appui d&#233;ploiement et int&#233;gration &#187; de ce march&#233; de prestation." />
+  <Matrix field="1-12" column="B" value="Bouton" />
+  <Matrix field="1-12" column="C" value="X" />
+  <Field field="1-13" tab="1" required="Yes" type="TextInput" text="Mots cl&#233;s" />
+  <Matrix field="1-13" column="A" value="Mots cl&#233;s" />
+  <Matrix field="1-13" column="B" value="Texte" />
+  <Matrix field="1-13" column="C" value="X" />
+  <Field field="1-14" tab="1" required="Yes" type="CheckBox" text="Acronymes suppl&#233;mentaires " uniquename="Acro1" />
+  <Matrix field="1-14" column="A" value="Acronymes suppl&#233;mentaires " />
+  <Matrix field="1-14" column="B" value="Case" />
+  <Matrix field="1-14" column="C" value="X" />
+  <Matrix field="1-14" column="E" value="Acro1" />
+  <Field field="1-15" tab="1" required="Yes" type="TextInput" text="Acronymes  " activationfield="Acro1" />
+  <Matrix field="1-15" column="A" value="Acronymes  " />
+  <Matrix field="1-15" column="B" value="Texte" />
+  <Matrix field="1-15" column="C" value="X" />
+  <Matrix field="1-15" column="I" value="Acro1" />
+  <Field field="1-16" tab="1" required="Yes" type="TextInput" text="Descriptif" activationfield="Acro1" />
+  <Matrix field="1-16" column="A" value="Descriptif" />
+  <Matrix field="1-16" column="B" value="Texte" />
+  <Matrix field="1-16" column="C" value="X" />
+  <Matrix field="1-16" column="I" value="Acro1" />
+  <Field field="1-17" tab="1" required="Yes" type="CheckBox" text="Acronymes suppl&#233;mentaires " uniquename="Acro2" />
+  <Matrix field="1-17" column="A" value="Acronymes suppl&#233;mentaires " />
+  <Matrix field="1-17" column="B" value="Case" />
+  <Matrix field="1-17" column="C" value="X" />
+  <Matrix field="1-17" column="E" value="Acro2" />
+  <Field field="1-18" tab="1" required="Yes" type="TextInput" text="Acronymes  " activationfield="Acro2" />
+  <Matrix field="1-18" column="A" value="Acronymes  " />
+  <Matrix field="1-18" column="B" value="Texte" />
+  <Matrix field="1-18" column="C" value="X" />
+  <Matrix field="1-18" column="I" value="Acro2" />
+  <Field field="1-19" tab="1" required="Yes" type="TextInput" text="Descriptif" activationfield="Acro2" />
+  <Matrix field="1-19" column="A" value="Descriptif" />
+  <Matrix field="1-19" column="B" value="Texte" />
+  <Matrix field="1-19" column="C" value="X" />
+  <Matrix field="1-19" column="I" value="Acro2" />
+  <Field field="2-1" tab="2" type="TextInput" text="Titre de la prestation n&#176;1" value="Le TITULAIRE s’adapte au contexte et intervient sur tous les sites dont l’Agence est l’op&#233;rateur informatique et t&#233;l&#233;com" color="#0070C0" fonttype="BU" />
+  <Matrix field="2-1" column="A" value="Titre de la prestation n&#176;1" />
+  <Matrix field="2-1" column="B" value="Texte" />
+  <Matrix field="2-1" column="D" value="Le TITULAIRE s’adapte au contexte et intervient sur tous les sites dont l’Agence est l’op&#233;rateur informatique et t&#233;l&#233;com" />
+  <Field field="2-2" tab="2" type="TextInput" text="P&#244;le impact&#233;" />
+  <Matrix field="2-2" column="A" value="P&#244;le impact&#233;" />
+  <Matrix field="2-2" column="B" value="Texte" />
+  <Field field="2-3" tab="2" type="TextInput" text="Antenne" />
+  <Matrix field="2-3" column="A" value="Antenne" />
+  <Matrix field="2-3" column="B" value="Texte" />
+  <Field field="2-4" tab="2" type="RadioButton" text="Description" uniquename="description1" parameter1="0" />
+  <Matrix field="2-4" column="A" value="Description" />
+  <Matrix field="2-4" column="B" value="Bouton" />
+  <Matrix field="2-4" column="E" value="description1" />
+  <Matrix field="2-4" column="F" value="0" />
+  <Field field="2-5" tab="2" type="TextInput" value="L’agence ENO exerce un certain nombre de mandats nationaux pour le compte d’ITSUP, gr&#226;ce notamment &#224; des &#233;quipes du P&#244;le Technique (PT).
+Le PT d’ITSUP ENO, est constitu&#233; de plusieurs centres de comp&#233;tences dont le CCN (description &#224; compl&#233;ter en fonction du Centre de comp&#233;tences concern&#233;)" activationfield="description1" />
+  <Matrix field="2-5" column="B" value="Texte" />
+  <Matrix field="2-5" column="D" value="L’agence ENO exerce un certain nombre de mandats nationaux pour le compte d’ITSUP, gr&#226;ce notamment &#224; des &#233;quipes du P&#244;le Technique (PT).
+Le PT d’ITSUP ENO, est constitu&#233; de plusieurs centres de comp&#233;tences dont le CCN (description &#224; compl&#233;ter en fonction du Centre de comp&#233;tences concern&#233;)" />
+  <Matrix field="2-5" column="I" value="description1" />
+  <Field field="2-6" tab="2" type="RadioButton" text="Description" uniquename="description2" parameter1="0" />
+  <Matrix field="2-6" column="A" value="Description" />
+  <Matrix field="2-6" column="B" value="Bouton" />
+  <Matrix field="2-6" column="E" value="description2" />
+  <Matrix field="2-6" column="F" value="0" />
+  <Field field="2-7" tab="2" type="TextInput" value="Le P&#244;le Production des Services (PPS) d’ITSUP ENO a dans l’une de ses missions de veiller au bon fonctionnement des pr&#233;conisations &#233;mises par les missions nationales sur les p&#233;rim&#232;tres ITIL, Pilotes de contrats, gestion des actifs et pilotage du contrat verticalis&#233; d’infog&#233;rance." activationfield="description2" />
+  <Matrix field="2-7" column="B" value="Texte" />
+  <Matrix field="2-7" column="D" value="Le P&#244;le Production des Services (PPS) d’ITSUP ENO a dans l’une de ses missions de veiller au bon fonctionnement des pr&#233;conisations &#233;mises par les missions nationales sur les p&#233;rim&#232;tres ITIL, Pilotes de contrats, gestion des actifs et pilotage du contrat verticalis&#233; d’infog&#233;rance." />
+  <Matrix field="2-7" column="I" value="description2" />
+  <Field field="2-8" tab="2" type="RadioButton" text="Description" uniquename="description3" parameter1="0" />
+  <Matrix field="2-8" column="A" value="Description" />
+  <Matrix field="2-8" column="B" value="Bouton" />
+  <Matrix field="2-8" column="E" value="description3" />
+  <Matrix field="2-8" column="F" value="0" />
+  <Field field="2-9" tab="2" type="TextInput" value="L’&#233;quipe DSP ITSUP ENO PSN Site (&#224; mentionner), a pour mission de mettre en place les syst&#232;mes d’information et de t&#233;l&#233;communication sur le site du CNPE de (&#224; mentionner). Elle a pour r&#244;le &#233;galement d’assurer le maintien en conditions op&#233;rationnelles des diff&#233;rents syst&#232;mes Informatiques et T&#233;l&#233;coms tertiaires pour les entit&#233;s en place sur ces sites. L’ensemble de ces actions doit s’inscrire dans un cadre et des offres d&#233;finies par l’Op&#233;rateur Groupe." activationfield="description3" />
+  <Matrix field="2-9" column="B" value="Texte" />
+  <Matrix field="2-9" column="D" value="L’&#233;quipe DSP ITSUP ENO PSN Site (&#224; mentionner), a pour mission de mettre en place les syst&#232;mes d’information et de t&#233;l&#233;communication sur le site du CNPE de (&#224; mentionner). Elle a pour r&#244;le &#233;galement d’assurer le maintien en conditions op&#233;rationnelles des diff&#233;rents syst&#232;mes Informatiques et T&#233;l&#233;coms tertiaires pour les entit&#233;s en place sur ces sites. L’ensemble de ces actions doit s’inscrire dans un cadre et des offres d&#233;finies par l’Op&#233;rateur Groupe." />
+  <Matrix field="2-9" column="I" value="description3" />
+  <Field field="2-10" tab="2" type="RadioButton" text="Description" uniquename="description4" parameter1="0" />
+  <Matrix field="2-10" column="A" value="Description" />
+  <Matrix field="2-10" column="B" value="Bouton" />
+  <Matrix field="2-10" column="E" value="description4" />
+  <Matrix field="2-10" column="F" value="0" />
+  <Field field="2-11" tab="2" type="TextInput" value="Le P&#244;le Services Hors Nucl&#233;aire (PSHN) de l’agence ENO a pour mission de mettre en place les syst&#232;mes d’information et de t&#233;l&#233;communication sur les sites hors nucl&#233;aires clients. L’antenne PSHN (&#224; mentionner), bas&#233;e &#224; (&#224; mentionner) couvre principalement le p&#233;rim&#232;tre g&#233;ographique des anciennes r&#233;gions administratives Alsace, Franche Comt&#233;, Bourgogne ainsi qu’une partie de la Lorraine (&#224; corriger si besoin). Elle a pour r&#244;le &#233;galement d’assurer le maintien en conditions op&#233;rationnelles des diff&#233;rents syst&#232;mes Informatiques et T&#233;l&#233;coms tertiaires pour les entit&#233;s en place sur ces sites. L’ensemble de ces actions doit s’inscrire dans un cadre et des offres d&#233;finies par l’Op&#233;rateur Groupe." activationfield="description4" />
+  <Matrix field="2-11" column="B" value="Texte" />
+  <Matrix field="2-11" column="D" value="Le P&#244;le Services Hors Nucl&#233;aire (PSHN) de l’agence ENO a pour mission de mettre en place les syst&#232;mes d’information et de t&#233;l&#233;communication sur les sites hors nucl&#233;aires clients. L’antenne PSHN (&#224; mentionner), bas&#233;e &#224; (&#224; mentionner) couvre principalement le p&#233;rim&#232;tre g&#233;ographique des anciennes r&#233;gions administratives Alsace, Franche Comt&#233;, Bourgogne ainsi qu’une partie de la Lorraine (&#224; corriger si besoin). Elle a pour r&#244;le &#233;galement d’assurer le maintien en conditions op&#233;rationnelles des diff&#233;rents syst&#232;mes Informatiques et T&#233;l&#233;coms tertiaires pour les entit&#233;s en place sur ces sites. L’ensemble de ces actions doit s’inscrire dans un cadre et des offres d&#233;finies par l’Op&#233;rateur Groupe." />
+  <Matrix field="2-11" column="I" value="description4" />
+  <Field field="2-12" tab="2" type="CheckBox" text="Description" uniquename="description5" parameter1="0" />
+  <Matrix field="2-12" column="A" value="Description" />
+  <Matrix field="2-12" column="B" value="Case" />
+  <Matrix field="2-12" column="E" value="description5" />
+  <Matrix field="2-12" column="F" value="0" />
+  <Field field="2-13" tab="2" type="TextInput" value="Compl&#233;ter si besoin pour expliquer le contexte dans lequel cette prestation interviendra.
+Les prestations attendues du TITULAIRE sont d’assurer (donner une br&#232;ve description). (Par exemple : Les prestations attendues du TITULAIRE sont d’assurer la prestation de r&#233;organisation de la documentation technique du p&#244;le xxx)
+" activationfield="description5" />
+  <Matrix field="2-13" column="B" value="Texte" />
+  <Matrix field="2-13" column="D" value="Compl&#233;ter si besoin pour expliquer le contexte dans lequel cette prestation interviendra.
+Les prestations attendues du TITULAIRE sont d’assurer (donner une br&#232;ve description). (Par exemple : Les prestations attendues du TITULAIRE sont d’assurer la prestation de r&#233;organisation de la documentation technique du p&#244;le xxx)
+" />
+  <Matrix field="2-13" column="I" value="description5" />
+  <Field field="3-1" tab="3" type="TextInput" text="Titre de la prestation n&#176;2" value="Le TITULAIRE intervient sur l’ensemble du p&#233;rim&#232;tre g&#233;ographique de la prestation" color="#0070C0" fonttype="BU" />
+  <Matrix field="3-1" column="A" value="Titre de la prestation n&#176;2" />
+  <Matrix field="3-1" column="B" value="Texte" />
+  <Matrix field="3-1" column="D" value="Le TITULAIRE intervient sur l’ensemble du p&#233;rim&#232;tre g&#233;ographique de la prestation" />
+  <Field field="3-2" tab="3" type="TextInput" text="Lieu de la prestation" />
+  <Matrix field="3-2" column="A" value="Lieu de la prestation" />
+  <Matrix field="3-2" column="B" value="Texte" />
+  <Field field="3-3" tab="3" type="RadioButton" text="Description" uniquename="description1" parameter1="0" />
+  <Matrix field="3-3" column="A" value="Description" />
+  <Matrix field="3-3" column="B" value="Bouton" />
+  <Matrix field="3-3" column="E" value="description1" />
+  <Matrix field="3-3" column="F" value="0" />
+  <Field field="3-4" tab="3" type="TextInput" value="Aucun d&#233;placement n’est pr&#233;vu pour cette prestation." activationfield="description1" />
+  <Matrix field="3-4" column="B" value="Texte" />
+  <Matrix field="3-4" column="D" value="Aucun d&#233;placement n’est pr&#233;vu pour cette prestation." />
+  <Matrix field="3-4" column="I" value="description1" />
+  <Field field="3-5" tab="3" type="RadioButton" text="Description" uniquename="description2" parameter1="0" />
+  <Matrix field="3-5" column="A" value="Description" />
+  <Matrix field="3-5" column="B" value="Bouton" />
+  <Matrix field="3-5" column="E" value="description2" />
+  <Matrix field="3-5" column="F" value="0" />
+  <Field field="3-6" tab="3" type="TextInput" value="Dans le cadre, notamment, de r&#233;unions (&#224; compl&#233;ter si besoin), des d&#233;placements exceptionnels sur des sites de l’Agence ENO ou sur le territoire fran&#231;ais sont &#224; pr&#233;voir." activationfield="description2" />
+  <Matrix field="3-6" column="B" value="Texte" />
+  <Matrix field="3-6" column="D" value="Dans le cadre, notamment, de r&#233;unions (&#224; compl&#233;ter si besoin), des d&#233;placements exceptionnels sur des sites de l’Agence ENO ou sur le territoire fran&#231;ais sont &#224; pr&#233;voir." />
+  <Matrix field="3-6" column="I" value="description2" />
+  <Field field="3-7" tab="3" type="RadioButton" text="Description" uniquename="description3" parameter1="0" />
+  <Matrix field="3-7" column="A" value="Description" />
+  <Matrix field="3-7" column="B" value="Bouton" />
+  <Matrix field="3-7" column="E" value="description3" />
+  <Matrix field="3-7" column="F" value="0" />
+  <Field field="3-8" tab="3" type="TextInput" value="compte.
+
+1.1. Acronymes
+Le Titulaire sera amen&#233;, dans le cadre de la prestation, &#224; se d&#233;placer tr&#232;s r&#233;guli&#232;rement (donner un ordre de fr&#233;quence) sur les sites ITSUP ENO clients de l’agence (ou antenne xx) et exceptionnellement sur le territoire fran&#231;ais. (Si besoin ajouter : A noter que certains d&#233;placements n&#233;cessiteront des passages en pays frontaliers dont l’Allemagne, la Belgique, le Luxembourg ou la Suisse)." activationfield="description3" />
+  <Matrix field="3-8" column="B" value="Texte" />
+  <Matrix field="3-8" column="D" value="compte.
+
+1.1. Acronymes
+Le Titulaire sera amen&#233;, dans le cadre de la prestation, &#224; se d&#233;placer tr&#232;s r&#233;guli&#232;rement (donner un ordre de fr&#233;quence) sur les sites ITSUP ENO clients de l’agence (ou antenne xx) et exceptionnellement sur le territoire fran&#231;ais. (Si besoin ajouter : A noter que certains d&#233;placements n&#233;cessiteront des passages en pays frontaliers dont l’Allemagne, la Belgique, le Luxembourg ou la Suisse)." />
+  <Matrix field="3-8" column="I" value="description3" />
+  <Field field="4-1" tab="4" type="TextInput" text="Titre de la prestation n&#176;3" value="Le TITULAIRE intervient sur la dur&#233;e de la prestation" color="#0070C0" fonttype="BU" />
+  <Matrix field="4-1" column="A" value="Titre de la prestation n&#176;3" />
+  <Matrix field="4-1" column="B" value="Texte" />
+  <Matrix field="4-1" column="D" value="Le TITULAIRE intervient sur la dur&#233;e de la prestation" />
+  <Field field="4-2" tab="4" type="Date" text="D&#233;but de la prestation" />
+  <Matrix field="4-2" column="A" value="D&#233;but de la prestation" />
+  <Matrix field="4-2" column="B" value="Date" />
+  <Field field="4-3" tab="4" type="DatePeriod" text="P&#233;riode ferme " />
+  <Matrix field="4-3" column="A" value="P&#233;riode ferme " />
+  <Matrix field="4-3" column="B" value="P&#233;riode" />
+  <Field field="4-4" tab="4" type="IncloseCheckBox" text="P&#233;riode optionnelle 1 " uniquename="Per1" parameter1="0" />
+  <Matrix field="4-4" column="A" value="P&#233;riode optionnelle 1 " />
+  <Matrix field="4-4" column="B" value="CaseInclure" />
+  <Matrix field="4-4" column="E" value="Per1" />
+  <Matrix field="4-4" column="F" value="0" />
+  <Field field="4-5" tab="4" type="DatePeriod" text="P&#233;riode" activationfield="Per1" />
+  <Matrix field="4-5" column="A" value="P&#233;riode" />
+  <Matrix field="4-5" column="B" value="P&#233;riode" />
+  <Matrix field="4-5" column="I" value="Per1" />
+  <Field field="4-6" tab="4" type="IncloseCheckBox" text="P&#233;riode optionnelle 2" uniquename="Per2" parameter1="0" />
+  <Matrix field="4-6" column="A" value="P&#233;riode optionnelle 2" />
+  <Matrix field="4-6" column="B" value="CaseInclure" />
+  <Matrix field="4-6" column="E" value="Per2" />
+  <Matrix field="4-6" column="F" value="0" />
+  <Field field="4-7" tab="4" type="DatePeriod" text="P&#233;riode" activationfield="Per2" />
+  <Matrix field="4-7" column="A" value="P&#233;riode" />
+  <Matrix field="4-7" column="B" value="P&#233;riode" />
+  <Matrix field="4-7" column="I" value="Per2" />
+  <Field field="4-8" tab="4" type="IncloseCheckBox" text="P&#233;riode optionnelle 3" uniquename="Per3" parameter1="0" />
+  <Matrix field="4-8" column="A" value="P&#233;riode optionnelle 3" />
+  <Matrix field="4-8" column="B" value="CaseInclure" />
+  <Matrix field="4-8" column="E" value="Per3" />
+  <Matrix field="4-8" column="F" value="0" />
+  <Field field="4-9" tab="4" type="DatePeriod" text="P&#233;riode" activationfield="Per3" />
+  <Matrix field="4-9" column="A" value="P&#233;riode" />
+  <Matrix field="4-9" column="B" value="P&#233;riode" />
+  <Matrix field="4-9" column="I" value="Per3" />
+  <Field field="4-10" tab="4" type="IncloseCheckBox" text="P&#233;riode optionnelle 3" uniquename="Per4" parameter1="0" />
+  <Matrix field="4-10" column="A" value="P&#233;riode optionnelle 3" />
+  <Matrix field="4-10" column="B" value="CaseInclure" />
+  <Matrix field="4-10" column="E" value="Per4" />
+  <Matrix field="4-10" column="F" value="0" />
+  <Field field="4-11" tab="4" type="DatePeriod" text="P&#233;riode" activationfield="Per4" />
+  <Matrix field="4-11" column="A" value="P&#233;riode" />
+  <Matrix field="4-11" column="B" value="P&#233;riode" />
+  <Matrix field="4-11" column="I" value="Per4" />
+  <Field field="4-12" tab="4" type="NumberInput" text="P&#233;riode de reversibilit&#233; (en mois)" />
+  <Matrix field="4-12" column="A" value="P&#233;riode de reversibilit&#233; (en mois)" />
+  <Matrix field="4-12" column="B" value="Nombre" />
+  <Field field="4-13" tab="4" type="CheckBox" text="En cas de lotissement de la prestation" uniquename="Ch1" parameter1="0" />
+  <Matrix field="4-13" column="A" value="En cas de lotissement de la prestation" />
+  <Matrix field="4-13" column="B" value="Case" />
+  <Matrix field="4-13" column="E" value="Ch1" />
+  <Matrix field="4-13" column="F" value="0" />
+  <Field field="4-14" tab="4" type="Information" text="Il est entendu que chaque lot de cette prestation est concern&#233; par ces p&#233;riodes et que les lev&#233;es d’options se feront en identifiant &#224; chaque fois les lots concern&#233;s." activationfield="Ch1" />
+  <Field field="4-15" tab="4" type="Separator" text="Separator" />
+  <Field field="4-16" tab="4" type="Information" text="Contexte de la prestation n&#176;4" />
+  <Field field="4-17" tab="4" type="Information" text="Le TITULAIRE respectera les horaires de la prestation" color="#0070C0" fonttype="BU" />
+  <Field field="4-18" tab="4" type="TimeSlot" text="Cr&#233;neau horaire concernant la r&#233;alisation de la prestation" />
+  <Matrix field="4-18" column="A" value="Cr&#233;neau horaire concernant la r&#233;alisation de la prestation" />
+  <Matrix field="4-18" column="B" value="Cr&#233;neau" />
+  <Field field="4-19" tab="4" type="ComboBox" text="Plage horaire" parameter1="11h;12;14" />
+  <Matrix field="4-19" column="A" value="Plage horaire" />
+  <Matrix field="4-19" column="B" value="ListeChoix" />
+  <Matrix field="4-19" column="F" value="11h;12;14" />
+  <Field field="4-20" tab="4" type="CheckBox" text="Option" uniquename="option1" parameter1="0" />
+  <Matrix field="4-20" column="A" value="Option" />
+  <Matrix field="4-20" column="B" value="Case" />
+  <Matrix field="4-20" column="E" value="option1" />
+  <Matrix field="4-20" column="F" value="0" />
+  <Field field="4-21" tab="4" type="Information" text="Dans le cadre d’interventions exceptionnelles pr&#233;vues en HNO et demandant une mobilisation de la prestation, une demande sera formul&#233;e au TITULAIRE d&#232;s la connaissance de cette activit&#233; afin de d&#233;finir les modalit&#233;s d’intervention, conform&#233;ment aux conditions du march&#233; de rattachement." activationfield="option1" />
+  <Field field="5-1" tab="5" type="IncloseCheckBox" text="D&#233;tail de la 1&#232;re prestation PRS-1" uniquename="PRS1" color="#0070C0" fonttype="BU" />
+  <Matrix field="5-1" column="A" value="D&#233;tail de la 1&#232;re prestation PRS-1" />
+  <Matrix field="5-1" column="B" value="CaseInclure" />
+  <Matrix field="5-1" column="E" value="PRS1" />
+  <Field field="5-2" tab="5" type="TextInput" text="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" activationfield="PRS1" />
+  <Matrix field="5-2" column="A" value="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-2" column="B" value="Texte" />
+  <Matrix field="5-2" column="I" value="PRS1" />
+  <Field field="5-3" tab="5" type="TextInput" text="Description de l&#39;exigence PRS-1" parameter2="5" activationfield="PRS1" />
+  <Matrix field="5-3" column="A" value="Description de l&#39;exigence PRS-1" />
+  <Matrix field="5-3" column="B" value="Texte" />
+  <Matrix field="5-3" column="G" value="5" />
+  <Matrix field="5-3" column="I" value="PRS1" />
+  <Field field="5-4" tab="5" type="TableColumn" text="PRS-1 Exigence vis-&#224;-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS1" color="#16365C" />
+  <Matrix field="5-4" column="A" value="PRS-1 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-4" column="B" value="TableauColonne" />
+  <Matrix field="5-4" column="F" value="3" />
+  <Matrix field="5-4" column="G" value="10" />
+  <Matrix field="5-4" column="H" value="1" />
+  <Matrix field="5-4" column="I" value="PRS1" />
+  <Field tableId="5-4" field="5-4-0-1" tab="5" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-4" field="5-4-1-1" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+  <Field tableId="5-4" field="5-4-2-1" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="5-4" field="5-4-3-1" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS1" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="5-4" field="5-4-0-2" tab="5" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-4" field="5-4-1-2" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+  <Field tableId="5-4" field="5-4-2-2" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="5-4" field="5-4-3-2" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS1" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="5-4" field="5-4-0-3" tab="5" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-4" field="5-4-1-3" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+  <Field tableId="5-4" field="5-4-2-3" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="5-4" field="5-4-3-3" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS1" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="5-4" field="5-4-0-4" tab="5" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-4" field="5-4-1-4" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+  <Field tableId="5-4" field="5-4-2-4" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="5-4" field="5-4-3-4" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS1" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="5-4" field="5-4-0-5" tab="5" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-4" field="5-4-1-5" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+  <Field tableId="5-4" field="5-4-2-5" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="5-4" field="5-4-3-5" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS1" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="5-4" field="5-4-0-6" tab="5" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-4" field="5-4-1-6" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+  <Field tableId="5-4" field="5-4-2-6" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="5-4" field="5-4-3-6" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS1" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="5-4" field="5-4-0-7" tab="5" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-4" field="5-4-1-7" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+  <Field tableId="5-4" field="5-4-2-7" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="5-4" field="5-4-3-7" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS1" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="5-4" field="5-4-0-8" tab="5" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-4" field="5-4-1-8" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+  <Field tableId="5-4" field="5-4-2-8" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="5-4" field="5-4-3-8" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS1" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="5-4" field="5-4-0-9" tab="5" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-4" field="5-4-1-9" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+  <Field tableId="5-4" field="5-4-2-9" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="5-4" field="5-4-3-9" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS1" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="5-4" field="5-4-0-10" tab="5" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-4" field="5-4-1-10" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+  <Field tableId="5-4" field="5-4-2-10" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="5-4" field="5-4-3-10" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS1" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field field="5-5" tab="5" type="Spacing" />
+  <Field field="5-6" tab="5" type="IncloseCheckBox" text="D&#233;tail de la 2&#232;me prestation PRS-2" uniquename="PRS2" color="#0070C0" fonttype="BU" />
+  <Matrix field="5-6" column="A" value="D&#233;tail de la 2&#232;me prestation PRS-2" />
+  <Matrix field="5-6" column="B" value="CaseInclure" />
+  <Matrix field="5-6" column="E" value="PRS2" />
+  <Field field="5-7" tab="5" type="TextInput" text="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" activationfield="PRS2" />
+  <Matrix field="5-7" column="A" value="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-7" column="B" value="Texte" />
+  <Matrix field="5-7" column="I" value="PRS2" />
+  <Field field="5-8" tab="5" type="TextInput" text="Description de l&#39;exigence PRS-2" parameter2="5" activationfield="PRS2" />
+  <Matrix field="5-8" column="A" value="Description de l&#39;exigence PRS-2" />
+  <Matrix field="5-8" column="B" value="Texte" />
+  <Matrix field="5-8" column="G" value="5" />
+  <Matrix field="5-8" column="I" value="PRS2" />
+  <Field field="5-9" tab="5" type="TableColumn" text="PRS-2 Exigence vis-&#224;-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS2" color="#16365C" />
+  <Matrix field="5-9" column="A" value="PRS-2 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-9" column="B" value="TableauColonne" />
+  <Matrix field="5-9" column="F" value="3" />
+  <Matrix field="5-9" column="G" value="10" />
+  <Matrix field="5-9" column="H" value="1" />
+  <Matrix field="5-9" column="I" value="PRS2" />
+  <Field tableId="5-9" field="5-9-0-1" tab="5" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-9" field="5-9-1-1" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-2-1" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-3-1" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-0-2" tab="5" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-9" field="5-9-1-2" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-2-2" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-3-2" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-0-3" tab="5" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-9" field="5-9-1-3" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-2-3" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-3-3" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-0-4" tab="5" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-9" field="5-9-1-4" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-2-4" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-3-4" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-0-5" tab="5" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-9" field="5-9-1-5" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-2-5" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-3-5" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-0-6" tab="5" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-9" field="5-9-1-6" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-2-6" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-3-6" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-0-7" tab="5" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-9" field="5-9-1-7" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-2-7" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-3-7" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-0-8" tab="5" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-9" field="5-9-1-8" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-2-8" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-3-8" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-0-9" tab="5" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-9" field="5-9-1-9" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-2-9" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-3-9" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-0-10" tab="5" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-9" field="5-9-1-10" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-2-10" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+  <Field tableId="5-9" field="5-9-3-10" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " activationfield="PRS2" />
+  <Field field="5-10" tab="5" type="Spacing" />
+  <Field field="5-11" tab="5" type="IncloseCheckBox" text="D&#233;tail de la 3&#232;me prestation PRS-3" uniquename="PRS3" color="#0070C0" fonttype="BU" />
+  <Matrix field="5-11" column="A" value="D&#233;tail de la 3&#232;me prestation PRS-3" />
+  <Matrix field="5-11" column="B" value="CaseInclure" />
+  <Matrix field="5-11" column="E" value="PRS3" />
+  <Field field="5-12" tab="5" type="TextInput" text="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" activationfield="PRS3" />
+  <Matrix field="5-12" column="A" value="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-12" column="B" value="Texte" />
+  <Matrix field="5-12" column="I" value="PRS3" />
+  <Field field="5-13" tab="5" type="TextInput" text="Description de l&#39;exigence PRS-3" parameter2="5" activationfield="PRS3" />
+  <Matrix field="5-13" column="A" value="Description de l&#39;exigence PRS-3" />
+  <Matrix field="5-13" column="B" value="Texte" />
+  <Matrix field="5-13" column="G" value="5" />
+  <Matrix field="5-13" column="I" value="PRS3" />
+  <Field field="5-14" tab="5" type="TableColumn" text="PRS-3 Exigence vis-&#224;-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS3" color="#16365C" />
+  <Matrix field="5-14" column="A" value="PRS-3 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-14" column="B" value="TableauColonne" />
+  <Matrix field="5-14" column="F" value="3" />
+  <Matrix field="5-14" column="G" value="10" />
+  <Matrix field="5-14" column="H" value="1" />
+  <Matrix field="5-14" column="I" value="PRS3" />
+  <Field tableId="5-14" field="5-14-0-1" tab="5" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-14" field="5-14-1-1" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-2-1" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-3-1" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-0-2" tab="5" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-14" field="5-14-1-2" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-2-2" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-3-2" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-0-3" tab="5" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-14" field="5-14-1-3" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-2-3" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-3-3" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-0-4" tab="5" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-14" field="5-14-1-4" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-2-4" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-3-4" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-0-5" tab="5" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-14" field="5-14-1-5" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-2-5" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-3-5" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-0-6" tab="5" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-14" field="5-14-1-6" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-2-6" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-3-6" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-0-7" tab="5" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-14" field="5-14-1-7" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-2-7" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-3-7" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-0-8" tab="5" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-14" field="5-14-1-8" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-2-8" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-3-8" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-0-9" tab="5" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-14" field="5-14-1-9" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-2-9" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-3-9" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-0-10" tab="5" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-14" field="5-14-1-10" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-2-10" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+  <Field tableId="5-14" field="5-14-3-10" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS3" />
+  <Field field="5-15" tab="5" type="Spacing" />
+  <Field field="5-16" tab="5" type="IncloseCheckBox" text="D&#233;tail de la 4&#232;me prestation PRS-4" uniquename="PRS4" color="#0070C0" fonttype="BU" />
+  <Matrix field="5-16" column="A" value="D&#233;tail de la 4&#232;me prestation PRS-4" />
+  <Matrix field="5-16" column="B" value="CaseInclure" />
+  <Matrix field="5-16" column="E" value="PRS4" />
+  <Field field="5-17" tab="5" type="TextInput" text="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" activationfield="PRS4" />
+  <Matrix field="5-17" column="A" value="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-17" column="B" value="Texte" />
+  <Matrix field="5-17" column="I" value="PRS4" />
+  <Field field="5-18" tab="5" type="TextInput" text="Description de l&#39;exigence PRS-4" parameter2="5" activationfield="PRS4" />
+  <Matrix field="5-18" column="A" value="Description de l&#39;exigence PRS-4" />
+  <Matrix field="5-18" column="B" value="Texte" />
+  <Matrix field="5-18" column="G" value="5" />
+  <Matrix field="5-18" column="I" value="PRS4" />
+  <Field field="5-19" tab="5" type="TableColumn" text="PRS-4 Exigence vis-&#224;-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS4" color="#16365C" />
+  <Matrix field="5-19" column="A" value="PRS-4 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-19" column="B" value="TableauColonne" />
+  <Matrix field="5-19" column="F" value="3" />
+  <Matrix field="5-19" column="G" value="10" />
+  <Matrix field="5-19" column="H" value="1" />
+  <Matrix field="5-19" column="I" value="PRS4" />
+  <Field tableId="5-19" field="5-19-0-1" tab="5" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-19" field="5-19-1-1" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-2-1" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-3-1" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-0-2" tab="5" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-19" field="5-19-1-2" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-2-2" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-3-2" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-0-3" tab="5" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-19" field="5-19-1-3" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-2-3" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-3-3" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-0-4" tab="5" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-19" field="5-19-1-4" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-2-4" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-3-4" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-0-5" tab="5" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-19" field="5-19-1-5" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-2-5" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-3-5" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-0-6" tab="5" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-19" field="5-19-1-6" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-2-6" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-3-6" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-0-7" tab="5" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-19" field="5-19-1-7" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-2-7" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-3-7" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-0-8" tab="5" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-19" field="5-19-1-8" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-2-8" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-3-8" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-0-9" tab="5" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-19" field="5-19-1-9" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-2-9" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-3-9" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-0-10" tab="5" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-19" field="5-19-1-10" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-2-10" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+  <Field tableId="5-19" field="5-19-3-10" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS4" />
+  <Field field="5-20" tab="5" type="Spacing" />
+  <Field field="5-21" tab="5" type="IncloseCheckBox" text="D&#233;tail de la 5&#232;me prestation PRS-5" uniquename="PRS5" color="#0070C0" fonttype="BU" />
+  <Matrix field="5-21" column="A" value="D&#233;tail de la 5&#232;me prestation PRS-5" />
+  <Matrix field="5-21" column="B" value="CaseInclure" />
+  <Matrix field="5-21" column="E" value="PRS5" />
+  <Field field="5-22" tab="5" type="TextInput" text="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" activationfield="PRS5" />
+  <Matrix field="5-22" column="A" value="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-22" column="B" value="Texte" />
+  <Matrix field="5-22" column="I" value="PRS5" />
+  <Field field="5-23" tab="5" type="TextInput" text="Description de l&#39;exigence PRS-5" parameter2="5" activationfield="PRS5" />
+  <Matrix field="5-23" column="A" value="Description de l&#39;exigence PRS-5" />
+  <Matrix field="5-23" column="B" value="Texte" />
+  <Matrix field="5-23" column="G" value="5" />
+  <Matrix field="5-23" column="I" value="PRS5" />
+  <Field field="5-24" tab="5" type="TableColumn" text="PRS-5 Exigence vis-&#224;-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS5" color="#16365C" />
+  <Matrix field="5-24" column="A" value="PRS-5 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-24" column="B" value="TableauColonne" />
+  <Matrix field="5-24" column="F" value="3" />
+  <Matrix field="5-24" column="G" value="10" />
+  <Matrix field="5-24" column="H" value="1" />
+  <Matrix field="5-24" column="I" value="PRS5" />
+  <Field tableId="5-24" field="5-24-0-1" tab="5" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-24" field="5-24-1-1" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-2-1" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-3-1" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-0-2" tab="5" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-24" field="5-24-1-2" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-2-2" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-3-2" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-0-3" tab="5" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-24" field="5-24-1-3" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-2-3" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-3-3" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-0-4" tab="5" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-24" field="5-24-1-4" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-2-4" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-3-4" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-0-5" tab="5" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-24" field="5-24-1-5" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-2-5" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-3-5" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-0-6" tab="5" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-24" field="5-24-1-6" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-2-6" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-3-6" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-0-7" tab="5" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-24" field="5-24-1-7" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-2-7" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-3-7" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-0-8" tab="5" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-24" field="5-24-1-8" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-2-8" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-3-8" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-0-9" tab="5" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-24" field="5-24-1-9" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-2-9" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-3-9" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-0-10" tab="5" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-24" field="5-24-1-10" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-2-10" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+  <Field tableId="5-24" field="5-24-3-10" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS5" />
+  <Field field="5-25" tab="5" type="Spacing" />
+  <Field field="5-26" tab="5" type="IncloseCheckBox" text="D&#233;tail de la 1&#232;re prestation PRS-6" uniquename="PRS6" color="#0070C0" fonttype="BU" />
+  <Matrix field="5-26" column="A" value="D&#233;tail de la 1&#232;re prestation PRS-6" />
+  <Matrix field="5-26" column="B" value="CaseInclure" />
+  <Matrix field="5-26" column="E" value="PRS6" />
+  <Field field="5-27" tab="5" type="TextInput" text="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" activationfield="PRS6" />
+  <Matrix field="5-27" column="A" value="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-27" column="B" value="Texte" />
+  <Matrix field="5-27" column="I" value="PRS6" />
+  <Field field="5-28" tab="5" type="TextInput" text="Description de l&#39;exigence PRS-6" parameter2="5" activationfield="PRS6" />
+  <Matrix field="5-28" column="A" value="Description de l&#39;exigence PRS-6" />
+  <Matrix field="5-28" column="B" value="Texte" />
+  <Matrix field="5-28" column="G" value="5" />
+  <Matrix field="5-28" column="I" value="PRS6" />
+  <Field field="5-29" tab="5" type="TableColumn" text="PRS-6 Exigence vis-&#224;-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS6" color="#16365C" />
+  <Matrix field="5-29" column="A" value="PRS-6 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-29" column="B" value="TableauColonne" />
+  <Matrix field="5-29" column="F" value="3" />
+  <Matrix field="5-29" column="G" value="10" />
+  <Matrix field="5-29" column="H" value="1" />
+  <Matrix field="5-29" column="I" value="PRS6" />
+  <Field tableId="5-29" field="5-29-0-1" tab="5" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-29" field="5-29-1-1" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-2-1" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-3-1" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-0-2" tab="5" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-29" field="5-29-1-2" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-2-2" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-3-2" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-0-3" tab="5" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-29" field="5-29-1-3" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-2-3" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-3-3" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-0-4" tab="5" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-29" field="5-29-1-4" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-2-4" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-3-4" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-0-5" tab="5" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-29" field="5-29-1-5" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-2-5" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-3-5" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-0-6" tab="5" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-29" field="5-29-1-6" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-2-6" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-3-6" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-0-7" tab="5" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-29" field="5-29-1-7" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-2-7" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-3-7" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-0-8" tab="5" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-29" field="5-29-1-8" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-2-8" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-3-8" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-0-9" tab="5" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-29" field="5-29-1-9" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-2-9" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-3-9" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-0-10" tab="5" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-29" field="5-29-1-10" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-2-10" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+  <Field tableId="5-29" field="5-29-3-10" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS6" />
+  <Field field="5-30" tab="5" type="Spacing" />
+  <Field field="5-31" tab="5" type="IncloseCheckBox" text="D&#233;tail de la 1&#232;re prestation PRS-7" uniquename="PRS7" color="#0070C0" fonttype="BU" />
+  <Matrix field="5-31" column="A" value="D&#233;tail de la 1&#232;re prestation PRS-7" />
+  <Matrix field="5-31" column="B" value="CaseInclure" />
+  <Matrix field="5-31" column="E" value="PRS7" />
+  <Field field="5-32" tab="5" type="TextInput" text="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" activationfield="PRS7" />
+  <Matrix field="5-32" column="A" value="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-32" column="B" value="Texte" />
+  <Matrix field="5-32" column="I" value="PRS7" />
+  <Field field="5-33" tab="5" type="TextInput" text="Description de l&#39;exigence PRS-7" parameter2="5" activationfield="PRS7" />
+  <Matrix field="5-33" column="A" value="Description de l&#39;exigence PRS-7" />
+  <Matrix field="5-33" column="B" value="Texte" />
+  <Matrix field="5-33" column="G" value="5" />
+  <Matrix field="5-33" column="I" value="PRS7" />
+  <Field field="5-34" tab="5" type="TableColumn" text="PRS-7 Exigence vis-&#224;-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS7" color="#16365C" />
+  <Matrix field="5-34" column="A" value="PRS-7 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-34" column="B" value="TableauColonne" />
+  <Matrix field="5-34" column="F" value="3" />
+  <Matrix field="5-34" column="G" value="10" />
+  <Matrix field="5-34" column="H" value="1" />
+  <Matrix field="5-34" column="I" value="PRS7" />
+  <Field tableId="5-34" field="5-34-0-1" tab="5" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-34" field="5-34-1-1" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-2-1" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-3-1" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-0-2" tab="5" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-34" field="5-34-1-2" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-2-2" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-3-2" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-0-3" tab="5" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-34" field="5-34-1-3" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-2-3" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-3-3" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-0-4" tab="5" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-34" field="5-34-1-4" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-2-4" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-3-4" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-0-5" tab="5" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-34" field="5-34-1-5" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-2-5" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-3-5" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-0-6" tab="5" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-34" field="5-34-1-6" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-2-6" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-3-6" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-0-7" tab="5" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-34" field="5-34-1-7" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-2-7" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-3-7" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-0-8" tab="5" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-34" field="5-34-1-8" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-2-8" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-3-8" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-0-9" tab="5" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-34" field="5-34-1-9" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-2-9" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-3-9" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-0-10" tab="5" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-34" field="5-34-1-10" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-2-10" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+  <Field tableId="5-34" field="5-34-3-10" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS7" />
+  <Field field="5-35" tab="5" type="Spacing" />
+  <Field field="5-36" tab="5" type="IncloseCheckBox" text="D&#233;tail de la 1&#232;re prestation PRS-8" uniquename="PRS8" color="#0070C0" fonttype="BU" />
+  <Matrix field="5-36" column="A" value="D&#233;tail de la 1&#232;re prestation PRS-8" />
+  <Matrix field="5-36" column="B" value="CaseInclure" />
+  <Matrix field="5-36" column="E" value="PRS8" />
+  <Field field="5-37" tab="5" type="TextInput" text="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" activationfield="PRS8" />
+  <Matrix field="5-37" column="A" value="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-37" column="B" value="Texte" />
+  <Matrix field="5-37" column="I" value="PRS8" />
+  <Field field="5-38" tab="5" type="TextInput" text="Description de l&#39;exigence PRS-8" parameter2="5" activationfield="PRS8" />
+  <Matrix field="5-38" column="A" value="Description de l&#39;exigence PRS-8" />
+  <Matrix field="5-38" column="B" value="Texte" />
+  <Matrix field="5-38" column="G" value="5" />
+  <Matrix field="5-38" column="I" value="PRS8" />
+  <Field field="5-39" tab="5" type="TableColumn" text="PRS-8 Exigence vis-&#224;-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS8" color="#16365C" />
+  <Matrix field="5-39" column="A" value="PRS-8 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-39" column="B" value="TableauColonne" />
+  <Matrix field="5-39" column="F" value="3" />
+  <Matrix field="5-39" column="G" value="10" />
+  <Matrix field="5-39" column="H" value="1" />
+  <Matrix field="5-39" column="I" value="PRS8" />
+  <Field tableId="5-39" field="5-39-0-1" tab="5" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-39" field="5-39-1-1" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-2-1" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-3-1" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-0-2" tab="5" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-39" field="5-39-1-2" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-2-2" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-3-2" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-0-3" tab="5" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-39" field="5-39-1-3" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-2-3" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-3-3" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-0-4" tab="5" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-39" field="5-39-1-4" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-2-4" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-3-4" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-0-5" tab="5" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-39" field="5-39-1-5" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-2-5" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-3-5" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-0-6" tab="5" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-39" field="5-39-1-6" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-2-6" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-3-6" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-0-7" tab="5" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-39" field="5-39-1-7" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-2-7" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-3-7" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-0-8" tab="5" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-39" field="5-39-1-8" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-2-8" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-3-8" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-0-9" tab="5" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-39" field="5-39-1-9" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-2-9" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-3-9" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-0-10" tab="5" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-39" field="5-39-1-10" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-2-10" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+  <Field tableId="5-39" field="5-39-3-10" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS8" />
+  <Field field="5-40" tab="5" type="Spacing" />
+  <Field field="5-41" tab="5" type="IncloseCheckBox" text="D&#233;tail de la 1&#232;re prestation PRS-9" uniquename="PRS9" color="#0070C0" fonttype="BU" />
+  <Matrix field="5-41" column="A" value="D&#233;tail de la 1&#232;re prestation PRS-9" />
+  <Matrix field="5-41" column="B" value="CaseInclure" />
+  <Matrix field="5-41" column="E" value="PRS9" />
+  <Field field="5-42" tab="5" type="TextInput" text="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" activationfield="PRS9" />
+  <Matrix field="5-42" column="A" value="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-42" column="B" value="Texte" />
+  <Matrix field="5-42" column="I" value="PRS9" />
+  <Field field="5-43" tab="5" type="TextInput" text="Description de l&#39;exigence PRS-9" parameter2="5" activationfield="PRS9" />
+  <Matrix field="5-43" column="A" value="Description de l&#39;exigence PRS-9" />
+  <Matrix field="5-43" column="B" value="Texte" />
+  <Matrix field="5-43" column="G" value="5" />
+  <Matrix field="5-43" column="I" value="PRS9" />
+  <Field field="5-44" tab="5" type="TableColumn" text="PRS-9 Exigence vis-&#224;-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS9" color="#16365C" />
+  <Matrix field="5-44" column="A" value="PRS-9 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-44" column="B" value="TableauColonne" />
+  <Matrix field="5-44" column="F" value="3" />
+  <Matrix field="5-44" column="G" value="10" />
+  <Matrix field="5-44" column="H" value="1" />
+  <Matrix field="5-44" column="I" value="PRS9" />
+  <Field tableId="5-44" field="5-44-0-1" tab="5" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-44" field="5-44-1-1" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-2-1" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-3-1" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-0-2" tab="5" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-44" field="5-44-1-2" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-2-2" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-3-2" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-0-3" tab="5" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-44" field="5-44-1-3" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-2-3" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-3-3" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-0-4" tab="5" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-44" field="5-44-1-4" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-2-4" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-3-4" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-0-5" tab="5" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-44" field="5-44-1-5" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-2-5" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-3-5" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-0-6" tab="5" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-44" field="5-44-1-6" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-2-6" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-3-6" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-0-7" tab="5" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-44" field="5-44-1-7" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-2-7" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-3-7" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-0-8" tab="5" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-44" field="5-44-1-8" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-2-8" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-3-8" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-0-9" tab="5" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-44" field="5-44-1-9" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-2-9" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-3-9" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-0-10" tab="5" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-44" field="5-44-1-10" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-2-10" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+  <Field tableId="5-44" field="5-44-3-10" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS9" />
+  <Field field="5-45" tab="5" type="Spacing" />
+  <Field field="5-46" tab="5" type="IncloseCheckBox" text="D&#233;tail de la 1&#232;re prestation PRS-10" uniquename="PRS10" color="#0070C0" fonttype="BU" />
+  <Matrix field="5-46" column="A" value="D&#233;tail de la 1&#232;re prestation PRS-10" />
+  <Matrix field="5-46" column="B" value="CaseInclure" />
+  <Matrix field="5-46" column="E" value="PRS10" />
+  <Field field="5-47" tab="5" type="TextInput" text="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" activationfield="PRS10" />
+  <Matrix field="5-47" column="A" value="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-47" column="B" value="Texte" />
+  <Matrix field="5-47" column="I" value="PRS10" />
+  <Field field="5-48" tab="5" type="TextInput" text="Description de l&#39;exigence PRS-10" parameter2="5" activationfield="PRS10" />
+  <Matrix field="5-48" column="A" value="Description de l&#39;exigence PRS-10" />
+  <Matrix field="5-48" column="B" value="Texte" />
+  <Matrix field="5-48" column="G" value="5" />
+  <Matrix field="5-48" column="I" value="PRS10" />
+  <Field field="5-49" tab="5" type="TableColumn" text="PRS-10 Exigence vis-&#224;-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS10" color="#16365C" />
+  <Matrix field="5-49" column="A" value="PRS-10 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="5-49" column="B" value="TableauColonne" />
+  <Matrix field="5-49" column="F" value="3" />
+  <Matrix field="5-49" column="G" value="10" />
+  <Matrix field="5-49" column="H" value="1" />
+  <Matrix field="5-49" column="I" value="PRS10" />
+  <Field tableId="5-49" field="5-49-0-1" tab="5" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-49" field="5-49-1-1" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-2-1" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-3-1" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-0-2" tab="5" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-49" field="5-49-1-2" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-2-2" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-3-2" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-0-3" tab="5" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-49" field="5-49-1-3" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-2-3" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-3-3" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-0-4" tab="5" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-49" field="5-49-1-4" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-2-4" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-3-4" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-0-5" tab="5" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-49" field="5-49-1-5" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-2-5" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-3-5" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-0-6" tab="5" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-49" field="5-49-1-6" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-2-6" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-3-6" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-0-7" tab="5" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-49" field="5-49-1-7" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-2-7" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-3-7" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-0-8" tab="5" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-49" field="5-49-1-8" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-2-8" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-3-8" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-0-9" tab="5" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-49" field="5-49-1-9" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-2-9" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-3-9" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-0-10" tab="5" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="5-49" field="5-49-1-10" tab="5" type="TextInput" text="Livrable de l&#39;exigence" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-2-10" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+  <Field tableId="5-49" field="5-49-3-10" tab="5" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" activationfield="PRS10" />
+  <Field field="6-1" tab="6" type="TextInput" text="Dur&#233;e pr&#233;visonnelle de la phase d&#39;initialisation" tooltiptext="Exemple : 2 jours ; 2 semaines ; 2 mois" />
+  <Matrix field="6-1" column="A" value="Dur&#233;e pr&#233;visonnelle de la phase d&#39;initialisation" />
+  <Matrix field="6-1" column="B" value="Texte" />
+  <Matrix field="6-1" column="J" value="Exemple : 2 jours ; 2 semaines ; 2 mois" />
+  <Field field="6-2" tab="6" type="TableColumn" text="INIT-7 Le TITULAIRE assure une phase d’initialisation" parameter1="3" parameter2="10" parameter3="1" color="#16365C" />
+  <Matrix field="6-2" column="A" value="INIT-7 Le TITULAIRE assure une phase d’initialisation" />
+  <Matrix field="6-2" column="B" value="TableauColonne" />
+  <Matrix field="6-2" column="F" value="3" />
+  <Matrix field="6-2" column="G" value="10" />
+  <Matrix field="6-2" column="H" value="1" />
+  <Field tableId="6-2" field="6-2-0-1" tab="6" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-2" field="6-2-1-1" tab="6" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="6-2" field="6-2-2-1" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="6-2" field="6-2-3-1" tab="6" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="6-2" field="6-2-0-2" tab="6" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-2" field="6-2-1-2" tab="6" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="6-2" field="6-2-2-2" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="6-2" field="6-2-3-2" tab="6" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="6-2" field="6-2-0-3" tab="6" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-2" field="6-2-1-3" tab="6" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="6-2" field="6-2-2-3" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="6-2" field="6-2-3-3" tab="6" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="6-2" field="6-2-0-4" tab="6" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-2" field="6-2-1-4" tab="6" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="6-2" field="6-2-2-4" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="6-2" field="6-2-3-4" tab="6" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="6-2" field="6-2-0-5" tab="6" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-2" field="6-2-1-5" tab="6" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="6-2" field="6-2-2-5" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="6-2" field="6-2-3-5" tab="6" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="6-2" field="6-2-0-6" tab="6" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-2" field="6-2-1-6" tab="6" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="6-2" field="6-2-2-6" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="6-2" field="6-2-3-6" tab="6" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="6-2" field="6-2-0-7" tab="6" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-2" field="6-2-1-7" tab="6" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="6-2" field="6-2-2-7" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="6-2" field="6-2-3-7" tab="6" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="6-2" field="6-2-0-8" tab="6" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-2" field="6-2-1-8" tab="6" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="6-2" field="6-2-2-8" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="6-2" field="6-2-3-8" tab="6" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="6-2" field="6-2-0-9" tab="6" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-2" field="6-2-1-9" tab="6" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="6-2" field="6-2-2-9" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="6-2" field="6-2-3-9" tab="6" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="6-2" field="6-2-0-10" tab="6" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="6-2" field="6-2-1-10" tab="6" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="6-2" field="6-2-2-10" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="6-2" field="6-2-3-10" tab="6" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field field="7-1" tab="7" type="TableColumn" text="REV-8 Le TITULAIRE assure une phase de R&#233;versibilit&#233;" parameter1="3" parameter2="10" parameter3="1" color="#16365C" />
+  <Matrix field="7-1" column="A" value="REV-8 Le TITULAIRE assure une phase de R&#233;versibilit&#233;" />
+  <Matrix field="7-1" column="B" value="TableauColonne" />
+  <Matrix field="7-1" column="F" value="3" />
+  <Matrix field="7-1" column="G" value="10" />
+  <Matrix field="7-1" column="H" value="1" />
+  <Field tableId="7-1" field="7-1-0-1" tab="7" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-1" field="7-1-1-1" tab="7" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="7-1" field="7-1-2-1" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="7-1" field="7-1-3-1" tab="7" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="7-1" field="7-1-0-2" tab="7" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-1" field="7-1-1-2" tab="7" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="7-1" field="7-1-2-2" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="7-1" field="7-1-3-2" tab="7" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="7-1" field="7-1-0-3" tab="7" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-1" field="7-1-1-3" tab="7" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="7-1" field="7-1-2-3" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="7-1" field="7-1-3-3" tab="7" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="7-1" field="7-1-0-4" tab="7" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-1" field="7-1-1-4" tab="7" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="7-1" field="7-1-2-4" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="7-1" field="7-1-3-4" tab="7" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="7-1" field="7-1-0-5" tab="7" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-1" field="7-1-1-5" tab="7" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="7-1" field="7-1-2-5" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="7-1" field="7-1-3-5" tab="7" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="7-1" field="7-1-0-6" tab="7" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-1" field="7-1-1-6" tab="7" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="7-1" field="7-1-2-6" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="7-1" field="7-1-3-6" tab="7" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="7-1" field="7-1-0-7" tab="7" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-1" field="7-1-1-7" tab="7" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="7-1" field="7-1-2-7" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="7-1" field="7-1-3-7" tab="7" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="7-1" field="7-1-0-8" tab="7" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-1" field="7-1-1-8" tab="7" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="7-1" field="7-1-2-8" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="7-1" field="7-1-3-8" tab="7" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="7-1" field="7-1-0-9" tab="7" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-1" field="7-1-1-9" tab="7" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="7-1" field="7-1-2-9" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="7-1" field="7-1-3-9" tab="7" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="7-1" field="7-1-0-10" tab="7" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="7-1" field="7-1-1-10" tab="7" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="7-1" field="7-1-2-10" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="7-1" field="7-1-3-10" tab="7" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field field="8-1" tab="8" type="RadioButton" text="La prestation n’est pas contrainte &#224; couvrir tous les jours ouvr&#233;s de la p&#233;riode " />
+  <Matrix field="8-1" column="A" value="La prestation n’est pas contrainte &#224; couvrir tous les jours ouvr&#233;s de la p&#233;riode " />
+  <Matrix field="8-1" column="B" value="Bouton" />
+  <Field field="8-2" tab="8" type="Information" text="Le TITULAIRE assure une continuit&#233; de service conforme aux attendus de production des livrables.
+
+Concernant les absences programm&#233;es : Quelle que soit la dur&#233;e de l’absence de l’intervenant du TITULAIRE, le pilote op&#233;rationnel EDF de la prestation doit &#234;tre inform&#233; a minima 15 jours ouvr&#233;s avant le d&#233;but de celle-ci.
+Concernant les absences fortuites : Toute absence fortuite de l’intervenant habituel devra faire l’objet d’une information du TITULAIRE vers le pilote op&#233;rationnel EDF de la prestation au plus tard &#224; J+2 du d&#233;but de celle-ci.
+
+Tout manquement de fourniture de livrable, parmi ceux d&#233;crits dans les exigences de ce CCTP, donnera lieu &#224; l’application de la p&#233;nalit&#233; associ&#233;e." />
+  <Field field="8-3" tab="8" type="RadioButton" text="La prestation est pr&#233;vue pour couvrir tous les jours ouvr&#233;s de la p&#233;riode" />
+  <Matrix field="8-3" column="A" value="La prestation est pr&#233;vue pour couvrir tous les jours ouvr&#233;s de la p&#233;riode" />
+  <Matrix field="8-3" column="B" value="Bouton" />
+  <Field field="8-4" tab="8" type="Information" text="Le TITULAIRE assure la continuit&#233; de service pendant la dur&#233;e de la prestation.
+
+Concernant les absences programm&#233;es : Le TITULAIRE garantira la continuit&#233; de service de cette prestation et ce, quelle que soit la dur&#233;e de l’absence de l&#39;intervenant du TITULAIRE. Le pilote op&#233;rationnel EDF de la prestation doit &#234;tre inform&#233; a minima 15 jours ouvr&#233;s avant le d&#233;but de celle-ci.
+En cas de remplacement temporaire de l’intervenant par le TITULAIRE, celui-ci fera appel &#224; un intervenant d&#39;un niveau &#233;gal ou sup&#233;rieur qu&#39;il mettra en tutorat avec l&#39;intervenant habituel avant l&#39;absence planifi&#233;e. Au retour de l&#39;intervenant habituel de la prestation, l&#39;intervenant rempla&#231;ant r&#233;alisera un recouvrement pour faire un transfert de l&#39;encours. Ces p&#233;riodes ne feront pas l’objet de facturation compl&#233;mentaire.
+Concernant les absences fortuites : Le TITULAIRE doit pr&#233;venir le pilote op&#233;rationnel EDF de la prestation de l’absence de l’intervenant au plus tard &#224; J+1 et lui soumettre un plan d’action permettant de garantir la fourniture des livrables attendus.
+
+Tout manquement de fourniture de livrable, parmi ceux d&#233;crits dans les exigences de ce CCTP, donnera lieu &#224; l’application de la p&#233;nalit&#233; associ&#233;e." />
+  <Field field="8-5" tab="8" type="Separator" text="Separator" />
+  <Field field="8-6" tab="8" type="TextInput" text="Dur&#233;e de remplacement par un intervenant" tooltiptext="Exemple : 2 jours ; 2 semaines ; 2 mois" />
+  <Matrix field="8-6" column="A" value="Dur&#233;e de remplacement par un intervenant" />
+  <Matrix field="8-6" column="B" value="Texte" />
+  <Matrix field="8-6" column="J" value="Exemple : 2 jours ; 2 semaines ; 2 mois" />
+  <Field field="8-7" tab="8" type="TableColumn" text="SERV-9 Le TITULAIRE assure une continuit&#233; de service pendant la dur&#233;e de la prestation" parameter1="3" parameter2="10" parameter3="1" color="#16365C" />
+  <Matrix field="8-7" column="A" value="SERV-9 Le TITULAIRE assure une continuit&#233; de service pendant la dur&#233;e de la prestation" />
+  <Matrix field="8-7" column="B" value="TableauColonne" />
+  <Matrix field="8-7" column="F" value="3" />
+  <Matrix field="8-7" column="G" value="10" />
+  <Matrix field="8-7" column="H" value="1" />
+  <Field tableId="8-7" field="8-7-0-1" tab="8" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="8-7" field="8-7-1-1" tab="8" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="8-7" field="8-7-2-1" tab="8" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="8-7" field="8-7-3-1" tab="8" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="8-7" field="8-7-0-2" tab="8" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="8-7" field="8-7-1-2" tab="8" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="8-7" field="8-7-2-2" tab="8" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="8-7" field="8-7-3-2" tab="8" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="8-7" field="8-7-0-3" tab="8" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="8-7" field="8-7-1-3" tab="8" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="8-7" field="8-7-2-3" tab="8" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="8-7" field="8-7-3-3" tab="8" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="8-7" field="8-7-0-4" tab="8" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="8-7" field="8-7-1-4" tab="8" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="8-7" field="8-7-2-4" tab="8" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="8-7" field="8-7-3-4" tab="8" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="8-7" field="8-7-0-5" tab="8" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="8-7" field="8-7-1-5" tab="8" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="8-7" field="8-7-2-5" tab="8" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="8-7" field="8-7-3-5" tab="8" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="8-7" field="8-7-0-6" tab="8" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="8-7" field="8-7-1-6" tab="8" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="8-7" field="8-7-2-6" tab="8" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="8-7" field="8-7-3-6" tab="8" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="8-7" field="8-7-0-7" tab="8" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="8-7" field="8-7-1-7" tab="8" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="8-7" field="8-7-2-7" tab="8" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="8-7" field="8-7-3-7" tab="8" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="8-7" field="8-7-0-8" tab="8" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="8-7" field="8-7-1-8" tab="8" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="8-7" field="8-7-2-8" tab="8" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="8-7" field="8-7-3-8" tab="8" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="8-7" field="8-7-0-9" tab="8" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="8-7" field="8-7-1-9" tab="8" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="8-7" field="8-7-2-9" tab="8" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="8-7" field="8-7-3-9" tab="8" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="8-7" field="8-7-0-10" tab="8" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="8-7" field="8-7-1-10" tab="8" type="TextInput" text="Livrable de l&#39;exigence" tooltiptext="Nom du livrable" />
+  <Field tableId="8-7" field="8-7-2-10" tab="8" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualit&#233;" />
+  <Field tableId="8-7" field="8-7-3-10" tab="8" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable " tooltiptext="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field field="9-1" tab="9" type="TextInput" text="Titre de la contrainte technique n&#176;1" value="Le dispositif d’intervention du TITULAIRE dispose des comp&#233;tences sp&#233;cifiques &#224; la prestation" />
+  <Matrix field="9-1" column="A" value="Titre de la contrainte technique n&#176;1" />
+  <Matrix field="9-1" column="B" value="Texte" />
+  <Matrix field="9-1" column="D" value="Le dispositif d’intervention du TITULAIRE dispose des comp&#233;tences sp&#233;cifiques &#224; la prestation" />
+  <Field field="9-2" tab="9" type="TextInput" text="Indiquer les comp&#233;tences et les qualit&#233;s requises pour r&#233;aliser la prestation demand&#233;e " parameter2="3" />
+  <Matrix field="9-2" column="A" value="Indiquer les comp&#233;tences et les qualit&#233;s requises pour r&#233;aliser la prestation demand&#233;e " />
+  <Matrix field="9-2" column="B" value="Texte" />
+  <Matrix field="9-2" column="G" value="3" />
+  <Field field="9-3" tab="9" type="TableColumn" text="Dispositif d&#39;intervention" parameter1="3" parameter2="10" parameter3="1" color="#16365C" />
+  <Matrix field="9-3" column="A" value="Dispositif d&#39;intervention" />
+  <Matrix field="9-3" column="B" value="TableauColonne" />
+  <Matrix field="9-3" column="F" value="3" />
+  <Matrix field="9-3" column="G" value="10" />
+  <Matrix field="9-3" column="H" value="1" />
+  <Field tableId="9-3" field="9-3-0-1" tab="9" type="Information" text="El&#233;ment 1 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="9-3" field="9-3-1-1" tab="9" type="TextInput" text="Livrable de l&#39;exigence" />
+  <Field tableId="9-3" field="9-3-2-1" tab="9" type="NumberInput" text="Niveau de service atendu (en %)" />
+  <Field tableId="9-3" field="9-3-3-1" tab="9" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="9-3" field="9-3-0-2" tab="9" type="Information" text="El&#233;ment 2 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="9-3" field="9-3-1-2" tab="9" type="TextInput" text="Livrable de l&#39;exigence" />
+  <Field tableId="9-3" field="9-3-2-2" tab="9" type="NumberInput" text="Niveau de service atendu (en %)" />
+  <Field tableId="9-3" field="9-3-3-2" tab="9" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="9-3" field="9-3-0-3" tab="9" type="Information" text="El&#233;ment 3 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="9-3" field="9-3-1-3" tab="9" type="TextInput" text="Livrable de l&#39;exigence" />
+  <Field tableId="9-3" field="9-3-2-3" tab="9" type="NumberInput" text="Niveau de service atendu (en %)" />
+  <Field tableId="9-3" field="9-3-3-3" tab="9" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="9-3" field="9-3-0-4" tab="9" type="Information" text="El&#233;ment 4 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="9-3" field="9-3-1-4" tab="9" type="TextInput" text="Livrable de l&#39;exigence" />
+  <Field tableId="9-3" field="9-3-2-4" tab="9" type="NumberInput" text="Niveau de service atendu (en %)" />
+  <Field tableId="9-3" field="9-3-3-4" tab="9" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="9-3" field="9-3-0-5" tab="9" type="Information" text="El&#233;ment 5 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="9-3" field="9-3-1-5" tab="9" type="TextInput" text="Livrable de l&#39;exigence" />
+  <Field tableId="9-3" field="9-3-2-5" tab="9" type="NumberInput" text="Niveau de service atendu (en %)" />
+  <Field tableId="9-3" field="9-3-3-5" tab="9" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="9-3" field="9-3-0-6" tab="9" type="Information" text="El&#233;ment 6 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="9-3" field="9-3-1-6" tab="9" type="TextInput" text="Livrable de l&#39;exigence" />
+  <Field tableId="9-3" field="9-3-2-6" tab="9" type="NumberInput" text="Niveau de service atendu (en %)" />
+  <Field tableId="9-3" field="9-3-3-6" tab="9" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="9-3" field="9-3-0-7" tab="9" type="Information" text="El&#233;ment 7 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="9-3" field="9-3-1-7" tab="9" type="TextInput" text="Livrable de l&#39;exigence" />
+  <Field tableId="9-3" field="9-3-2-7" tab="9" type="NumberInput" text="Niveau de service atendu (en %)" />
+  <Field tableId="9-3" field="9-3-3-7" tab="9" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="9-3" field="9-3-0-8" tab="9" type="Information" text="El&#233;ment 8 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="9-3" field="9-3-1-8" tab="9" type="TextInput" text="Livrable de l&#39;exigence" />
+  <Field tableId="9-3" field="9-3-2-8" tab="9" type="NumberInput" text="Niveau de service atendu (en %)" />
+  <Field tableId="9-3" field="9-3-3-8" tab="9" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="9-3" field="9-3-0-9" tab="9" type="Information" text="El&#233;ment 9 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="9-3" field="9-3-1-9" tab="9" type="TextInput" text="Livrable de l&#39;exigence" />
+  <Field tableId="9-3" field="9-3-2-9" tab="9" type="NumberInput" text="Niveau de service atendu (en %)" />
+  <Field tableId="9-3" field="9-3-3-9" tab="9" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" />
+  <Field tableId="9-3" field="9-3-0-10" tab="9" type="Information" text="El&#233;ment 10 :" color="#1E90FF" fonttype="U" />
+  <Field tableId="9-3" field="9-3-1-10" tab="9" type="TextInput" text="Livrable de l&#39;exigence" />
+  <Field tableId="9-3" field="9-3-2-10" tab="9" type="NumberInput" text="Niveau de service atendu (en %)" />
+  <Field tableId="9-3" field="9-3-3-10" tab="9" type="TextInput" text="P&#233;nalit&#233; associ&#233;e au livrable" />
+
+<!-- Correspondances Lot/Champ. -->
+  <Link lot="10" field="1-1" />
+  <Link lot="10" field="1-2" />
+  <Link lot="10" field="1-3" />
+  <Link lot="10" field="1-4" />
+  <Link lot="10" field="1-5" />
+  <Link lot="10" field="1-6" />
+  <Link lot="10" field="1-7" />
+  <Link lot="10" field="1-8" />
+  <Link lot="10" field="1-9" />
+  <Link lot="10" field="1-10" />
+  <Link lot="10" field="1-11" />
+  <Link lot="10" field="1-12" />
+  <Link lot="10" field="1-13" />
+  <Link lot="10" field="1-14" />
+  <Link lot="10" field="1-15" />
+  <Link lot="10" field="1-16" />
+  <Link lot="10" field="1-17" />
+  <Link lot="10" field="1-18" />
+  <Link lot="10" field="1-19" />
+  <Link lot="10" field="2-1" />
+  <Link lot="10" field="2-2" />
+  <Link lot="10" field="2-3" />
+  <Link lot="10" field="2-4" />
+  <Link lot="10" field="2-5" />
+  <Link lot="10" field="2-6" />
+  <Link lot="10" field="2-7" />
+  <Link lot="10" field="2-8" />
+  <Link lot="10" field="2-9" />
+  <Link lot="10" field="2-10" />
+  <Link lot="10" field="2-11" />
+  <Link lot="10" field="2-12" />
+  <Link lot="10" field="2-13" />
+  <Link lot="10" field="3-1" />
+  <Link lot="10" field="3-2" />
+  <Link lot="10" field="3-3" />
+  <Link lot="10" field="3-4" />
+  <Link lot="10" field="3-5" />
+  <Link lot="10" field="3-6" />
+  <Link lot="10" field="3-7" />
+  <Link lot="10" field="3-8" />
+  <Link lot="10" field="4-2" />
+  <Link lot="10" field="4-3" />
+  <Link lot="10" field="4-4" />
+  <Link lot="10" field="4-5" />
+  <Link lot="10" field="4-6" />
+  <Link lot="10" field="4-7" />
+  <Link lot="10" field="4-8" />
+  <Link lot="10" field="4-9" />
+  <Link lot="10" field="4-10" />
+  <Link lot="10" field="4-11" />
+  <Link lot="10" field="4-12" />
+  <Link lot="10" field="4-13" />
+  <Link lot="10" field="4-14" />
+  <Link lot="10" field="4-15" />
+  <Link lot="10" field="4-16" />
+  <Link lot="10" field="4-17" />
+  <Link lot="10" field="4-18" />
+  <Link lot="10" field="4-19" />
+  <Link lot="10" field="4-20" />
+  <Link lot="10" field="4-21" />
+  <Link lot="10" field="5-1" />
+  <Link lot="10" field="5-2" />
+  <Link lot="10" field="5-3" />
+  <Link lot="10" field="5-4" />
+  <Link lot="10" field="5-4-0-1" />
+  <Link lot="10" field="5-4-0-2" />
+  <Link lot="10" field="5-4-0-3" />
+  <Link lot="10" field="5-4-0-4" />
+  <Link lot="10" field="5-4-0-5" />
+  <Link lot="10" field="5-4-0-6" />
+  <Link lot="10" field="5-4-0-7" />
+  <Link lot="10" field="5-4-0-8" />
+  <Link lot="10" field="5-4-0-9" />
+  <Link lot="10" field="5-4-0-10" />
+  <Link lot="10" field="5-4-1-1" />
+  <Link lot="10" field="5-4-2-1" />
+  <Link lot="10" field="5-4-3-1" />
+  <Link lot="10" field="5-4-1-2" />
+  <Link lot="10" field="5-4-2-2" />
+  <Link lot="10" field="5-4-3-2" />
+  <Link lot="10" field="5-4-1-3" />
+  <Link lot="10" field="5-4-2-3" />
+  <Link lot="10" field="5-4-3-3" />
+  <Link lot="10" field="5-4-1-4" />
+  <Link lot="10" field="5-4-2-4" />
+  <Link lot="10" field="5-4-3-4" />
+  <Link lot="10" field="5-4-1-5" />
+  <Link lot="10" field="5-4-2-5" />
+  <Link lot="10" field="5-4-3-5" />
+  <Link lot="10" field="5-4-1-6" />
+  <Link lot="10" field="5-4-2-6" />
+  <Link lot="10" field="5-4-3-6" />
+  <Link lot="10" field="5-4-1-7" />
+  <Link lot="10" field="5-4-2-7" />
+  <Link lot="10" field="5-4-3-7" />
+  <Link lot="10" field="5-4-1-8" />
+  <Link lot="10" field="5-4-2-8" />
+  <Link lot="10" field="5-4-3-8" />
+  <Link lot="10" field="5-4-1-9" />
+  <Link lot="10" field="5-4-2-9" />
+  <Link lot="10" field="5-4-3-9" />
+  <Link lot="10" field="5-4-1-10" />
+  <Link lot="10" field="5-4-2-10" />
+  <Link lot="10" field="5-4-3-10" />
+  <Link lot="10" field="5-5" />
+  <Link lot="10" field="5-6" />
+  <Link lot="10" field="5-7" />
+  <Link lot="10" field="5-8" />
+  <Link lot="10" field="5-9" />
+  <Link lot="10" field="5-9-0-1" />
+  <Link lot="10" field="5-9-0-2" />
+  <Link lot="10" field="5-9-0-3" />
+  <Link lot="10" field="5-9-0-4" />
+  <Link lot="10" field="5-9-0-5" />
+  <Link lot="10" field="5-9-0-6" />
+  <Link lot="10" field="5-9-0-7" />
+  <Link lot="10" field="5-9-0-8" />
+  <Link lot="10" field="5-9-0-9" />
+  <Link lot="10" field="5-9-0-10" />
+  <Link lot="10" field="5-9-1-1" />
+  <Link lot="10" field="5-9-2-1" />
+  <Link lot="10" field="5-9-3-1" />
+  <Link lot="10" field="5-9-1-2" />
+  <Link lot="10" field="5-9-2-2" />
+  <Link lot="10" field="5-9-3-2" />
+  <Link lot="10" field="5-9-1-3" />
+  <Link lot="10" field="5-9-2-3" />
+  <Link lot="10" field="5-9-3-3" />
+  <Link lot="10" field="5-9-1-4" />
+  <Link lot="10" field="5-9-2-4" />
+  <Link lot="10" field="5-9-3-4" />
+  <Link lot="10" field="5-9-1-5" />
+  <Link lot="10" field="5-9-2-5" />
+  <Link lot="10" field="5-9-3-5" />
+  <Link lot="10" field="5-9-1-6" />
+  <Link lot="10" field="5-9-2-6" />
+  <Link lot="10" field="5-9-3-6" />
+  <Link lot="10" field="5-9-1-7" />
+  <Link lot="10" field="5-9-2-7" />
+  <Link lot="10" field="5-9-3-7" />
+  <Link lot="10" field="5-9-1-8" />
+  <Link lot="10" field="5-9-2-8" />
+  <Link lot="10" field="5-9-3-8" />
+  <Link lot="10" field="5-9-1-9" />
+  <Link lot="10" field="5-9-2-9" />
+  <Link lot="10" field="5-9-3-9" />
+  <Link lot="10" field="5-9-1-10" />
+  <Link lot="10" field="5-9-2-10" />
+  <Link lot="10" field="5-9-3-10" />
+  <Link lot="10" field="5-10" />
+  <Link lot="10" field="5-11" />
+  <Link lot="10" field="5-12" />
+  <Link lot="10" field="5-13" />
+  <Link lot="10" field="5-14" />
+  <Link lot="10" field="5-14-0-1" />
+  <Link lot="10" field="5-14-0-2" />
+  <Link lot="10" field="5-14-0-3" />
+  <Link lot="10" field="5-14-0-4" />
+  <Link lot="10" field="5-14-0-5" />
+  <Link lot="10" field="5-14-0-6" />
+  <Link lot="10" field="5-14-0-7" />
+  <Link lot="10" field="5-14-0-8" />
+  <Link lot="10" field="5-14-0-9" />
+  <Link lot="10" field="5-14-0-10" />
+  <Link lot="10" field="5-14-1-1" />
+  <Link lot="10" field="5-14-2-1" />
+  <Link lot="10" field="5-14-3-1" />
+  <Link lot="10" field="5-14-1-2" />
+  <Link lot="10" field="5-14-2-2" />
+  <Link lot="10" field="5-14-3-2" />
+  <Link lot="10" field="5-14-1-3" />
+  <Link lot="10" field="5-14-2-3" />
+  <Link lot="10" field="5-14-3-3" />
+  <Link lot="10" field="5-14-1-4" />
+  <Link lot="10" field="5-14-2-4" />
+  <Link lot="10" field="5-14-3-4" />
+  <Link lot="10" field="5-14-1-5" />
+  <Link lot="10" field="5-14-2-5" />
+  <Link lot="10" field="5-14-3-5" />
+  <Link lot="10" field="5-14-1-6" />
+  <Link lot="10" field="5-14-2-6" />
+  <Link lot="10" field="5-14-3-6" />
+  <Link lot="10" field="5-14-1-7" />
+  <Link lot="10" field="5-14-2-7" />
+  <Link lot="10" field="5-14-3-7" />
+  <Link lot="10" field="5-14-1-8" />
+  <Link lot="10" field="5-14-2-8" />
+  <Link lot="10" field="5-14-3-8" />
+  <Link lot="10" field="5-14-1-9" />
+  <Link lot="10" field="5-14-2-9" />
+  <Link lot="10" field="5-14-3-9" />
+  <Link lot="10" field="5-14-1-10" />
+  <Link lot="10" field="5-14-2-10" />
+  <Link lot="10" field="5-14-3-10" />
+  <Link lot="10" field="5-15" />
+  <Link lot="10" field="5-16" />
+  <Link lot="10" field="5-17" />
+  <Link lot="10" field="5-18" />
+  <Link lot="10" field="5-19" />
+  <Link lot="10" field="5-19-0-1" />
+  <Link lot="10" field="5-19-0-2" />
+  <Link lot="10" field="5-19-0-3" />
+  <Link lot="10" field="5-19-0-4" />
+  <Link lot="10" field="5-19-0-5" />
+  <Link lot="10" field="5-19-0-6" />
+  <Link lot="10" field="5-19-0-7" />
+  <Link lot="10" field="5-19-0-8" />
+  <Link lot="10" field="5-19-0-9" />
+  <Link lot="10" field="5-19-0-10" />
+  <Link lot="10" field="5-19-1-1" />
+  <Link lot="10" field="5-19-2-1" />
+  <Link lot="10" field="5-19-3-1" />
+  <Link lot="10" field="5-19-1-2" />
+  <Link lot="10" field="5-19-2-2" />
+  <Link lot="10" field="5-19-3-2" />
+  <Link lot="10" field="5-19-1-3" />
+  <Link lot="10" field="5-19-2-3" />
+  <Link lot="10" field="5-19-3-3" />
+  <Link lot="10" field="5-19-1-4" />
+  <Link lot="10" field="5-19-2-4" />
+  <Link lot="10" field="5-19-3-4" />
+  <Link lot="10" field="5-19-1-5" />
+  <Link lot="10" field="5-19-2-5" />
+  <Link lot="10" field="5-19-3-5" />
+  <Link lot="10" field="5-19-1-6" />
+  <Link lot="10" field="5-19-2-6" />
+  <Link lot="10" field="5-19-3-6" />
+  <Link lot="10" field="5-19-1-7" />
+  <Link lot="10" field="5-19-2-7" />
+  <Link lot="10" field="5-19-3-7" />
+  <Link lot="10" field="5-19-1-8" />
+  <Link lot="10" field="5-19-2-8" />
+  <Link lot="10" field="5-19-3-8" />
+  <Link lot="10" field="5-19-1-9" />
+  <Link lot="10" field="5-19-2-9" />
+  <Link lot="10" field="5-19-3-9" />
+  <Link lot="10" field="5-19-1-10" />
+  <Link lot="10" field="5-19-2-10" />
+  <Link lot="10" field="5-19-3-10" />
+  <Link lot="10" field="5-20" />
+  <Link lot="10" field="5-21" />
+  <Link lot="10" field="5-22" />
+  <Link lot="10" field="5-23" />
+  <Link lot="10" field="5-24" />
+  <Link lot="10" field="5-24-0-1" />
+  <Link lot="10" field="5-24-0-2" />
+  <Link lot="10" field="5-24-0-3" />
+  <Link lot="10" field="5-24-0-4" />
+  <Link lot="10" field="5-24-0-5" />
+  <Link lot="10" field="5-24-0-6" />
+  <Link lot="10" field="5-24-0-7" />
+  <Link lot="10" field="5-24-0-8" />
+  <Link lot="10" field="5-24-0-9" />
+  <Link lot="10" field="5-24-0-10" />
+  <Link lot="10" field="5-24-1-1" />
+  <Link lot="10" field="5-24-2-1" />
+  <Link lot="10" field="5-24-3-1" />
+  <Link lot="10" field="5-24-1-2" />
+  <Link lot="10" field="5-24-2-2" />
+  <Link lot="10" field="5-24-3-2" />
+  <Link lot="10" field="5-24-1-3" />
+  <Link lot="10" field="5-24-2-3" />
+  <Link lot="10" field="5-24-3-3" />
+  <Link lot="10" field="5-24-1-4" />
+  <Link lot="10" field="5-24-2-4" />
+  <Link lot="10" field="5-24-3-4" />
+  <Link lot="10" field="5-24-1-5" />
+  <Link lot="10" field="5-24-2-5" />
+  <Link lot="10" field="5-24-3-5" />
+  <Link lot="10" field="5-24-1-6" />
+  <Link lot="10" field="5-24-2-6" />
+  <Link lot="10" field="5-24-3-6" />
+  <Link lot="10" field="5-24-1-7" />
+  <Link lot="10" field="5-24-2-7" />
+  <Link lot="10" field="5-24-3-7" />
+  <Link lot="10" field="5-24-1-8" />
+  <Link lot="10" field="5-24-2-8" />
+  <Link lot="10" field="5-24-3-8" />
+  <Link lot="10" field="5-24-1-9" />
+  <Link lot="10" field="5-24-2-9" />
+  <Link lot="10" field="5-24-3-9" />
+  <Link lot="10" field="5-24-1-10" />
+  <Link lot="10" field="5-24-2-10" />
+  <Link lot="10" field="5-24-3-10" />
+  <Link lot="10" field="5-25" />
+  <Link lot="10" field="5-26" />
+  <Link lot="10" field="5-27" />
+  <Link lot="10" field="5-28" />
+  <Link lot="10" field="5-29" />
+  <Link lot="10" field="5-29-0-1" />
+  <Link lot="10" field="5-29-0-2" />
+  <Link lot="10" field="5-29-0-3" />
+  <Link lot="10" field="5-29-0-4" />
+  <Link lot="10" field="5-29-0-5" />
+  <Link lot="10" field="5-29-0-6" />
+  <Link lot="10" field="5-29-0-7" />
+  <Link lot="10" field="5-29-0-8" />
+  <Link lot="10" field="5-29-0-9" />
+  <Link lot="10" field="5-29-0-10" />
+  <Link lot="10" field="5-29-1-1" />
+  <Link lot="10" field="5-29-2-1" />
+  <Link lot="10" field="5-29-3-1" />
+  <Link lot="10" field="5-29-1-2" />
+  <Link lot="10" field="5-29-2-2" />
+  <Link lot="10" field="5-29-3-2" />
+  <Link lot="10" field="5-29-1-3" />
+  <Link lot="10" field="5-29-2-3" />
+  <Link lot="10" field="5-29-3-3" />
+  <Link lot="10" field="5-29-1-4" />
+  <Link lot="10" field="5-29-2-4" />
+  <Link lot="10" field="5-29-3-4" />
+  <Link lot="10" field="5-29-1-5" />
+  <Link lot="10" field="5-29-2-5" />
+  <Link lot="10" field="5-29-3-5" />
+  <Link lot="10" field="5-29-1-6" />
+  <Link lot="10" field="5-29-2-6" />
+  <Link lot="10" field="5-29-3-6" />
+  <Link lot="10" field="5-29-1-7" />
+  <Link lot="10" field="5-29-2-7" />
+  <Link lot="10" field="5-29-3-7" />
+  <Link lot="10" field="5-29-1-8" />
+  <Link lot="10" field="5-29-2-8" />
+  <Link lot="10" field="5-29-3-8" />
+  <Link lot="10" field="5-29-1-9" />
+  <Link lot="10" field="5-29-2-9" />
+  <Link lot="10" field="5-29-3-9" />
+  <Link lot="10" field="5-29-1-10" />
+  <Link lot="10" field="5-29-2-10" />
+  <Link lot="10" field="5-29-3-10" />
+  <Link lot="10" field="5-30" />
+  <Link lot="10" field="5-31" />
+  <Link lot="10" field="5-32" />
+  <Link lot="10" field="5-33" />
+  <Link lot="10" field="5-34" />
+  <Link lot="10" field="5-34-0-1" />
+  <Link lot="10" field="5-34-0-2" />
+  <Link lot="10" field="5-34-0-3" />
+  <Link lot="10" field="5-34-0-4" />
+  <Link lot="10" field="5-34-0-5" />
+  <Link lot="10" field="5-34-0-6" />
+  <Link lot="10" field="5-34-0-7" />
+  <Link lot="10" field="5-34-0-8" />
+  <Link lot="10" field="5-34-0-9" />
+  <Link lot="10" field="5-34-0-10" />
+  <Link lot="10" field="5-34-1-1" />
+  <Link lot="10" field="5-34-2-1" />
+  <Link lot="10" field="5-34-3-1" />
+  <Link lot="10" field="5-34-1-2" />
+  <Link lot="10" field="5-34-2-2" />
+  <Link lot="10" field="5-34-3-2" />
+  <Link lot="10" field="5-34-1-3" />
+  <Link lot="10" field="5-34-2-3" />
+  <Link lot="10" field="5-34-3-3" />
+  <Link lot="10" field="5-34-1-4" />
+  <Link lot="10" field="5-34-2-4" />
+  <Link lot="10" field="5-34-3-4" />
+  <Link lot="10" field="5-34-1-5" />
+  <Link lot="10" field="5-34-2-5" />
+  <Link lot="10" field="5-34-3-5" />
+  <Link lot="10" field="5-34-1-6" />
+  <Link lot="10" field="5-34-2-6" />
+  <Link lot="10" field="5-34-3-6" />
+  <Link lot="10" field="5-34-1-7" />
+  <Link lot="10" field="5-34-2-7" />
+  <Link lot="10" field="5-34-3-7" />
+  <Link lot="10" field="5-34-1-8" />
+  <Link lot="10" field="5-34-2-8" />
+  <Link lot="10" field="5-34-3-8" />
+  <Link lot="10" field="5-34-1-9" />
+  <Link lot="10" field="5-34-2-9" />
+  <Link lot="10" field="5-34-3-9" />
+  <Link lot="10" field="5-34-1-10" />
+  <Link lot="10" field="5-34-2-10" />
+  <Link lot="10" field="5-34-3-10" />
+  <Link lot="10" field="5-35" />
+  <Link lot="10" field="5-36" />
+  <Link lot="10" field="5-37" />
+  <Link lot="10" field="5-38" />
+  <Link lot="10" field="5-39" />
+  <Link lot="10" field="5-39-0-1" />
+  <Link lot="10" field="5-39-0-2" />
+  <Link lot="10" field="5-39-0-3" />
+  <Link lot="10" field="5-39-0-4" />
+  <Link lot="10" field="5-39-0-5" />
+  <Link lot="10" field="5-39-0-6" />
+  <Link lot="10" field="5-39-0-7" />
+  <Link lot="10" field="5-39-0-8" />
+  <Link lot="10" field="5-39-0-9" />
+  <Link lot="10" field="5-39-0-10" />
+  <Link lot="10" field="5-39-1-1" />
+  <Link lot="10" field="5-39-2-1" />
+  <Link lot="10" field="5-39-3-1" />
+  <Link lot="10" field="5-39-1-2" />
+  <Link lot="10" field="5-39-2-2" />
+  <Link lot="10" field="5-39-3-2" />
+  <Link lot="10" field="5-39-1-3" />
+  <Link lot="10" field="5-39-2-3" />
+  <Link lot="10" field="5-39-3-3" />
+  <Link lot="10" field="5-39-1-4" />
+  <Link lot="10" field="5-39-2-4" />
+  <Link lot="10" field="5-39-3-4" />
+  <Link lot="10" field="5-39-1-5" />
+  <Link lot="10" field="5-39-2-5" />
+  <Link lot="10" field="5-39-3-5" />
+  <Link lot="10" field="5-39-1-6" />
+  <Link lot="10" field="5-39-2-6" />
+  <Link lot="10" field="5-39-3-6" />
+  <Link lot="10" field="5-39-1-7" />
+  <Link lot="10" field="5-39-2-7" />
+  <Link lot="10" field="5-39-3-7" />
+  <Link lot="10" field="5-39-1-8" />
+  <Link lot="10" field="5-39-2-8" />
+  <Link lot="10" field="5-39-3-8" />
+  <Link lot="10" field="5-39-1-9" />
+  <Link lot="10" field="5-39-2-9" />
+  <Link lot="10" field="5-39-3-9" />
+  <Link lot="10" field="5-39-1-10" />
+  <Link lot="10" field="5-39-2-10" />
+  <Link lot="10" field="5-39-3-10" />
+  <Link lot="10" field="5-40" />
+  <Link lot="10" field="5-41" />
+  <Link lot="10" field="5-42" />
+  <Link lot="10" field="5-43" />
+  <Link lot="10" field="5-44" />
+  <Link lot="10" field="5-44-0-1" />
+  <Link lot="10" field="5-44-0-2" />
+  <Link lot="10" field="5-44-0-3" />
+  <Link lot="10" field="5-44-0-4" />
+  <Link lot="10" field="5-44-0-5" />
+  <Link lot="10" field="5-44-0-6" />
+  <Link lot="10" field="5-44-0-7" />
+  <Link lot="10" field="5-44-0-8" />
+  <Link lot="10" field="5-44-0-9" />
+  <Link lot="10" field="5-44-0-10" />
+  <Link lot="10" field="5-44-1-1" />
+  <Link lot="10" field="5-44-2-1" />
+  <Link lot="10" field="5-44-3-1" />
+  <Link lot="10" field="5-44-1-2" />
+  <Link lot="10" field="5-44-2-2" />
+  <Link lot="10" field="5-44-3-2" />
+  <Link lot="10" field="5-44-1-3" />
+  <Link lot="10" field="5-44-2-3" />
+  <Link lot="10" field="5-44-3-3" />
+  <Link lot="10" field="5-44-1-4" />
+  <Link lot="10" field="5-44-2-4" />
+  <Link lot="10" field="5-44-3-4" />
+  <Link lot="10" field="5-44-1-5" />
+  <Link lot="10" field="5-44-2-5" />
+  <Link lot="10" field="5-44-3-5" />
+  <Link lot="10" field="5-44-1-6" />
+  <Link lot="10" field="5-44-2-6" />
+  <Link lot="10" field="5-44-3-6" />
+  <Link lot="10" field="5-44-1-7" />
+  <Link lot="10" field="5-44-2-7" />
+  <Link lot="10" field="5-44-3-7" />
+  <Link lot="10" field="5-44-1-8" />
+  <Link lot="10" field="5-44-2-8" />
+  <Link lot="10" field="5-44-3-8" />
+  <Link lot="10" field="5-44-1-9" />
+  <Link lot="10" field="5-44-2-9" />
+  <Link lot="10" field="5-44-3-9" />
+  <Link lot="10" field="5-44-1-10" />
+  <Link lot="10" field="5-44-2-10" />
+  <Link lot="10" field="5-44-3-10" />
+  <Link lot="10" field="5-45" />
+  <Link lot="10" field="5-46" />
+  <Link lot="10" field="5-47" />
+  <Link lot="10" field="5-48" />
+  <Link lot="10" field="5-49" />
+  <Link lot="10" field="5-49-0-1" />
+  <Link lot="10" field="5-49-0-2" />
+  <Link lot="10" field="5-49-0-3" />
+  <Link lot="10" field="5-49-0-4" />
+  <Link lot="10" field="5-49-0-5" />
+  <Link lot="10" field="5-49-0-6" />
+  <Link lot="10" field="5-49-0-7" />
+  <Link lot="10" field="5-49-0-8" />
+  <Link lot="10" field="5-49-0-9" />
+  <Link lot="10" field="5-49-0-10" />
+  <Link lot="10" field="5-49-1-1" />
+  <Link lot="10" field="5-49-2-1" />
+  <Link lot="10" field="5-49-3-1" />
+  <Link lot="10" field="5-49-1-2" />
+  <Link lot="10" field="5-49-2-2" />
+  <Link lot="10" field="5-49-3-2" />
+  <Link lot="10" field="5-49-1-3" />
+  <Link lot="10" field="5-49-2-3" />
+  <Link lot="10" field="5-49-3-3" />
+  <Link lot="10" field="5-49-1-4" />
+  <Link lot="10" field="5-49-2-4" />
+  <Link lot="10" field="5-49-3-4" />
+  <Link lot="10" field="5-49-1-5" />
+  <Link lot="10" field="5-49-2-5" />
+  <Link lot="10" field="5-49-3-5" />
+  <Link lot="10" field="5-49-1-6" />
+  <Link lot="10" field="5-49-2-6" />
+  <Link lot="10" field="5-49-3-6" />
+  <Link lot="10" field="5-49-1-7" />
+  <Link lot="10" field="5-49-2-7" />
+  <Link lot="10" field="5-49-3-7" />
+  <Link lot="10" field="5-49-1-8" />
+  <Link lot="10" field="5-49-2-8" />
+  <Link lot="10" field="5-49-3-8" />
+  <Link lot="10" field="5-49-1-9" />
+  <Link lot="10" field="5-49-2-9" />
+  <Link lot="10" field="5-49-3-9" />
+  <Link lot="10" field="5-49-1-10" />
+  <Link lot="10" field="5-49-2-10" />
+  <Link lot="10" field="5-49-3-10" />
+  <Link lot="10" field="6-1" />
+  <Link lot="10" field="6-2" />
+  <Link lot="10" field="6-2-0-1" />
+  <Link lot="10" field="6-2-0-2" />
+  <Link lot="10" field="6-2-0-3" />
+  <Link lot="10" field="6-2-0-4" />
+  <Link lot="10" field="6-2-0-5" />
+  <Link lot="10" field="6-2-0-6" />
+  <Link lot="10" field="6-2-0-7" />
+  <Link lot="10" field="6-2-0-8" />
+  <Link lot="10" field="6-2-0-9" />
+  <Link lot="10" field="6-2-0-10" />
+  <Link lot="10" field="6-2-1-1" />
+  <Link lot="10" field="6-2-2-1" />
+  <Link lot="10" field="6-2-3-1" />
+  <Link lot="10" field="6-2-1-2" />
+  <Link lot="10" field="6-2-2-2" />
+  <Link lot="10" field="6-2-3-2" />
+  <Link lot="10" field="6-2-1-3" />
+  <Link lot="10" field="6-2-2-3" />
+  <Link lot="10" field="6-2-3-3" />
+  <Link lot="10" field="6-2-1-4" />
+  <Link lot="10" field="6-2-2-4" />
+  <Link lot="10" field="6-2-3-4" />
+  <Link lot="10" field="6-2-1-5" />
+  <Link lot="10" field="6-2-2-5" />
+  <Link lot="10" field="6-2-3-5" />
+  <Link lot="10" field="6-2-1-6" />
+  <Link lot="10" field="6-2-2-6" />
+  <Link lot="10" field="6-2-3-6" />
+  <Link lot="10" field="6-2-1-7" />
+  <Link lot="10" field="6-2-2-7" />
+  <Link lot="10" field="6-2-3-7" />
+  <Link lot="10" field="6-2-1-8" />
+  <Link lot="10" field="6-2-2-8" />
+  <Link lot="10" field="6-2-3-8" />
+  <Link lot="10" field="6-2-1-9" />
+  <Link lot="10" field="6-2-2-9" />
+  <Link lot="10" field="6-2-3-9" />
+  <Link lot="10" field="6-2-1-10" />
+  <Link lot="10" field="6-2-2-10" />
+  <Link lot="10" field="6-2-3-10" />
+  <Link lot="10" field="7-1" />
+  <Link lot="10" field="7-1-0-1" />
+  <Link lot="10" field="7-1-0-2" />
+  <Link lot="10" field="7-1-0-3" />
+  <Link lot="10" field="7-1-0-4" />
+  <Link lot="10" field="7-1-0-5" />
+  <Link lot="10" field="7-1-0-6" />
+  <Link lot="10" field="7-1-0-7" />
+  <Link lot="10" field="7-1-0-8" />
+  <Link lot="10" field="7-1-0-9" />
+  <Link lot="10" field="7-1-0-10" />
+  <Link lot="10" field="7-1-1-1" />
+  <Link lot="10" field="7-1-2-1" />
+  <Link lot="10" field="7-1-3-1" />
+  <Link lot="10" field="7-1-1-2" />
+  <Link lot="10" field="7-1-2-2" />
+  <Link lot="10" field="7-1-3-2" />
+  <Link lot="10" field="7-1-1-3" />
+  <Link lot="10" field="7-1-2-3" />
+  <Link lot="10" field="7-1-3-3" />
+  <Link lot="10" field="7-1-1-4" />
+  <Link lot="10" field="7-1-2-4" />
+  <Link lot="10" field="7-1-3-4" />
+  <Link lot="10" field="7-1-1-5" />
+  <Link lot="10" field="7-1-2-5" />
+  <Link lot="10" field="7-1-3-5" />
+  <Link lot="10" field="7-1-1-6" />
+  <Link lot="10" field="7-1-2-6" />
+  <Link lot="10" field="7-1-3-6" />
+  <Link lot="10" field="7-1-1-7" />
+  <Link lot="10" field="7-1-2-7" />
+  <Link lot="10" field="7-1-3-7" />
+  <Link lot="10" field="7-1-1-8" />
+  <Link lot="10" field="7-1-2-8" />
+  <Link lot="10" field="7-1-3-8" />
+  <Link lot="10" field="7-1-1-9" />
+  <Link lot="10" field="7-1-2-9" />
+  <Link lot="10" field="7-1-3-9" />
+  <Link lot="10" field="7-1-1-10" />
+  <Link lot="10" field="7-1-2-10" />
+  <Link lot="10" field="7-1-3-10" />
+  <Link lot="10" field="8-1" />
+  <Link lot="10" field="8-2" />
+  <Link lot="10" field="8-3" />
+  <Link lot="10" field="8-4" />
+  <Link lot="10" field="8-5" />
+  <Link lot="10" field="8-6" />
+  <Link lot="10" field="8-7" />
+  <Link lot="10" field="8-7-0-1" />
+  <Link lot="10" field="8-7-0-2" />
+  <Link lot="10" field="8-7-0-3" />
+  <Link lot="10" field="8-7-0-4" />
+  <Link lot="10" field="8-7-0-5" />
+  <Link lot="10" field="8-7-0-6" />
+  <Link lot="10" field="8-7-0-7" />
+  <Link lot="10" field="8-7-0-8" />
+  <Link lot="10" field="8-7-0-9" />
+  <Link lot="10" field="8-7-0-10" />
+  <Link lot="10" field="8-7-1-1" />
+  <Link lot="10" field="8-7-2-1" />
+  <Link lot="10" field="8-7-3-1" />
+  <Link lot="10" field="8-7-1-2" />
+  <Link lot="10" field="8-7-2-2" />
+  <Link lot="10" field="8-7-3-2" />
+  <Link lot="10" field="8-7-1-3" />
+  <Link lot="10" field="8-7-2-3" />
+  <Link lot="10" field="8-7-3-3" />
+  <Link lot="10" field="8-7-1-4" />
+  <Link lot="10" field="8-7-2-4" />
+  <Link lot="10" field="8-7-3-4" />
+  <Link lot="10" field="8-7-1-5" />
+  <Link lot="10" field="8-7-2-5" />
+  <Link lot="10" field="8-7-3-5" />
+  <Link lot="10" field="8-7-1-6" />
+  <Link lot="10" field="8-7-2-6" />
+  <Link lot="10" field="8-7-3-6" />
+  <Link lot="10" field="8-7-1-7" />
+  <Link lot="10" field="8-7-2-7" />
+  <Link lot="10" field="8-7-3-7" />
+  <Link lot="10" field="8-7-1-8" />
+  <Link lot="10" field="8-7-2-8" />
+  <Link lot="10" field="8-7-3-8" />
+  <Link lot="10" field="8-7-1-9" />
+  <Link lot="10" field="8-7-2-9" />
+  <Link lot="10" field="8-7-3-9" />
+  <Link lot="10" field="8-7-1-10" />
+  <Link lot="10" field="8-7-2-10" />
+  <Link lot="10" field="8-7-3-10" />
+  <Link lot="10" field="9-1" />
+  <Link lot="10" field="9-2" />
+  <Link lot="10" field="9-3" />
+  <Link lot="10" field="9-3-0-1" />
+  <Link lot="10" field="9-3-0-2" />
+  <Link lot="10" field="9-3-0-3" />
+  <Link lot="10" field="9-3-0-4" />
+  <Link lot="10" field="9-3-0-5" />
+  <Link lot="10" field="9-3-0-6" />
+  <Link lot="10" field="9-3-0-7" />
+  <Link lot="10" field="9-3-0-8" />
+  <Link lot="10" field="9-3-0-9" />
+  <Link lot="10" field="9-3-0-10" />
+  <Link lot="10" field="9-3-1-1" />
+  <Link lot="10" field="9-3-2-1" />
+  <Link lot="10" field="9-3-3-1" />
+  <Link lot="10" field="9-3-1-2" />
+  <Link lot="10" field="9-3-2-2" />
+  <Link lot="10" field="9-3-3-2" />
+  <Link lot="10" field="9-3-1-3" />
+  <Link lot="10" field="9-3-2-3" />
+  <Link lot="10" field="9-3-3-3" />
+  <Link lot="10" field="9-3-1-4" />
+  <Link lot="10" field="9-3-2-4" />
+  <Link lot="10" field="9-3-3-4" />
+  <Link lot="10" field="9-3-1-5" />
+  <Link lot="10" field="9-3-2-5" />
+  <Link lot="10" field="9-3-3-5" />
+  <Link lot="10" field="9-3-1-6" />
+  <Link lot="10" field="9-3-2-6" />
+  <Link lot="10" field="9-3-3-6" />
+  <Link lot="10" field="9-3-1-7" />
+  <Link lot="10" field="9-3-2-7" />
+  <Link lot="10" field="9-3-3-7" />
+  <Link lot="10" field="9-3-1-8" />
+  <Link lot="10" field="9-3-2-8" />
+  <Link lot="10" field="9-3-3-8" />
+  <Link lot="10" field="9-3-1-9" />
+  <Link lot="10" field="9-3-2-9" />
+  <Link lot="10" field="9-3-3-9" />
+  <Link lot="10" field="9-3-1-10" />
+  <Link lot="10" field="9-3-2-10" />
+  <Link lot="10" field="9-3-3-10" />
+
+<!-- Correspondances Lot/Onglet. -->
+  <LinkTab lot="10" tab="1" />
+  <LinkTab lot="10" tab="2" />
+  <LinkTab lot="10" tab="3" />
+  <LinkTab lot="10" tab="4" />
+  <LinkTab lot="10" tab="5" />
+  <LinkTab lot="10" tab="6" />
+  <LinkTab lot="10" tab="7" />
+  <LinkTab lot="10" tab="8" />
+  <LinkTab lot="10" tab="9" />
+
+<!-- Fin de la matrice -->
+
+</Scrib>

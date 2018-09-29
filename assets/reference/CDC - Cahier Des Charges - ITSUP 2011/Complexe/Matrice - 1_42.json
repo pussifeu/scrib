@@ -1,0 +1,74 @@
+[
+    [
+        {
+            "type": "select",
+            "label": "Select",
+            "className": "form-control",
+            "name": "select-1537969082280",
+            "perimeters": [
+                "9"
+            ],
+            "lots": [
+                "8"
+            ],
+            "values": [
+                {
+                    "label": "Option 1",
+                    "value": "option-1"
+                },
+                {
+                    "label": "Option 2",
+                    "value": "option-2"
+                },
+                {
+                    "label": "Option 3",
+                    "value": "option-3"
+                }
+            ],
+            "scrib": "scrib-1-1"
+        }
+    ],
+    [
+        {
+            "type": "select",
+            "label": "Select",
+            "className": "form-control",
+            "name": "select-1537970685260",
+            "perimeters": [
+                "19"
+            ],
+            "lots": [
+                "19"
+            ],
+            "values": [
+                {
+                    "label": "Option 1",
+                    "value": "option-1"
+                },
+                {
+                    "label": "Option 2",
+                    "value": "option-2"
+                },
+                {
+                    "label": "Option 3",
+                    "value": "option-3"
+                }
+            ],
+            "scrib": "scrib-2-1"
+        },
+        {
+            "type": "date",
+            "label": "Champ Date",
+            "className": "form-control",
+            "name": "date-1537970697418",
+            "value": "2018-09-14",
+            "perimeters": [
+                "9"
+            ],
+            "lots": [
+                "8"
+            ],
+            "scrib": "scrib-2-2"
+        }
+    ]
+]

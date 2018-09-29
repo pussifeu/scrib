@@ -1,0 +1,934 @@
+<Scrib>
+
+<!-- Enregistrement du document de travail -->
+  <ExpertVersion value="0" />
+  <StructureVersion value="1" />
+  <ExcelDate value="22/06/2017 15:24:29" />
+  <CompileDate value="22/06/2017 15:24:41" />
+  <Reference value="Modele CCTP Prestation par exigences ENO.doc" />
+  <Theme value="CCTP - Cahier des Clauses Techniques Particul&#232;res" />
+  <Type value="Prestation par exigences ENO" />
+  <FinalDocumentIndex value="1" />
+  <Summary value="Connaisseur : Gilberto De Vasconcelos &amp; Ludovic Dumont" />
+  <FinalDocumentChangedBeforeGenerate value="True" />
+
+<!-- Lots -->
+  <Lot lot="10" text="Prestations attendues des titulaires" />
+
+<!-- Lots non utilisés -->
+
+<!-- Liste des entêtes de colonne -->
+  <Matrix column="A" name="Regroupements et champs" />
+  <Matrix column="B" name="Type" />
+  <Matrix column="C" name="Obligatoire" />
+  <Matrix column="D" name="Valeur par d&#233;faut" />
+  <Matrix column="E" name="Nom unique du champ" />
+  <Matrix column="F" name="1er" />
+  <Matrix column="G" name="2&#232;me" />
+  <Matrix column="H" name="3&#232;me" />
+  <Matrix column="I" name="Nom Unique du champ &#39;Case&#39; d&#39;activation &amp; &#39;CaseInclure&#39;" />
+  <Matrix column="J" name="Message d&#39;aide" />
+  <Matrix column="K" name="Suffixe" />
+  <Matrix column="L" name="R&#233;serv&#233;" />
+  <Matrix column="Q" name="Lien" />
+  <Matrix column="R" name="Libell&#233;" />
+
+<!-- Onglets -->
+<Tab tab="1" name="Général" />
+<Tab tab="2" name="Contexte de la prestation" />
+<Tab tab="3" name="Prestations attendues" />
+<Tab tab="4" name="Phase d'initialisation" />
+<Tab tab="5" name="Phase de réversibilité " />
+<Tab tab="6" name="Continuité de service" />
+<Tab tab="7" name="Contraintes techniques" />
+<Tab tab="8" name="Gourvernance et pilotage opérationnel" />
+
+<!-- Champs -->
+<Field field="1-1" tab="1" required="Yes" type="TextInput" text="Libellé de la prestation" fonttype="B" />
+<Field field="1-2" tab="1" required="Yes" type="Date" text="Date du jour" />
+<Field field="1-3" tab="1" required="Yes" type="TextInput" text="Référence N° chrono ENO" />
+<Field field="1-4" tab="1" required="Yes" type="TextInput" text="Pôle" />
+<Field field="1-5" tab="1" required="Yes" type="TextInput" text="Auteur" />
+<Field field="1-6" tab="1" required="Yes" type="TextInput" text="Nom du Prescripteur" />
+<Field field="1-7" tab="1" required="Yes" type="TextInput" text="Nom du manager" />
+<Field field="2-1" tab="2" type="Information" text="CPR-1 Le TITULAIRE s’adapte au contexte du projet et intervient sur tous les sites dont l’agence est l’opérateur" color="#0070C0" fonttype="BU" />
+<Field field="2-2" tab="2" type="TextInput" text="Renseignez tous les éléments de contexte du projet dans le cadre où le Titulaire va évoluer pendant la mission" parameter2="3" />
+<Field field="2-3" tab="2" type="CheckBox" text="Intégrer une image " uniquename="Image1" />
+<Field field="2-4" tab="2" type="ImageInput" text="Ajouter" parameter1="0" parameter2="0" activationfield="Image1" />
+<Field field="2-5" tab="2" type="CheckBox" text="Intégrer une 2nd image" uniquename="Image2" />
+<Field field="2-6" tab="2" type="ImageInput" text="Ajouter" parameter1="0" parameter2="0" activationfield="Image2" />
+<Field field="2-7" tab="2" type="CheckBox" text="Intégrer une 3ème image" uniquename="Image3" />
+<Field field="2-8" tab="2" type="ImageInput" text="Ajouter" parameter1="0" parameter2="0" activationfield="Image3" />
+<Field field="2-9" tab="2" type="Spacing" />
+<Field field="2-10" tab="2" type="Information" text="CPR-2 Le TITULAIRE intervient sur l’ensemble du périmètre géographique de la prestation" color="#0070C0" fonttype="BU" />
+<Field field="2-11" tab="2" type="Information" text="Lieu d'exécution de la prestation :" fonttype="BU" />
+<Field field="2-12" tab="2" type="TextInput" text="Site" />
+<Field field="2-13" tab="2" type="TextInput" text="Adresse" parameter2="2" helpurl="notes://APPD23/C12578A9003DA8FA/221B06E91A16C391C125758B005D7540/8EF62FFC13F563DCC1257F99002B9E36" helptext="NNS" />
+<Field field="2-14" tab="2" type="Spacing" />
+<Field field="2-15" tab="2" type="Information" text="CPR-3 Le TITULAIRE respectera la durée de la prestation" color="#0070C0" fonttype="BU" />
+<Field field="2-16" tab="2" type="Date" text="Début de la prestation" />
+<Field field="2-17" tab="2" type="DatePeriod" text="Période ferme " />
+<Field field="2-18" tab="2" type="IncloseCheckBox" text="Période optionnelle 1 " uniquename="Per1" />
+<Field field="2-19" tab="2" type="DatePeriod" text="Période" activationfield="Per1" />
+<Field field="2-20" tab="2" type="IncloseCheckBox" text="Période optionnelle 2" uniquename="Per2" />
+<Field field="2-21" tab="2" type="DatePeriod" text="Période" activationfield="Per2" />
+<Field field="2-22" tab="2" type="IncloseCheckBox" text="Période optionnelle 3" uniquename="Per3" />
+<Field field="2-23" tab="2" type="DatePeriod" text="Période" activationfield="Per3" />
+<Field field="2-24" tab="2" type="IncloseCheckBox" text="Période optionnelle 3" uniquename="Per4" />
+<Field field="2-25" tab="2" type="DatePeriod" text="Période" activationfield="Per4" />
+<Field field="2-26" tab="2" type="Spacing" />
+<Field field="2-27" tab="2" type="Information" text="CPR-4 Le TITULAIRE respectera les horaires de la prestation" color="#0070C0" fonttype="BU" />
+<Field field="2-28" tab="2" type="TimeSlot" text="Créneau horaire concernant la réalisation de la prestation" />
+<Field field="3-1" tab="3" type="IncloseCheckBox" text="Détail de la 1ère prestation PRS-1" uniquename="PRS1" color="#0070C0" fonttype="BU" />
+<Field field="3-2" tab="3" type="TextInput" text="Nom de l'exigence vis-à-vis du Titulaire" activationfield="PRS1" />
+<Field field="3-3" tab="3" type="TextInput" text="Description de l'exigence PRS-1" activationfield="PRS1" />
+<Field field="3-4" tab="3" type="TableColumn" text="PRS-1 Exigence vis-à-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS1" color="#16365C" />
+<Field tableId="3-4" field="3-4-0-1" tab="3" type="Information" text="Elément 1 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-4" field="3-4-1-1" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+<Field tableId="3-4" field="3-4-2-1" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="3-4" field="3-4-3-1" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS1" tooltiptext="Pénalité associée au livrable" />
+<Field tableId="3-4" field="3-4-0-2" tab="3" type="Information" text="Elément 2 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-4" field="3-4-1-2" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+<Field tableId="3-4" field="3-4-2-2" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="3-4" field="3-4-3-2" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS1" tooltiptext="Pénalité associée au livrable" />
+<Field tableId="3-4" field="3-4-0-3" tab="3" type="Information" text="Elément 3 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-4" field="3-4-1-3" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+<Field tableId="3-4" field="3-4-2-3" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="3-4" field="3-4-3-3" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS1" tooltiptext="Pénalité associée au livrable" />
+<Field tableId="3-4" field="3-4-0-4" tab="3" type="Information" text="Elément 4 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-4" field="3-4-1-4" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+<Field tableId="3-4" field="3-4-2-4" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="3-4" field="3-4-3-4" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS1" tooltiptext="Pénalité associée au livrable" />
+<Field tableId="3-4" field="3-4-0-5" tab="3" type="Information" text="Elément 5 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-4" field="3-4-1-5" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+<Field tableId="3-4" field="3-4-2-5" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="3-4" field="3-4-3-5" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS1" tooltiptext="Pénalité associée au livrable" />
+<Field tableId="3-4" field="3-4-0-6" tab="3" type="Information" text="Elément 6 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-4" field="3-4-1-6" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+<Field tableId="3-4" field="3-4-2-6" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="3-4" field="3-4-3-6" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS1" tooltiptext="Pénalité associée au livrable" />
+<Field tableId="3-4" field="3-4-0-7" tab="3" type="Information" text="Elément 7 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-4" field="3-4-1-7" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+<Field tableId="3-4" field="3-4-2-7" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="3-4" field="3-4-3-7" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS1" tooltiptext="Pénalité associée au livrable" />
+<Field tableId="3-4" field="3-4-0-8" tab="3" type="Information" text="Elément 8 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-4" field="3-4-1-8" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+<Field tableId="3-4" field="3-4-2-8" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="3-4" field="3-4-3-8" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS1" tooltiptext="Pénalité associée au livrable" />
+<Field tableId="3-4" field="3-4-0-9" tab="3" type="Information" text="Elément 9 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-4" field="3-4-1-9" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+<Field tableId="3-4" field="3-4-2-9" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="3-4" field="3-4-3-9" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS1" tooltiptext="Pénalité associée au livrable" />
+<Field tableId="3-4" field="3-4-0-10" tab="3" type="Information" text="Elément 10 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-4" field="3-4-1-10" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS1" tooltiptext="Nom du livrable" />
+<Field tableId="3-4" field="3-4-2-10" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS1" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="3-4" field="3-4-3-10" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS1" tooltiptext="Pénalité associée au livrable" />
+<Field field="3-5" tab="3" type="Spacing" />
+<Field field="3-6" tab="3" type="IncloseCheckBox" text="Détail de la 2ème prestation PRS-2" uniquename="PRS2" color="#0070C0" fonttype="BU" />
+<Field field="3-7" tab="3" type="TextInput" text="Nom de l'exigence vis-à-vis du Titulaire" activationfield="PRS2" />
+<Field field="3-8" tab="3" type="TextInput" text="Description de l'exigence PRS-2" activationfield="PRS2" />
+<Field field="3-9" tab="3" type="TableColumn" text="PRS-2 Exigence vis-à-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS2" color="#16365C" />
+<Field tableId="3-9" field="3-9-0-1" tab="3" type="Information" text="Elément 1 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-9" field="3-9-1-1" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-2-1" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-3-1" tab="3" type="TextInput" text="Pénalité associée au livrable " activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-0-2" tab="3" type="Information" text="Elément 2 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-9" field="3-9-1-2" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-2-2" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-3-2" tab="3" type="TextInput" text="Pénalité associée au livrable " activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-0-3" tab="3" type="Information" text="Elément 3 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-9" field="3-9-1-3" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-2-3" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-3-3" tab="3" type="TextInput" text="Pénalité associée au livrable " activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-0-4" tab="3" type="Information" text="Elément 4 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-9" field="3-9-1-4" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-2-4" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-3-4" tab="3" type="TextInput" text="Pénalité associée au livrable " activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-0-5" tab="3" type="Information" text="Elément 5 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-9" field="3-9-1-5" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-2-5" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-3-5" tab="3" type="TextInput" text="Pénalité associée au livrable " activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-0-6" tab="3" type="Information" text="Elément 6 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-9" field="3-9-1-6" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-2-6" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-3-6" tab="3" type="TextInput" text="Pénalité associée au livrable " activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-0-7" tab="3" type="Information" text="Elément 7 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-9" field="3-9-1-7" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-2-7" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-3-7" tab="3" type="TextInput" text="Pénalité associée au livrable " activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-0-8" tab="3" type="Information" text="Elément 8 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-9" field="3-9-1-8" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-2-8" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-3-8" tab="3" type="TextInput" text="Pénalité associée au livrable " activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-0-9" tab="3" type="Information" text="Elément 9 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-9" field="3-9-1-9" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-2-9" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-3-9" tab="3" type="TextInput" text="Pénalité associée au livrable " activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-0-10" tab="3" type="Information" text="Elément 10 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-9" field="3-9-1-10" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-2-10" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS2" />
+<Field tableId="3-9" field="3-9-3-10" tab="3" type="TextInput" text="Pénalité associée au livrable " activationfield="PRS2" />
+<Field field="3-10" tab="3" type="Spacing" />
+<Field field="3-11" tab="3" type="IncloseCheckBox" text="Détail de la 3ème prestation PRS-3" uniquename="PRS3" color="#0070C0" fonttype="BU" />
+<Field field="3-12" tab="3" type="TextInput" text="Nom de l'exigence vis-à-vis du Titulaire" activationfield="PRS3" />
+<Field field="3-13" tab="3" type="TextInput" text="Description de l'exigence PRS-3" activationfield="PRS3" />
+<Field field="3-14" tab="3" type="TableColumn" text="PRS-3 Exigence vis-à-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS3" color="#16365C" />
+<Field tableId="3-14" field="3-14-0-1" tab="3" type="Information" text="Elément 1 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-14" field="3-14-1-1" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-2-1" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-3-1" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-0-2" tab="3" type="Information" text="Elément 2 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-14" field="3-14-1-2" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-2-2" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-3-2" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-0-3" tab="3" type="Information" text="Elément 3 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-14" field="3-14-1-3" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-2-3" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-3-3" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-0-4" tab="3" type="Information" text="Elément 4 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-14" field="3-14-1-4" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-2-4" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-3-4" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-0-5" tab="3" type="Information" text="Elément 5 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-14" field="3-14-1-5" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-2-5" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-3-5" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-0-6" tab="3" type="Information" text="Elément 6 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-14" field="3-14-1-6" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-2-6" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-3-6" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-0-7" tab="3" type="Information" text="Elément 7 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-14" field="3-14-1-7" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-2-7" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-3-7" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-0-8" tab="3" type="Information" text="Elément 8 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-14" field="3-14-1-8" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-2-8" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-3-8" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-0-9" tab="3" type="Information" text="Elément 9 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-14" field="3-14-1-9" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-2-9" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-3-9" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-0-10" tab="3" type="Information" text="Elément 10 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-14" field="3-14-1-10" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-2-10" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS3" />
+<Field tableId="3-14" field="3-14-3-10" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS3" />
+<Field field="3-15" tab="3" type="Spacing" />
+<Field field="3-16" tab="3" type="IncloseCheckBox" text="Détail de la 4ème prestation PRS-4" uniquename="PRS4" color="#0070C0" fonttype="BU" />
+<Field field="3-17" tab="3" type="TextInput" text="Nom de l'exigence vis-à-vis du Titulaire" activationfield="PRS4" />
+<Field field="3-18" tab="3" type="TextInput" text="Description de l'exigence PRS-4" activationfield="PRS4" />
+<Field field="3-19" tab="3" type="TableColumn" text="PRS-4 Exigence vis-à-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS4" color="#16365C" />
+<Field tableId="3-19" field="3-19-0-1" tab="3" type="Information" text="Elément 1 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-19" field="3-19-1-1" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-2-1" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-3-1" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-0-2" tab="3" type="Information" text="Elément 2 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-19" field="3-19-1-2" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-2-2" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-3-2" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-0-3" tab="3" type="Information" text="Elément 3 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-19" field="3-19-1-3" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-2-3" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-3-3" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-0-4" tab="3" type="Information" text="Elément 4 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-19" field="3-19-1-4" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-2-4" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-3-4" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-0-5" tab="3" type="Information" text="Elément 5 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-19" field="3-19-1-5" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-2-5" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-3-5" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-0-6" tab="3" type="Information" text="Elément 6 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-19" field="3-19-1-6" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-2-6" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-3-6" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-0-7" tab="3" type="Information" text="Elément 7 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-19" field="3-19-1-7" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-2-7" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-3-7" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-0-8" tab="3" type="Information" text="Elément 8 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-19" field="3-19-1-8" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-2-8" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-3-8" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-0-9" tab="3" type="Information" text="Elément 9 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-19" field="3-19-1-9" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-2-9" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-3-9" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-0-10" tab="3" type="Information" text="Elément 10 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-19" field="3-19-1-10" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-2-10" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS4" />
+<Field tableId="3-19" field="3-19-3-10" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS4" />
+<Field field="3-20" tab="3" type="Spacing" />
+<Field field="3-21" tab="3" type="IncloseCheckBox" text="Détail de la 5ème prestation PRS-5" uniquename="PRS5" color="#0070C0" fonttype="BU" />
+<Field field="3-22" tab="3" type="TextInput" text="Nom de l'exigence vis-à-vis du Titulaire" activationfield="PRS5" />
+<Field field="3-23" tab="3" type="TextInput" text="Description de l'exigence PRS-5" activationfield="PRS5" />
+<Field field="3-24" tab="3" type="TableColumn" text="PRS-5 Exigence vis-à-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS5" color="#16365C" />
+<Field tableId="3-24" field="3-24-0-1" tab="3" type="Information" text="Elément 1 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-24" field="3-24-1-1" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-2-1" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-3-1" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-0-2" tab="3" type="Information" text="Elément 2 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-24" field="3-24-1-2" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-2-2" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-3-2" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-0-3" tab="3" type="Information" text="Elément 3 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-24" field="3-24-1-3" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-2-3" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-3-3" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-0-4" tab="3" type="Information" text="Elément 4 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-24" field="3-24-1-4" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-2-4" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-3-4" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-0-5" tab="3" type="Information" text="Elément 5 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-24" field="3-24-1-5" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-2-5" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-3-5" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-0-6" tab="3" type="Information" text="Elément 6 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-24" field="3-24-1-6" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-2-6" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-3-6" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-0-7" tab="3" type="Information" text="Elément 7 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-24" field="3-24-1-7" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-2-7" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-3-7" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-0-8" tab="3" type="Information" text="Elément 8 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-24" field="3-24-1-8" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-2-8" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-3-8" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-0-9" tab="3" type="Information" text="Elément 9 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-24" field="3-24-1-9" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-2-9" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-3-9" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-0-10" tab="3" type="Information" text="Elément 10 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-24" field="3-24-1-10" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-2-10" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS5" />
+<Field tableId="3-24" field="3-24-3-10" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS5" />
+<Field field="3-25" tab="3" type="Spacing" />
+<Field field="3-26" tab="3" type="IncloseCheckBox" text="Détail de la 1ère prestation PRS-6" uniquename="PRS6" color="#0070C0" fonttype="BU" />
+<Field field="3-27" tab="3" type="TextInput" text="Nom de l'exigence vis-à-vis du Titulaire" activationfield="PRS6" />
+<Field field="3-28" tab="3" type="TextInput" text="Description de l'exigence PRS-6" activationfield="PRS6" />
+<Field field="3-29" tab="3" type="TableColumn" text="PRS-6 Exigence vis-à-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS6" color="#16365C" />
+<Field tableId="3-29" field="3-29-0-1" tab="3" type="Information" text="Elément 1 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-29" field="3-29-1-1" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-2-1" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-3-1" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-0-2" tab="3" type="Information" text="Elément 2 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-29" field="3-29-1-2" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-2-2" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-3-2" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-0-3" tab="3" type="Information" text="Elément 3 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-29" field="3-29-1-3" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-2-3" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-3-3" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-0-4" tab="3" type="Information" text="Elément 4 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-29" field="3-29-1-4" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-2-4" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-3-4" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-0-5" tab="3" type="Information" text="Elément 5 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-29" field="3-29-1-5" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-2-5" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-3-5" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-0-6" tab="3" type="Information" text="Elément 6 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-29" field="3-29-1-6" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-2-6" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-3-6" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-0-7" tab="3" type="Information" text="Elément 7 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-29" field="3-29-1-7" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-2-7" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-3-7" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-0-8" tab="3" type="Information" text="Elément 8 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-29" field="3-29-1-8" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-2-8" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-3-8" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-0-9" tab="3" type="Information" text="Elément 9 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-29" field="3-29-1-9" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-2-9" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-3-9" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-0-10" tab="3" type="Information" text="Elément 10 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-29" field="3-29-1-10" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-2-10" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS6" />
+<Field tableId="3-29" field="3-29-3-10" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS6" />
+<Field field="3-30" tab="3" type="Spacing" />
+<Field field="3-31" tab="3" type="IncloseCheckBox" text="Détail de la 1ère prestation PRS-7" uniquename="PRS7" color="#0070C0" fonttype="BU" />
+<Field field="3-32" tab="3" type="TextInput" text="Nom de l'exigence vis-à-vis du Titulaire" activationfield="PRS7" />
+<Field field="3-33" tab="3" type="TextInput" text="Description de l'exigence PRS-7" activationfield="PRS7" />
+<Field field="3-34" tab="3" type="TableColumn" text="PRS-7 Exigence vis-à-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS7" color="#16365C" />
+<Field tableId="3-34" field="3-34-0-1" tab="3" type="Information" text="Elément 1 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-34" field="3-34-1-1" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-2-1" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-3-1" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-0-2" tab="3" type="Information" text="Elément 2 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-34" field="3-34-1-2" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-2-2" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-3-2" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-0-3" tab="3" type="Information" text="Elément 3 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-34" field="3-34-1-3" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-2-3" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-3-3" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-0-4" tab="3" type="Information" text="Elément 4 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-34" field="3-34-1-4" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-2-4" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-3-4" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-0-5" tab="3" type="Information" text="Elément 5 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-34" field="3-34-1-5" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-2-5" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-3-5" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-0-6" tab="3" type="Information" text="Elément 6 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-34" field="3-34-1-6" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-2-6" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-3-6" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-0-7" tab="3" type="Information" text="Elément 7 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-34" field="3-34-1-7" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-2-7" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-3-7" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-0-8" tab="3" type="Information" text="Elément 8 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-34" field="3-34-1-8" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-2-8" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-3-8" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-0-9" tab="3" type="Information" text="Elément 9 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-34" field="3-34-1-9" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-2-9" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-3-9" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-0-10" tab="3" type="Information" text="Elément 10 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-34" field="3-34-1-10" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-2-10" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS7" />
+<Field tableId="3-34" field="3-34-3-10" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS7" />
+<Field field="3-35" tab="3" type="Spacing" />
+<Field field="3-36" tab="3" type="IncloseCheckBox" text="Détail de la 1ère prestation PRS-8" uniquename="PRS8" color="#0070C0" fonttype="BU" />
+<Field field="3-37" tab="3" type="TextInput" text="Nom de l'exigence vis-à-vis du Titulaire" activationfield="PRS8" />
+<Field field="3-38" tab="3" type="TextInput" text="Description de l'exigence PRS-8" activationfield="PRS8" />
+<Field field="3-39" tab="3" type="TableColumn" text="PRS-8 Exigence vis-à-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS8" color="#16365C" />
+<Field tableId="3-39" field="3-39-0-1" tab="3" type="Information" text="Elément 1 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-39" field="3-39-1-1" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-2-1" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-3-1" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-0-2" tab="3" type="Information" text="Elément 2 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-39" field="3-39-1-2" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-2-2" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-3-2" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-0-3" tab="3" type="Information" text="Elément 3 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-39" field="3-39-1-3" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-2-3" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-3-3" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-0-4" tab="3" type="Information" text="Elément 4 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-39" field="3-39-1-4" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-2-4" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-3-4" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-0-5" tab="3" type="Information" text="Elément 5 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-39" field="3-39-1-5" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-2-5" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-3-5" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-0-6" tab="3" type="Information" text="Elément 6 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-39" field="3-39-1-6" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-2-6" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-3-6" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-0-7" tab="3" type="Information" text="Elément 7 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-39" field="3-39-1-7" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-2-7" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-3-7" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-0-8" tab="3" type="Information" text="Elément 8 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-39" field="3-39-1-8" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-2-8" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-3-8" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-0-9" tab="3" type="Information" text="Elément 9 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-39" field="3-39-1-9" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-2-9" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-3-9" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-0-10" tab="3" type="Information" text="Elément 10 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-39" field="3-39-1-10" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-2-10" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS8" />
+<Field tableId="3-39" field="3-39-3-10" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS8" />
+<Field field="3-40" tab="3" type="Spacing" />
+<Field field="3-41" tab="3" type="IncloseCheckBox" text="Détail de la 1ère prestation PRS-9" uniquename="PRS9" color="#0070C0" fonttype="BU" />
+<Field field="3-42" tab="3" type="TextInput" text="Nom de l'exigence vis-à-vis du Titulaire" activationfield="PRS9" />
+<Field field="3-43" tab="3" type="TextInput" text="Description de l'exigence PRS-9" activationfield="PRS9" />
+<Field field="3-44" tab="3" type="TableColumn" text="PRS-9 Exigence vis-à-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS9" color="#16365C" />
+<Field tableId="3-44" field="3-44-0-1" tab="3" type="Information" text="Elément 1 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-44" field="3-44-1-1" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-2-1" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-3-1" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-0-2" tab="3" type="Information" text="Elément 2 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-44" field="3-44-1-2" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-2-2" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-3-2" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-0-3" tab="3" type="Information" text="Elément 3 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-44" field="3-44-1-3" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-2-3" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-3-3" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-0-4" tab="3" type="Information" text="Elément 4 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-44" field="3-44-1-4" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-2-4" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-3-4" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-0-5" tab="3" type="Information" text="Elément 5 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-44" field="3-44-1-5" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-2-5" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-3-5" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-0-6" tab="3" type="Information" text="Elément 6 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-44" field="3-44-1-6" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-2-6" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-3-6" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-0-7" tab="3" type="Information" text="Elément 7 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-44" field="3-44-1-7" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-2-7" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-3-7" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-0-8" tab="3" type="Information" text="Elément 8 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-44" field="3-44-1-8" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-2-8" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-3-8" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-0-9" tab="3" type="Information" text="Elément 9 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-44" field="3-44-1-9" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-2-9" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-3-9" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-0-10" tab="3" type="Information" text="Elément 10 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-44" field="3-44-1-10" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-2-10" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS9" />
+<Field tableId="3-44" field="3-44-3-10" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS9" />
+<Field field="3-45" tab="3" type="Spacing" />
+<Field field="3-46" tab="3" type="IncloseCheckBox" text="Détail de la 1ère prestation PRS-10" uniquename="PRS10" color="#0070C0" fonttype="BU" />
+<Field field="3-47" tab="3" type="TextInput" text="Nom de l'exigence vis-à-vis du Titulaire" activationfield="PRS10" />
+<Field field="3-48" tab="3" type="TextInput" text="Description de l'exigence PRS-10" activationfield="PRS10" />
+<Field field="3-49" tab="3" type="TableColumn" text="PRS-10 Exigence vis-à-vis du Titulaire" parameter1="3" parameter2="10" parameter3="1" activationfield="PRS10" color="#16365C" />
+<Field tableId="3-49" field="3-49-0-1" tab="3" type="Information" text="Elément 1 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-49" field="3-49-1-1" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-2-1" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-3-1" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-0-2" tab="3" type="Information" text="Elément 2 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-49" field="3-49-1-2" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-2-2" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-3-2" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-0-3" tab="3" type="Information" text="Elément 3 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-49" field="3-49-1-3" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-2-3" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-3-3" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-0-4" tab="3" type="Information" text="Elément 4 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-49" field="3-49-1-4" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-2-4" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-3-4" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-0-5" tab="3" type="Information" text="Elément 5 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-49" field="3-49-1-5" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-2-5" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-3-5" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-0-6" tab="3" type="Information" text="Elément 6 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-49" field="3-49-1-6" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-2-6" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-3-6" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-0-7" tab="3" type="Information" text="Elément 7 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-49" field="3-49-1-7" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-2-7" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-3-7" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-0-8" tab="3" type="Information" text="Elément 8 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-49" field="3-49-1-8" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-2-8" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-3-8" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-0-9" tab="3" type="Information" text="Elément 9 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-49" field="3-49-1-9" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-2-9" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-3-9" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-0-10" tab="3" type="Information" text="Elément 10 :" color="#1E90FF" fonttype="U" />
+<Field tableId="3-49" field="3-49-1-10" tab="3" type="TextInput" text="Livrable de l'exigence" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-2-10" tab="3" type="NumberInput" text="Niveau de service atendu (en %)" activationfield="PRS10" />
+<Field tableId="3-49" field="3-49-3-10" tab="3" type="TextInput" text="Pénalité associée au livrable" activationfield="PRS10" />
+<Field field="4-1" tab="4" type="TextInput" text="Durée prévisonnelle de la phase d'initialisation" tooltiptext="Exemple : 2 jours ; 2 semaines ; 2 mois" />
+<Field field="4-2" tab="4" type="TableColumn" text="INIT-7 Le TITULAIRE assure une phase d’initialisation" parameter1="3" parameter2="10" parameter3="1" color="#16365C" />
+<Field tableId="4-2" field="4-2-0-1" tab="4" type="Information" text="Elément 1 :" color="#1E90FF" fonttype="U" />
+<Field tableId="4-2" field="4-2-1-1" tab="4" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="4-2" field="4-2-2-1" tab="4" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="4-2" field="4-2-3-1" tab="4" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field tableId="4-2" field="4-2-0-2" tab="4" type="Information" text="Elément 2 :" color="#1E90FF" fonttype="U" />
+<Field tableId="4-2" field="4-2-1-2" tab="4" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="4-2" field="4-2-2-2" tab="4" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="4-2" field="4-2-3-2" tab="4" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field tableId="4-2" field="4-2-0-3" tab="4" type="Information" text="Elément 3 :" color="#1E90FF" fonttype="U" />
+<Field tableId="4-2" field="4-2-1-3" tab="4" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="4-2" field="4-2-2-3" tab="4" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="4-2" field="4-2-3-3" tab="4" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field tableId="4-2" field="4-2-0-4" tab="4" type="Information" text="Elément 4 :" color="#1E90FF" fonttype="U" />
+<Field tableId="4-2" field="4-2-1-4" tab="4" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="4-2" field="4-2-2-4" tab="4" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="4-2" field="4-2-3-4" tab="4" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field tableId="4-2" field="4-2-0-5" tab="4" type="Information" text="Elément 5 :" color="#1E90FF" fonttype="U" />
+<Field tableId="4-2" field="4-2-1-5" tab="4" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="4-2" field="4-2-2-5" tab="4" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="4-2" field="4-2-3-5" tab="4" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field tableId="4-2" field="4-2-0-6" tab="4" type="Information" text="Elément 6 :" color="#1E90FF" fonttype="U" />
+<Field tableId="4-2" field="4-2-1-6" tab="4" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="4-2" field="4-2-2-6" tab="4" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="4-2" field="4-2-3-6" tab="4" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field tableId="4-2" field="4-2-0-7" tab="4" type="Information" text="Elément 7 :" color="#1E90FF" fonttype="U" />
+<Field tableId="4-2" field="4-2-1-7" tab="4" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="4-2" field="4-2-2-7" tab="4" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="4-2" field="4-2-3-7" tab="4" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field tableId="4-2" field="4-2-0-8" tab="4" type="Information" text="Elément 8 :" color="#1E90FF" fonttype="U" />
+<Field tableId="4-2" field="4-2-1-8" tab="4" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="4-2" field="4-2-2-8" tab="4" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="4-2" field="4-2-3-8" tab="4" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field tableId="4-2" field="4-2-0-9" tab="4" type="Information" text="Elément 9 :" color="#1E90FF" fonttype="U" />
+<Field tableId="4-2" field="4-2-1-9" tab="4" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="4-2" field="4-2-2-9" tab="4" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="4-2" field="4-2-3-9" tab="4" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field tableId="4-2" field="4-2-0-10" tab="4" type="Information" text="Elément 10 :" color="#1E90FF" fonttype="U" />
+<Field tableId="4-2" field="4-2-1-10" tab="4" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="4-2" field="4-2-2-10" tab="4" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="4-2" field="4-2-3-10" tab="4" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field field="5-1" tab="5" type="TableColumn" text="REV-8 Le TITULAIRE assure une phase de Réversibilité" parameter1="3" parameter2="10" parameter3="1" color="#16365C" />
+<Field tableId="5-1" field="5-1-0-1" tab="5" type="Information" text="Elément 1 :" color="#1E90FF" fonttype="U" />
+<Field tableId="5-1" field="5-1-1-1" tab="5" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="5-1" field="5-1-2-1" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="5-1" field="5-1-3-1" tab="5" type="TextInput" text="Pénalité associée au livrable" tooltiptext="Pénalité associée au livrable" />
+<Field tableId="5-1" field="5-1-0-2" tab="5" type="Information" text="Elément 2 :" color="#1E90FF" fonttype="U" />
+<Field tableId="5-1" field="5-1-1-2" tab="5" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="5-1" field="5-1-2-2" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="5-1" field="5-1-3-2" tab="5" type="TextInput" text="Pénalité associée au livrable" tooltiptext="Pénalité associée au livrable" />
+<Field tableId="5-1" field="5-1-0-3" tab="5" type="Information" text="Elément 3 :" color="#1E90FF" fonttype="U" />
+<Field tableId="5-1" field="5-1-1-3" tab="5" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="5-1" field="5-1-2-3" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="5-1" field="5-1-3-3" tab="5" type="TextInput" text="Pénalité associée au livrable" tooltiptext="Pénalité associée au livrable" />
+<Field tableId="5-1" field="5-1-0-4" tab="5" type="Information" text="Elément 4 :" color="#1E90FF" fonttype="U" />
+<Field tableId="5-1" field="5-1-1-4" tab="5" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="5-1" field="5-1-2-4" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="5-1" field="5-1-3-4" tab="5" type="TextInput" text="Pénalité associée au livrable" tooltiptext="Pénalité associée au livrable" />
+<Field tableId="5-1" field="5-1-0-5" tab="5" type="Information" text="Elément 5 :" color="#1E90FF" fonttype="U" />
+<Field tableId="5-1" field="5-1-1-5" tab="5" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="5-1" field="5-1-2-5" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="5-1" field="5-1-3-5" tab="5" type="TextInput" text="Pénalité associée au livrable" tooltiptext="Pénalité associée au livrable" />
+<Field tableId="5-1" field="5-1-0-6" tab="5" type="Information" text="Elément 6 :" color="#1E90FF" fonttype="U" />
+<Field tableId="5-1" field="5-1-1-6" tab="5" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="5-1" field="5-1-2-6" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="5-1" field="5-1-3-6" tab="5" type="TextInput" text="Pénalité associée au livrable" tooltiptext="Pénalité associée au livrable" />
+<Field tableId="5-1" field="5-1-0-7" tab="5" type="Information" text="Elément 7 :" color="#1E90FF" fonttype="U" />
+<Field tableId="5-1" field="5-1-1-7" tab="5" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="5-1" field="5-1-2-7" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="5-1" field="5-1-3-7" tab="5" type="TextInput" text="Pénalité associée au livrable" tooltiptext="Pénalité associée au livrable" />
+<Field tableId="5-1" field="5-1-0-8" tab="5" type="Information" text="Elément 8 :" color="#1E90FF" fonttype="U" />
+<Field tableId="5-1" field="5-1-1-8" tab="5" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="5-1" field="5-1-2-8" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="5-1" field="5-1-3-8" tab="5" type="TextInput" text="Pénalité associée au livrable" tooltiptext="Pénalité associée au livrable" />
+<Field tableId="5-1" field="5-1-0-9" tab="5" type="Information" text="Elément 9 :" color="#1E90FF" fonttype="U" />
+<Field tableId="5-1" field="5-1-1-9" tab="5" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="5-1" field="5-1-2-9" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="5-1" field="5-1-3-9" tab="5" type="TextInput" text="Pénalité associée au livrable" tooltiptext="Pénalité associée au livrable" />
+<Field tableId="5-1" field="5-1-0-10" tab="5" type="Information" text="Elément 10 :" color="#1E90FF" fonttype="U" />
+<Field tableId="5-1" field="5-1-1-10" tab="5" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="5-1" field="5-1-2-10" tab="5" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="5-1" field="5-1-3-10" tab="5" type="TextInput" text="Pénalité associée au livrable" tooltiptext="Pénalité associée au livrable" />
+<Field field="6-1" tab="6" type="TextInput" text="Durée de remplacement par un intervenant" tooltiptext="Exemple : 2 jours ; 2 semaines ; 2 mois" />
+<Field field="6-2" tab="6" type="TableColumn" text="SERV-9 Le TITULAIRE assure une continuité de service pendant la durée de la prestation" parameter1="3" parameter2="10" parameter3="1" color="#16365C" />
+<Field tableId="6-2" field="6-2-0-1" tab="6" type="Information" text="Elément 1 :" color="#1E90FF" fonttype="U" />
+<Field tableId="6-2" field="6-2-1-1" tab="6" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="6-2" field="6-2-2-1" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="6-2" field="6-2-3-1" tab="6" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field tableId="6-2" field="6-2-0-2" tab="6" type="Information" text="Elément 2 :" color="#1E90FF" fonttype="U" />
+<Field tableId="6-2" field="6-2-1-2" tab="6" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="6-2" field="6-2-2-2" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="6-2" field="6-2-3-2" tab="6" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field tableId="6-2" field="6-2-0-3" tab="6" type="Information" text="Elément 3 :" color="#1E90FF" fonttype="U" />
+<Field tableId="6-2" field="6-2-1-3" tab="6" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="6-2" field="6-2-2-3" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="6-2" field="6-2-3-3" tab="6" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field tableId="6-2" field="6-2-0-4" tab="6" type="Information" text="Elément 4 :" color="#1E90FF" fonttype="U" />
+<Field tableId="6-2" field="6-2-1-4" tab="6" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="6-2" field="6-2-2-4" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="6-2" field="6-2-3-4" tab="6" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field tableId="6-2" field="6-2-0-5" tab="6" type="Information" text="Elément 5 :" color="#1E90FF" fonttype="U" />
+<Field tableId="6-2" field="6-2-1-5" tab="6" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="6-2" field="6-2-2-5" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="6-2" field="6-2-3-5" tab="6" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field tableId="6-2" field="6-2-0-6" tab="6" type="Information" text="Elément 6 :" color="#1E90FF" fonttype="U" />
+<Field tableId="6-2" field="6-2-1-6" tab="6" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="6-2" field="6-2-2-6" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="6-2" field="6-2-3-6" tab="6" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field tableId="6-2" field="6-2-0-7" tab="6" type="Information" text="Elément 7 :" color="#1E90FF" fonttype="U" />
+<Field tableId="6-2" field="6-2-1-7" tab="6" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="6-2" field="6-2-2-7" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="6-2" field="6-2-3-7" tab="6" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field tableId="6-2" field="6-2-0-8" tab="6" type="Information" text="Elément 8 :" color="#1E90FF" fonttype="U" />
+<Field tableId="6-2" field="6-2-1-8" tab="6" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="6-2" field="6-2-2-8" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="6-2" field="6-2-3-8" tab="6" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field tableId="6-2" field="6-2-0-9" tab="6" type="Information" text="Elément 9 :" color="#1E90FF" fonttype="U" />
+<Field tableId="6-2" field="6-2-1-9" tab="6" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="6-2" field="6-2-2-9" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="6-2" field="6-2-3-9" tab="6" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field tableId="6-2" field="6-2-0-10" tab="6" type="Information" text="Elément 10 :" color="#1E90FF" fonttype="U" />
+<Field tableId="6-2" field="6-2-1-10" tab="6" type="TextInput" text="Livrable de l'exigence" tooltiptext="Nom du livrable" />
+<Field tableId="6-2" field="6-2-2-10" tab="6" type="NumberInput" text="Niveau de service atendu (en %)" tooltiptext="Par exemple, 100% du respect de la qualité" />
+<Field tableId="6-2" field="6-2-3-10" tab="6" type="TextInput" text="Pénalité associée au livrable " tooltiptext="Pénalité associée au livrable" />
+<Field field="7-1" tab="7" type="TextInput" text="Indiquer les compétences et les qualités requises pour réaliser la prestation demandée " parameter2="3" />
+<Field field="7-2" tab="7" type="TableColumn" text="Dispositif d'intervention" parameter1="3" parameter2="10" parameter3="1" color="#16365C" />
+<Field tableId="7-2" field="7-2-0-1" tab="7" type="Information" text="Elément 1 :" color="#1E90FF" fonttype="U" />
+<Field tableId="7-2" field="7-2-1-1" tab="7" type="TextInput" text="Livrable de l'exigence" />
+<Field tableId="7-2" field="7-2-2-1" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" />
+<Field tableId="7-2" field="7-2-3-1" tab="7" type="TextInput" text="Pénalité associée au livrable" />
+<Field tableId="7-2" field="7-2-0-2" tab="7" type="Information" text="Elément 2 :" color="#1E90FF" fonttype="U" />
+<Field tableId="7-2" field="7-2-1-2" tab="7" type="TextInput" text="Livrable de l'exigence" />
+<Field tableId="7-2" field="7-2-2-2" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" />
+<Field tableId="7-2" field="7-2-3-2" tab="7" type="TextInput" text="Pénalité associée au livrable" />
+<Field tableId="7-2" field="7-2-0-3" tab="7" type="Information" text="Elément 3 :" color="#1E90FF" fonttype="U" />
+<Field tableId="7-2" field="7-2-1-3" tab="7" type="TextInput" text="Livrable de l'exigence" />
+<Field tableId="7-2" field="7-2-2-3" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" />
+<Field tableId="7-2" field="7-2-3-3" tab="7" type="TextInput" text="Pénalité associée au livrable" />
+<Field tableId="7-2" field="7-2-0-4" tab="7" type="Information" text="Elément 4 :" color="#1E90FF" fonttype="U" />
+<Field tableId="7-2" field="7-2-1-4" tab="7" type="TextInput" text="Livrable de l'exigence" />
+<Field tableId="7-2" field="7-2-2-4" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" />
+<Field tableId="7-2" field="7-2-3-4" tab="7" type="TextInput" text="Pénalité associée au livrable" />
+<Field tableId="7-2" field="7-2-0-5" tab="7" type="Information" text="Elément 5 :" color="#1E90FF" fonttype="U" />
+<Field tableId="7-2" field="7-2-1-5" tab="7" type="TextInput" text="Livrable de l'exigence" />
+<Field tableId="7-2" field="7-2-2-5" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" />
+<Field tableId="7-2" field="7-2-3-5" tab="7" type="TextInput" text="Pénalité associée au livrable" />
+<Field tableId="7-2" field="7-2-0-6" tab="7" type="Information" text="Elément 6 :" color="#1E90FF" fonttype="U" />
+<Field tableId="7-2" field="7-2-1-6" tab="7" type="TextInput" text="Livrable de l'exigence" />
+<Field tableId="7-2" field="7-2-2-6" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" />
+<Field tableId="7-2" field="7-2-3-6" tab="7" type="TextInput" text="Pénalité associée au livrable" />
+<Field tableId="7-2" field="7-2-0-7" tab="7" type="Information" text="Elément 7 :" color="#1E90FF" fonttype="U" />
+<Field tableId="7-2" field="7-2-1-7" tab="7" type="TextInput" text="Livrable de l'exigence" />
+<Field tableId="7-2" field="7-2-2-7" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" />
+<Field tableId="7-2" field="7-2-3-7" tab="7" type="TextInput" text="Pénalité associée au livrable" />
+<Field tableId="7-2" field="7-2-0-8" tab="7" type="Information" text="Elément 8 :" color="#1E90FF" fonttype="U" />
+<Field tableId="7-2" field="7-2-1-8" tab="7" type="TextInput" text="Livrable de l'exigence" />
+<Field tableId="7-2" field="7-2-2-8" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" />
+<Field tableId="7-2" field="7-2-3-8" tab="7" type="TextInput" text="Pénalité associée au livrable" />
+<Field tableId="7-2" field="7-2-0-9" tab="7" type="Information" text="Elément 9 :" color="#1E90FF" fonttype="U" />
+<Field tableId="7-2" field="7-2-1-9" tab="7" type="TextInput" text="Livrable de l'exigence" />
+<Field tableId="7-2" field="7-2-2-9" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" />
+<Field tableId="7-2" field="7-2-3-9" tab="7" type="TextInput" text="Pénalité associée au livrable" />
+<Field tableId="7-2" field="7-2-0-10" tab="7" type="Information" text="Elément 10 :" color="#1E90FF" fonttype="U" />
+<Field tableId="7-2" field="7-2-1-10" tab="7" type="TextInput" text="Livrable de l'exigence" />
+<Field tableId="7-2" field="7-2-2-10" tab="7" type="NumberInput" text="Niveau de service atendu (en %)" />
+<Field tableId="7-2" field="7-2-3-10" tab="7" type="TextInput" text="Pénalité associée au livrable" />
+<Field field="8-1" tab="8" type="Information" text="Pilote de sous-traitance en charge du domaine contractuel " color="#0070C0" fonttype="BU" />
+<Field field="8-2" tab="8" type="Information" text="Coordonnées du PST régional" />
+<Field field="8-3" tab="8" type="RadioButton" text="Gilberto DE VASCONCELOS" uniquename="GDV" />
+<Field field="8-4" tab="8" type="TextInput" text="Coordonnées" value="Contact : gilberto.de-vasconcelos@edf.fr / 0698649692" activationfield="GDV" />
+<Field field="8-5" tab="8" type="RadioButton" text="Ludovic DUMONT " uniquename="LD" />
+<Field field="8-6" tab="8" type="TextInput" text="Coordonnées" value="Contact : gilberto.de-vasconcelos@edf.fr / 0698649692" activationfield="LD" />
+<Field field="8-7" tab="8" type="Information" text="Gestionnaire de la prestation en charge du domaine opérationnel " color="#0070C0" fonttype="BU" />
+<Field field="8-8" tab="8" type="Information" text="Nom du prescripteur (même que l'auteur)" />
+<Field field="8-9" tab="8" type="TextInput" text="Coordonnées téléphoniques " />
+<Field field="8-10" tab="8" type="Information" text="Comités de suivi de la prestation" color="#0070C0" fonttype="BU" />
+<Field field="8-11" tab="8" type="TextInput" text="Durée de livraison du compte-rendu " />
+
+<!-- Champs avec leur valeur -->
+  <Save field="1-1" value="XX" />
+  <Save field="1-2" value="26/06/2017" />
+  <Save field="1-3" value="1234" />
+  <Save field="1-4" value="XX" />
+  <Save field="1-5" value="XY" />
+  <Save field="1-6" value="XY" />
+  <Save field="1-7" value="XY" />
+  <Save field="2-2" value="XXX" />
+  <Save field="2-12" value="SITE" />
+  <Save field="2-13" value="ADRESSE" />
+  <Save field="2-16" value="26/06/2017" />
+  <Save field="2-17" value="26/06/2017-30/06/2017" />
+  <Save field="2-18" value="False" />
+  <Save field="3-1" value="True" />
+  <Save field="3-2" value="ZZ" />
+  <Save field="3-3" value="ZZ" />
+  <Save field="3-4" value="2" />
+  <Save field="3-4-1-1" value="X" />
+  <Save field="3-4-2-1" value="2" />
+  <Save field="3-4-3-1" value="X" />
+  <Save field="3-4-1-2" value="Y" />
+  <Save field="3-4-2-2" value="3" />
+  <Save field="3-4-3-2" value="Y" />
+  <Save field="3-9" value="1" />
+  <Save field="3-14" value="1" />
+  <Save field="3-19" value="1" />
+  <Save field="3-24" value="1" />
+  <Save field="3-29" value="1" />
+  <Save field="3-34" value="1" />
+  <Save field="3-39" value="1" />
+  <Save field="3-44" value="1" />
+  <Save field="3-49" value="1" />
+  <Save field="4-1" value="WW" />
+  <Save field="4-2" value="1" />
+  <Save field="4-2-1-1" value="W" />
+  <Save field="4-2-2-1" value="1" />
+  <Save field="4-2-3-1" value="W" />
+  <Save field="5-1" value="1" />
+  <Save field="5-1-1-1" value="W" />
+  <Save field="5-1-2-1" value="1" />
+  <Save field="5-1-3-1" value="W" />
+  <Save field="6-1" value="2 semaines" />
+  <Save field="6-2" value="1" />
+  <Save field="6-2-1-1" value="W" />
+  <Save field="6-2-2-1" value="1" />
+  <Save field="6-2-3-1" value="W" />
+  <Save field="7-1" value="XX" />
+  <Save field="7-2" value="1" />
+  <Save field="7-2-1-1" value="X" />
+  <Save field="7-2-2-1" value="3" />
+  <Save field="7-2-3-1" value="X" />
+  <Save field="8-3" value="True" />
+  <Save field="8-4" value="Contact : gilberto.de-vasconcelos@edf.fr / 0698649692" />
+  <Save field="8-6" value="Contact : gilberto.de-vasconcelos@edf.fr / 0698649692" />
+  <Save field="8-9" value="XY" />
+  <Save field="8-11" value="XY" />
+
+<!-- Entêtes des colonnes de la matrice par champ. -->
+  <Matrix field="1-1" column="A" value="Libell&#233; de la prestation" />
+  <Matrix field="1-1" column="B" value="Texte" />
+  <Matrix field="1-1" column="C" value="X" />
+  <Matrix field="1-2" column="A" value="Date du jour" />
+  <Matrix field="1-2" column="B" value="Date" />
+  <Matrix field="1-2" column="C" value="X" />
+  <Matrix field="1-3" column="A" value="R&#233;f&#233;rence N&#176; chrono ENO" />
+  <Matrix field="1-3" column="B" value="Texte" />
+  <Matrix field="1-3" column="C" value="X" />
+  <Matrix field="1-4" column="A" value="P&#244;le" />
+  <Matrix field="1-4" column="B" value="Texte" />
+  <Matrix field="1-4" column="C" value="X" />
+  <Matrix field="1-5" column="A" value="Auteur" />
+  <Matrix field="1-5" column="B" value="Texte" />
+  <Matrix field="1-5" column="C" value="X" />
+  <Matrix field="1-6" column="A" value="Nom du Prescripteur" />
+  <Matrix field="1-6" column="B" value="Texte" />
+  <Matrix field="1-6" column="C" value="X" />
+  <Matrix field="1-7" column="A" value="Nom du manager" />
+  <Matrix field="1-7" column="B" value="Texte" />
+  <Matrix field="1-7" column="C" value="X" />
+  <Matrix field="2-2" column="A" value="Renseignez tous les &#233;l&#233;ments de contexte du projet dans le cadre o&#249; le Titulaire va &#233;voluer pendant la mission" />
+  <Matrix field="2-2" column="B" value="Texte" />
+  <Matrix field="2-2" column="G" value="3" />
+  <Matrix field="2-12" column="A" value="Site" />
+  <Matrix field="2-12" column="B" value="Texte" />
+  <Matrix field="2-13" column="A" value="Adresse" />
+  <Matrix field="2-13" column="B" value="Texte" />
+  <Matrix field="2-13" column="G" value="2" />
+  <Matrix field="2-13" column="L" value="NNS" />
+  <Matrix field="2-13" column="Q" value="notes://APPD23/C12578A9003DA8FA/221B06E91A16C391C125758B005D7540/8EF62FFC13F563DCC1257F99002B9E36" />
+  <Matrix field="2-13" column="R" value="NNS" />
+  <Matrix field="2-16" column="A" value="D&#233;but de la prestation" />
+  <Matrix field="2-16" column="B" value="Date" />
+  <Matrix field="2-17" column="A" value="P&#233;riode ferme " />
+  <Matrix field="2-17" column="B" value="P&#233;riode" />
+  <Matrix field="2-18" column="A" value="P&#233;riode optionnelle 1 " />
+  <Matrix field="2-18" column="B" value="CaseInclure" />
+  <Matrix field="2-18" column="E" value="Per1" />
+  <Matrix field="3-1" column="A" value="D&#233;tail de la 1&#232;re prestation PRS-1" />
+  <Matrix field="3-1" column="B" value="CaseInclure" />
+  <Matrix field="3-1" column="E" value="PRS1" />
+  <Matrix field="3-2" column="A" value="Nom de l&#39;exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="3-2" column="B" value="Texte" />
+  <Matrix field="3-2" column="I" value="PRS1" />
+  <Matrix field="3-3" column="A" value="Description de l&#39;exigence PRS-1" />
+  <Matrix field="3-3" column="B" value="Texte" />
+  <Matrix field="3-3" column="I" value="PRS1" />
+  <Matrix field="3-4" column="A" value="PRS-1 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="3-4" column="B" value="TableauColonne" />
+  <Matrix field="3-4" column="F" value="3" />
+  <Matrix field="3-4" column="G" value="10" />
+  <Matrix field="3-4" column="H" value="1" />
+  <Matrix field="3-4" column="I" value="PRS1" />
+  <Matrix field="3-9" column="A" value="PRS-2 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="3-9" column="B" value="TableauColonne" />
+  <Matrix field="3-9" column="F" value="3" />
+  <Matrix field="3-9" column="G" value="10" />
+  <Matrix field="3-9" column="H" value="1" />
+  <Matrix field="3-9" column="I" value="PRS2" />
+  <Matrix field="3-14" column="A" value="PRS-3 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="3-14" column="B" value="TableauColonne" />
+  <Matrix field="3-14" column="F" value="3" />
+  <Matrix field="3-14" column="G" value="10" />
+  <Matrix field="3-14" column="H" value="1" />
+  <Matrix field="3-14" column="I" value="PRS3" />
+  <Matrix field="3-19" column="A" value="PRS-4 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="3-19" column="B" value="TableauColonne" />
+  <Matrix field="3-19" column="F" value="3" />
+  <Matrix field="3-19" column="G" value="10" />
+  <Matrix field="3-19" column="H" value="1" />
+  <Matrix field="3-19" column="I" value="PRS4" />
+  <Matrix field="3-24" column="A" value="PRS-5 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="3-24" column="B" value="TableauColonne" />
+  <Matrix field="3-24" column="F" value="3" />
+  <Matrix field="3-24" column="G" value="10" />
+  <Matrix field="3-24" column="H" value="1" />
+  <Matrix field="3-24" column="I" value="PRS5" />
+  <Matrix field="3-29" column="A" value="PRS-6 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="3-29" column="B" value="TableauColonne" />
+  <Matrix field="3-29" column="F" value="3" />
+  <Matrix field="3-29" column="G" value="10" />
+  <Matrix field="3-29" column="H" value="1" />
+  <Matrix field="3-29" column="I" value="PRS6" />
+  <Matrix field="3-34" column="A" value="PRS-7 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="3-34" column="B" value="TableauColonne" />
+  <Matrix field="3-34" column="F" value="3" />
+  <Matrix field="3-34" column="G" value="10" />
+  <Matrix field="3-34" column="H" value="1" />
+  <Matrix field="3-34" column="I" value="PRS7" />
+  <Matrix field="3-39" column="A" value="PRS-8 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="3-39" column="B" value="TableauColonne" />
+  <Matrix field="3-39" column="F" value="3" />
+  <Matrix field="3-39" column="G" value="10" />
+  <Matrix field="3-39" column="H" value="1" />
+  <Matrix field="3-39" column="I" value="PRS8" />
+  <Matrix field="3-44" column="A" value="PRS-9 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="3-44" column="B" value="TableauColonne" />
+  <Matrix field="3-44" column="F" value="3" />
+  <Matrix field="3-44" column="G" value="10" />
+  <Matrix field="3-44" column="H" value="1" />
+  <Matrix field="3-44" column="I" value="PRS9" />
+  <Matrix field="3-49" column="A" value="PRS-10 Exigence vis-&#224;-vis du Titulaire" />
+  <Matrix field="3-49" column="B" value="TableauColonne" />
+  <Matrix field="3-49" column="F" value="3" />
+  <Matrix field="3-49" column="G" value="10" />
+  <Matrix field="3-49" column="H" value="1" />
+  <Matrix field="3-49" column="I" value="PRS10" />
+  <Matrix field="4-1" column="A" value="Dur&#233;e pr&#233;visonnelle de la phase d&#39;initialisation" />
+  <Matrix field="4-1" column="B" value="Texte" />
+  <Matrix field="4-1" column="J" value="Exemple : 2 jours ; 2 semaines ; 2 mois" />
+  <Matrix field="4-2" column="A" value="INIT-7 Le TITULAIRE assure une phase d’initialisation" />
+  <Matrix field="4-2" column="B" value="TableauColonne" />
+  <Matrix field="4-2" column="F" value="3" />
+  <Matrix field="4-2" column="G" value="10" />
+  <Matrix field="4-2" column="H" value="1" />
+  <Matrix field="5-1" column="A" value="REV-8 Le TITULAIRE assure une phase de R&#233;versibilit&#233;" />
+  <Matrix field="5-1" column="B" value="TableauColonne" />
+  <Matrix field="5-1" column="F" value="3" />
+  <Matrix field="5-1" column="G" value="10" />
+  <Matrix field="5-1" column="H" value="1" />
+  <Matrix field="6-1" column="A" value="Dur&#233;e de remplacement par un intervenant" />
+  <Matrix field="6-1" column="B" value="Texte" />
+  <Matrix field="6-1" column="J" value="Exemple : 2 jours ; 2 semaines ; 2 mois" />
+  <Matrix field="6-2" column="A" value="SERV-9 Le TITULAIRE assure une continuit&#233; de service pendant la dur&#233;e de la prestation" />
+  <Matrix field="6-2" column="B" value="TableauColonne" />
+  <Matrix field="6-2" column="F" value="3" />
+  <Matrix field="6-2" column="G" value="10" />
+  <Matrix field="6-2" column="H" value="1" />
+  <Matrix field="7-1" column="A" value="Indiquer les comp&#233;tences et les qualit&#233;s requises pour r&#233;aliser la prestation demand&#233;e " />
+  <Matrix field="7-1" column="B" value="Texte" />
+  <Matrix field="7-1" column="G" value="3" />
+  <Matrix field="7-2" column="A" value="Dispositif d&#39;intervention" />
+  <Matrix field="7-2" column="B" value="TableauColonne" />
+  <Matrix field="7-2" column="F" value="3" />
+  <Matrix field="7-2" column="G" value="10" />
+  <Matrix field="7-2" column="H" value="1" />
+  <Matrix field="8-3" column="A" value="Gilberto DE VASCONCELOS" />
+  <Matrix field="8-3" column="B" value="Bouton" />
+  <Matrix field="8-3" column="E" value="GDV" />
+  <Matrix field="8-4" column="A" value="Coordonn&#233;es" />
+  <Matrix field="8-4" column="B" value="Texte" />
+  <Matrix field="8-4" column="D" value="Contact : gilberto.de-vasconcelos@edf.fr / 0698649692" />
+  <Matrix field="8-4" column="I" value="GDV" />
+  <Matrix field="8-6" column="A" value="Coordonn&#233;es" />
+  <Matrix field="8-6" column="B" value="Texte" />
+  <Matrix field="8-6" column="D" value="Contact : gilberto.de-vasconcelos@edf.fr / 0698649692" />
+  <Matrix field="8-6" column="I" value="LD" />
+  <Matrix field="8-9" column="A" value="Coordonn&#233;es t&#233;l&#233;phoniques " />
+  <Matrix field="8-9" column="B" value="Texte" />
+  <Matrix field="8-11" column="A" value="Dur&#233;e de livraison du compte-rendu " />
+  <Matrix field="8-11" column="B" value="Texte" />
+
+<!-- Correspondances Lot/Champ. -->
+  <LinkTab lot="10" tab="1" />
+  <LinkTab lot="10" tab="2" />
+  <LinkTab lot="10" tab="3" />
+  <LinkTab lot="10" tab="4" />
+  <LinkTab lot="10" tab="5" />
+  <LinkTab lot="10" tab="6" />
+  <LinkTab lot="10" tab="7" />
+  <LinkTab lot="10" tab="8" />
+
+<!-- Fin du document de travail -->
+
+</Scrib>

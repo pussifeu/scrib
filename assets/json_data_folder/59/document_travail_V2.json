@@ -1,0 +1,26 @@
+{
+    "fields": {
+        "document-id": "59",
+        "document-version": 2,
+        "1-1": "s",
+        "1-2": "s",
+        "1-3": "+33 ",
+        "1-4": "ssszq",
+        "1-5": "q",
+        "1-6": "+33 ",
+        "2-1": "2",
+        "2-2": "2",
+        "3-1": "a",
+        "4-1": "3",
+        "4-2": "2",
+        "document-state": "2",
+        "document-directory": "CDC - Cahier Des Charges - ITS 2011",
+        "document-type": "Complexe",
+        "document-perimeters": [
+            "RLE_1",
+            "RLE_2"
+        ],
+        "document-references": "",
+        "document-name": "test"
+    }
+}

@@ -1,0 +1,196 @@
+[
+    [
+        {
+            "type": "select",
+            "label": "Select",
+            "className": "form-control",
+            "name": "select-1537972700961",
+            "perimeters": [
+                "9",
+                "18"
+            ],
+            "lots": [
+                "6",
+                "9",
+                "12"
+            ],
+            "values": [
+                {
+                    "label": "Option 1",
+                    "value": "option-1"
+                },
+                {
+                    "label": "Option 2",
+                    "value": "option-2"
+                },
+                {
+                    "label": "Option 3",
+                    "value": "option-3"
+                }
+            ],
+            "scrib": "scrib-1-1"
+        },
+        {
+            "type": "number",
+            "label": "Num\u00e9ro",
+            "className": "form-control",
+            "name": "number-1538051246169",
+            "perimeters": [
+                "19"
+            ],
+            "lots": [
+                "16",
+                "19"
+            ],
+            "scrib": "scrib-1-2"
+        }
+    ],
+    [
+        {
+            "type": "text",
+            "label": "Champ de Saisie Texte",
+            "className": "form-control",
+            "name": "text-1537972703195",
+            "subtype": "text",
+            "perimeters": [
+                "9",
+                "18"
+            ],
+            "lots": [
+                "6",
+                "9",
+                "10",
+                "13"
+            ],
+            "scrib": "scrib-2-1"
+        }
+    ],
+    [
+        {
+            "type": "textarea",
+            "label": "Text Area",
+            "className": "form-control",
+            "name": "textarea-1538060720708",
+            "subtype": "textarea",
+            "perimeters": [
+                "18"
+            ],
+            "lots": [
+                "11"
+            ],
+            "scrib": "scrib-3-1"
+        },
+        {
+            "type": "date",
+            "label": "Champ Date",
+            "className": "form-control",
+            "name": "date-1538060792351",
+            "perimeters": [
+                "9"
+            ],
+            "lots": [
+                "8"
+            ],
+            "scrib": "scrib-3-2"
+        }
+    ],
+    [
+        {
+            "type": "checkbox-group",
+            "label": "Groupe de cases \u00e0 cocher",
+            "name": "checkbox-group-1538060808888",
+            "perimeters": [
+                "18"
+            ],
+            "lots": [
+                "6"
+            ],
+            "values": [
+                {
+                    "label": "Option 1",
+                    "value": "option-1"
+                }
+            ],
+            "scrib": "scrib-4-1"
+        },
+        {
+            "type": "textarea",
+            "label": "Text Area",
+            "className": "form-control",
+            "name": "textarea-1538060896297",
+            "subtype": "textarea",
+            "perimeters": [
+                "20"
+            ],
+            "lots": [
+                "20",
+                "21"
+            ],
+            "scrib": "scrib-4-2"
+        },
+        {
+            "type": "textarea",
+            "label": "Text Area",
+            "className": "form-control",
+            "name": "textarea-1538125061315",
+            "subtype": "textarea",
+            "perimeters": [
+                "9",
+                "19"
+            ],
+            "lots": [
+                "8"
+            ],
+            "scrib": "scrib-4-3"
+        }
+    ],
+    [
+        {
+            "type": "number",
+            "label": "Num\u00e9ro",
+            "className": "form-control",
+            "name": "number-1538125149870",
+            "perimeters": [
+                "9",
+                "18"
+            ],
+            "lots": [
+                "8",
+                "10"
+            ],
+            "scrib": "scrib-5-1"
+        },
+        {
+            "type": "select",
+            "label": "Select",
+            "className": "form-control",
+            "name": "select-1538125460278",
+            "perimeters": [
+                "9",
+                "18",
+                "21"
+            ],
+            "lots": [
+                "8",
+                "7",
+                "10"
+            ],
+            "values": [
+                {
+                    "label": "Option 1",
+                    "value": "option-1",
+                    "selected": "true"
+                },
+                {
+                    "label": "Option 2",
+                    "value": "option-2"
+                },
+                {
+                    "label": "Option 3",
+                    "value": "option-3"
+                }
+            ],
+            "scrib": "scrib-5-2"
+        }
+    ]
+]

@@ -1,0 +1,23 @@
+[
+    [
+        {
+            "type": "textarea",
+            "label": "Text Area",
+            "className": "form-control",
+            "name": "textarea-1538144032301",
+            "subtype": "textarea",
+            "perimeters": [
+                "9",
+                "19"
+            ],
+            "lots": [
+                "8",
+                "16",
+                "17",
+                "18",
+                "19"
+            ],
+            "scrib": "scrib-1-1"
+        }
+    ]
+]

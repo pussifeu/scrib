@@ -1,0 +1,30 @@
+{
+    "fields": {
+        "document-id": "58",
+        "document-version": 5,
+        "1-1": "aaaa",
+        "1-2": "aa",
+        "1-3": "+33 ",
+        "1-4": "zaza",
+        "1-5": "aaa",
+        "1-6": "+33 ",
+        "2-1": "3",
+        "2-2": "3",
+        "3-1": "GP SCOPE",
+        "4-1": "2",
+        "4-2": "3",
+        "document-state": "3",
+        "document-directory": "CDC - Cahier Des Charges - ITS 2011",
+        "document-type": "Complexe",
+        "document-perimeters": [
+            "RLE_1",
+            "RLE_2",
+            "PEB"
+        ],
+        "document-references": [
+            "Cahier Des Charges Complexe.docx",
+            "Fiche d'évalutation de prestation.docx"
+        ],
+        "document-name": ""
+    }
+}

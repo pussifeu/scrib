@@ -1,0 +1,244 @@
+<Scrib>
+
+<!-- Informations sur la matrice -->
+  <ExpertVersion value="5" />
+  <StructureVersion value="1" />
+  <ExcelDate value="03/01/2018 14:43:59" />
+  <ExcelName value="Matrice.xls" />
+  <CompileDate value="03/01/2018 14:44:33" />
+  <Reference value="CDC De base.docx" />
+  <ToolVersion value="1.17.10.31" />
+  <Summary value="Dans le cadre de ITSUP 2017
+A destination d&#39;un int&#233;grateur" />
+
+<!-- Liste des lots -->
+  <Lot type="Title" text="Besoin" />
+  <Lot lot="10" text="El&#233;ments" />
+
+<!-- Liste des entêtes de colonne -->
+  <Matrix column="A" name="Regroupements et champs" />
+  <Matrix column="B" name="Type" />
+  <Matrix column="C" name="Obligatoire" />
+  <Matrix column="D" name="Valeur
+par d&#233;faut" />
+  <Matrix column="E" name="Nom unique du champ" />
+  <Matrix column="F" name="1er" />
+  <Matrix column="G" name="2&#232;me" />
+  <Matrix column="H" name="3&#232;me" />
+  <Matrix column="I" name="Nom Unique du champ &#39;Case&#39; d&#39;activation" />
+  <Matrix column="J" name="Message d&#39;aide" />
+  <Matrix column="K" name="Suffixe" />
+  <Matrix column="L" name="R&#233;serv&#233;" />
+  <Matrix column="Q" name="Lien" />
+  <Matrix column="R" name="Libell&#233;" />
+
+<!-- Liste des onglets. -->
+  <Tab tab="1" name="Pr&#233;ambule" />
+  <Tab tab="2" name="Contexte" />
+  <Tab tab="3" name="P&#233;rim&#232;tre" />
+  <Tab tab="4" name="R&#244;les et responsabilit&#233;s" />
+
+<!-- Liste des champs. -->
+  <Field field="1-1" tab="1" required="Yes" type="TextInput" text="Intitul&#233; du projet" />
+  <Matrix field="1-1" column="A" value="Intitul&#233; du projet" />
+  <Matrix field="1-1" column="B" value="Texte" />
+  <Matrix field="1-1" column="C" value="X" />
+  <Field field="1-2" tab="1" required="Yes" type="TextInput" text="Nom du client" />
+  <Matrix field="1-2" column="A" value="Nom du client" />
+  <Matrix field="1-2" column="B" value="Texte" />
+  <Matrix field="1-2" column="C" value="X" />
+  <Field field="1-3" tab="1" required="Yes" type="TextInput" text="Intitul&#233; du Cahier des Charges" />
+  <Matrix field="1-3" column="A" value="Intitul&#233; du Cahier des Charges" />
+  <Matrix field="1-3" column="B" value="Texte" />
+  <Matrix field="1-3" column="C" value="X" />
+  <Field field="2-1" tab="2" required="Yes" type="TextInput" text="Objet de la demande" />
+  <Matrix field="2-1" column="A" value="Objet de la demande" />
+  <Matrix field="2-1" column="B" value="Texte" />
+  <Matrix field="2-1" column="C" value="X" />
+  <Field field="2-2" tab="2" required="Yes" type="ComboBox" text="Existe-t-il des demandes en lien avec cette demande ?" parameter1="Oui;Non" />
+  <Matrix field="2-2" column="A" value="Existe-t-il des demandes en lien avec cette demande ?" />
+  <Matrix field="2-2" column="B" value="ListeChoix" />
+  <Matrix field="2-2" column="C" value="X" />
+  <Matrix field="2-2" column="F" value="Oui;Non" />
+  <Field field="2-3" tab="2" type="TextInput" text="Si oui, lesquels :" />
+  <Matrix field="2-3" column="A" value="Si oui, lesquels :" />
+  <Matrix field="2-3" column="B" value="Texte" />
+  <Field field="2-4" tab="2" type="TextInput" text="R&#233;f&#233;rence de la RFC :" tooltiptext="La RFC est &#224; l&#39;initiative d&#39;EDF si le changement global est d&#39;EDF et que l&#39;IFG n&#39;est qu&#39;un contributeur" />
+  <Matrix field="2-4" column="A" value="R&#233;f&#233;rence de la RFC :" />
+  <Matrix field="2-4" column="B" value="Texte" />
+  <Matrix field="2-4" column="J" value="La RFC est &#224; l&#39;initiative d&#39;EDF si le changement global est d&#39;EDF et que l&#39;IFG n&#39;est qu&#39;un contributeur" />
+  <Field field="2-5" tab="2" required="Yes" type="TextInput" text="Site(s) concern&#233;(s) par la demande" helpurl="notes://APPD23/C12578A9003DA8FA/221B06E91A16C391C125758B005D7540/8EF62FFC13F563DCC1257F99002B9E36" helptext="NNS" tooltiptext="Il faut fournir les NNS des sites" />
+  <Matrix field="2-5" column="A" value="Site(s) concern&#233;(s) par la demande" />
+  <Matrix field="2-5" column="B" value="Texte" />
+  <Matrix field="2-5" column="C" value="X" />
+  <Matrix field="2-5" column="J" value="Il faut fournir les NNS des sites" />
+  <Matrix field="2-5" column="Q" value="notes://APPD23/C12578A9003DA8FA/221B06E91A16C391C125758B005D7540/8EF62FFC13F563DCC1257F99002B9E36" />
+  <Matrix field="2-5" column="R" value="NNS" />
+  <Field field="2-6" tab="2" required="Yes" type="Date" text="Date de r&#233;alisation attendue" />
+  <Matrix field="2-6" column="A" value="Date de r&#233;alisation attendue" />
+  <Matrix field="2-6" column="B" value="Date" />
+  <Matrix field="2-6" column="C" value="X" />
+  <Field field="2-7" tab="2" type="TextInput" text="Description de la demande" parameter2="5" />
+  <Matrix field="2-7" column="A" value="Description de la demande" />
+  <Matrix field="2-7" column="B" value="Texte" />
+  <Matrix field="2-7" column="G" value="5" />
+  <Field field="2-8" tab="2" required="Yes" type="ComboBox" text="Criticit&#233; de la demande " parameter1="Normal;Urgent" />
+  <Matrix field="2-8" column="A" value="Criticit&#233; de la demande " />
+  <Matrix field="2-8" column="B" value="ListeChoix" />
+  <Matrix field="2-8" column="C" value="X" />
+  <Matrix field="2-8" column="F" value="Normal;Urgent" />
+  <Field field="2-9" tab="2" type="TextInput" text="Contraintes et limites de r&#233;alisation" parameter2="2" tooltiptext="Contraintes particuli&#232;res qu&#39;il faut prendre en compte pour la r&#233;alisation de la prestation" />
+  <Matrix field="2-9" column="A" value="Contraintes et limites de r&#233;alisation" />
+  <Matrix field="2-9" column="B" value="Texte" />
+  <Matrix field="2-9" column="G" value="2" />
+  <Matrix field="2-9" column="J" value="Contraintes particuli&#232;res qu&#39;il faut prendre en compte pour la r&#233;alisation de la prestation" />
+  <Field field="3-1" tab="3" type="Information" text="Type d&#39;op&#233;ration demand&#233;" color="#0070C0" fonttype="BU" />
+  <Field field="3-2" tab="3" type="CheckBox" text="RLE" />
+  <Matrix field="3-2" column="A" value="RLE" />
+  <Matrix field="3-2" column="B" value="Case" />
+  <Field field="3-3" tab="3" type="CheckBox" text="RLS" />
+  <Matrix field="3-3" column="A" value="RLS" />
+  <Matrix field="3-3" column="B" value="Case" />
+  <Field field="3-4" tab="3" type="CheckBox" text="Serveur" />
+  <Matrix field="3-4" column="A" value="Serveur" />
+  <Matrix field="3-4" column="B" value="Case" />
+  <Field field="3-5" tab="3" type="CheckBox" text="Poste(s) de travail" />
+  <Matrix field="3-5" column="A" value="Poste(s) de travail" />
+  <Matrix field="3-5" column="B" value="Case" />
+  <Field field="3-6" tab="3" type="CheckBox" text="P&#233;riph&#233;riques" />
+  <Matrix field="3-6" column="A" value="P&#233;riph&#233;riques" />
+  <Matrix field="3-6" column="B" value="Case" />
+  <Field field="3-7" tab="3" type="CheckBox" text="C&#226;blage infrastructure" />
+  <Matrix field="3-7" column="A" value="C&#226;blage infrastructure" />
+  <Matrix field="3-7" column="B" value="Case" />
+  <Field field="3-8" tab="3" type="CheckBox" text="T&#233;l&#233;phonie analogique" />
+  <Matrix field="3-8" column="A" value="T&#233;l&#233;phonie analogique" />
+  <Matrix field="3-8" column="B" value="Case" />
+  <Field field="3-9" tab="3" type="CheckBox" text="T&#233;l&#233;phonie num&#233;rique" />
+  <Matrix field="3-9" column="A" value="T&#233;l&#233;phonie num&#233;rique" />
+  <Matrix field="3-9" column="B" value="Case" />
+  <Field field="3-10" tab="3" required="Yes" type="ComboBox" text="Fourniture de document &quot;Annexe 1 - P&#233;rim&#232;tre technique&quot;" parameter1="Oui;Non" helpurl="\\atlas\AP\xcl1hz-commun\DSP-XCL1HZ\SCRIB\References\CDC - Cahier Des Charges - ITSUP 2017\De base\Formulaire de mat&#233;riel.xlsx" helptext="Lien" tooltiptext="Le fichier mod&#232;le est en lien. Il sera &#224; joindre &#224; la demande POGS (exemple liste des N&#176; d’asset impact&#233;s (PIxxx ou DSPxxx))" />
+  <Matrix field="3-10" column="A" value="Fourniture de document &quot;Annexe 1 - P&#233;rim&#232;tre technique&quot;" />
+  <Matrix field="3-10" column="B" value="ListeChoix" />
+  <Matrix field="3-10" column="C" value="X" />
+  <Matrix field="3-10" column="F" value="Oui;Non" />
+  <Matrix field="3-10" column="J" value="Le fichier mod&#232;le est en lien. Il sera &#224; joindre &#224; la demande POGS (exemple liste des N&#176; d’asset impact&#233;s (PIxxx ou DSPxxx))" />
+  <Matrix field="3-10" column="Q" value="\\atlas\AP\xcl1hz-commun\DSP-XCL1HZ\SCRIB\References\CDC - Cahier Des Charges - ITSUP 2017\De base\Formulaire de mat&#233;riel.xlsx" />
+  <Matrix field="3-10" column="R" value="Lien" />
+  <Field field="3-11" tab="3" required="Yes" type="ComboBox" text="Fourniture de document &quot;Annexe 2 - R&#233;f&#233;rences documentaires&quot;" parameter1="Oui;Non" tooltiptext="Les documents annexes seront &#224; joindre &#224; la demande POGS (exemple PTE, PTI, DAT ou documentation sp&#233;cifique)" />
+  <Matrix field="3-11" column="A" value="Fourniture de document &quot;Annexe 2 - R&#233;f&#233;rences documentaires&quot;" />
+  <Matrix field="3-11" column="B" value="ListeChoix" />
+  <Matrix field="3-11" column="C" value="X" />
+  <Matrix field="3-11" column="F" value="Oui;Non" />
+  <Matrix field="3-11" column="J" value="Les documents annexes seront &#224; joindre &#224; la demande POGS (exemple PTE, PTI, DAT ou documentation sp&#233;cifique)" />
+  <Field field="4-1" tab="4" type="Information" text="Demandeur" color="#0070C0" fonttype="BU" />
+  <Field field="4-2" tab="4" required="Yes" type="TextInput" text="Nom" />
+  <Matrix field="4-2" column="A" value="Nom" />
+  <Matrix field="4-2" column="B" value="Texte" />
+  <Matrix field="4-2" column="C" value="X" />
+  <Field field="4-3" tab="4" required="Yes" type="TextInput" text="Pr&#233;nom" />
+  <Matrix field="4-3" column="A" value="Pr&#233;nom" />
+  <Matrix field="4-3" column="B" value="Texte" />
+  <Matrix field="4-3" column="C" value="X" />
+  <Field field="4-4" tab="4" required="Yes" type="TextInput" text="Email" />
+  <Matrix field="4-4" column="A" value="Email" />
+  <Matrix field="4-4" column="B" value="Texte" />
+  <Matrix field="4-4" column="C" value="X" />
+  <Field field="4-5" tab="4" required="Yes" type="TextInput" text="T&#233;l&#233;phone" />
+  <Matrix field="4-5" column="A" value="T&#233;l&#233;phone" />
+  <Matrix field="4-5" column="B" value="Texte" />
+  <Matrix field="4-5" column="C" value="X" />
+  <Field field="4-6" tab="4" type="Information" text="Responsable de l&#39;op&#233;ration" color="#0070C0" fonttype="BU" />
+  <Field field="4-7" tab="4" type="TextInput" text="Nom" />
+  <Matrix field="4-7" column="A" value="Nom" />
+  <Matrix field="4-7" column="B" value="Texte" />
+  <Field field="4-8" tab="4" type="TextInput" text="Pr&#233;nom" />
+  <Matrix field="4-8" column="A" value="Pr&#233;nom" />
+  <Matrix field="4-8" column="B" value="Texte" />
+  <Field field="4-9" tab="4" type="TextInput" text="Email" />
+  <Matrix field="4-9" column="A" value="Email" />
+  <Matrix field="4-9" column="B" value="Texte" />
+  <Field field="4-10" tab="4" type="TextInput" text="T&#233;l&#233;phone" />
+  <Matrix field="4-10" column="A" value="T&#233;l&#233;phone" />
+  <Matrix field="4-10" column="B" value="Texte" />
+  <Field field="4-11" tab="4" type="Information" text="Valideur de l&#39;op&#233;ration" color="#0070C0" fonttype="BU" />
+  <Field field="4-12" tab="4" type="TextInput" text="Nom" />
+  <Matrix field="4-12" column="A" value="Nom" />
+  <Matrix field="4-12" column="B" value="Texte" />
+  <Field field="4-13" tab="4" type="TextInput" text="Pr&#233;nom" />
+  <Matrix field="4-13" column="A" value="Pr&#233;nom" />
+  <Matrix field="4-13" column="B" value="Texte" />
+  <Field field="4-14" tab="4" type="TextInput" text="Email" />
+  <Matrix field="4-14" column="A" value="Email" />
+  <Matrix field="4-14" column="B" value="Texte" />
+  <Field field="4-15" tab="4" type="TextInput" text="T&#233;l&#233;phone" />
+  <Matrix field="4-15" column="A" value="T&#233;l&#233;phone" />
+  <Matrix field="4-15" column="B" value="Texte" />
+  <Field field="4-16" tab="4" type="Information" text="Contributeur potentiel" color="#0070C0" fonttype="BU" />
+  <Field field="4-17" tab="4" type="TextInput" text="Nom" />
+  <Matrix field="4-17" column="A" value="Nom" />
+  <Matrix field="4-17" column="B" value="Texte" />
+  <Field field="4-18" tab="4" type="TextInput" text="Pr&#233;nom" />
+  <Matrix field="4-18" column="A" value="Pr&#233;nom" />
+  <Matrix field="4-18" column="B" value="Texte" />
+  <Field field="4-19" tab="4" type="TextInput" text="Email" />
+  <Matrix field="4-19" column="A" value="Email" />
+  <Matrix field="4-19" column="B" value="Texte" />
+  <Field field="4-20" tab="4" type="TextInput" text="T&#233;l&#233;phone" />
+  <Matrix field="4-20" column="A" value="T&#233;l&#233;phone" />
+  <Matrix field="4-20" column="B" value="Texte" />
+
+<!-- Correspondances Lot/Champ. -->
+  <Link lot="10" field="1-1" />
+  <Link lot="10" field="1-2" />
+  <Link lot="10" field="1-3" />
+  <Link lot="10" field="2-1" />
+  <Link lot="10" field="2-2" />
+  <Link lot="10" field="2-3" />
+  <Link lot="10" field="2-4" />
+  <Link lot="10" field="2-5" />
+  <Link lot="10" field="2-6" />
+  <Link lot="10" field="2-7" />
+  <Link lot="10" field="2-8" />
+  <Link lot="10" field="2-9" />
+  <Link lot="10" field="3-1" />
+  <Link lot="10" field="3-2" />
+  <Link lot="10" field="3-3" />
+  <Link lot="10" field="3-4" />
+  <Link lot="10" field="3-5" />
+  <Link lot="10" field="3-6" />
+  <Link lot="10" field="3-7" />
+  <Link lot="10" field="3-8" />
+  <Link lot="10" field="3-9" />
+  <Link lot="10" field="3-10" />
+  <Link lot="10" field="3-11" />
+  <Link lot="10" field="4-1" />
+  <Link lot="10" field="4-2" />
+  <Link lot="10" field="4-3" />
+  <Link lot="10" field="4-4" />
+  <Link lot="10" field="4-5" />
+  <Link lot="10" field="4-6" />
+  <Link lot="10" field="4-7" />
+  <Link lot="10" field="4-8" />
+  <Link lot="10" field="4-9" />
+  <Link lot="10" field="4-10" />
+  <Link lot="10" field="4-11" />
+  <Link lot="10" field="4-12" />
+  <Link lot="10" field="4-13" />
+  <Link lot="10" field="4-14" />
+  <Link lot="10" field="4-15" />
+  <Link lot="10" field="4-16" />
+  <Link lot="10" field="4-17" />
+  <Link lot="10" field="4-18" />
+  <Link lot="10" field="4-19" />
+  <Link lot="10" field="4-20" />
+
+<!-- Correspondances Lot/Onglet. -->
+  <LinkTab lot="10" tab="1" />
+  <LinkTab lot="10" tab="2" />
+  <LinkTab lot="10" tab="3" />
+  <LinkTab lot="10" tab="4" />
+
+<!-- Fin de la matrice -->
+
+</Scrib>
