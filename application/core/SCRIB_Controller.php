@@ -11,7 +11,7 @@ class SCRIB_Controller extends CI_Controller {
         $user = $this->session->userdata('USER');
 
         if(!isset($user) && empty($user)) {
-            redirect(base_url('login'));
+            //redirect(base_url('login'));
         }
     }
 }

@@ -417,3 +417,9 @@ legend {
     min-height: 469px !important;
     background-color: hsla(0, 0%, 100%, .25);
 }
+
+[contenteditable] {
+    border: solid 1px lightgreen;
+    padding: 5px;
+    border-radius: 3px;
+}

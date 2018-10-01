@@ -141,3 +141,12 @@ if (!function_exists('normalizeToUpper')) {
         return strtoupper($newstring);
     }
 }
+/**
+ *
+ */
+if (!function_exists('is_dir_empty')) {
+    function is_dir_empty($dir) {
+        if (!is_readable($dir)) return NULL;
+        return (count(scandir($dir)) == 2);
+    }
+}

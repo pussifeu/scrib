@@ -324,6 +324,16 @@ $(function () {
         $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
     });
     /*******************************************************************END JS DE SCRIB************************************************************************/
+
+    var editHandler = function() {
+        var t = $(this);
+        t.css("visibility", "hidden");
+        $(this).prev().attr("contenteditable", "true").focusout(function() {
+            $(this).removeAttr("contenteditable").off("focusout");
+            t.css("visibility", "visible");
+        });
+    };
+    $(".edit").click(editHandler);
 });
 
 

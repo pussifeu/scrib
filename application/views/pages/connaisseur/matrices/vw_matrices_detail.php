@@ -48,7 +48,10 @@
                         <?php if($fileIsEmpty): ?>
                             <ul class="nav nav-tabs" id="tabs">
                                 <li class="active">
-                                    <a data-toggle="tab" href="#page-1">Page 1</a>
+                                    <a data-toggle="tab" href="#page-1">
+                                        <span>Page 1</span>
+                                        <span class="glyphicon glyphicon-pencil text-muted edit"></span>
+                                    </a>
                                 </li>
                             </ul>
                             <div class="tab-content">
@@ -58,7 +61,12 @@
                         <?php else : ?>
                             <ul class="nav nav-tabs" id="tabs">
                                 <?php for($i = 0; $i < sizeof(json_decode(json_decode($jsonData))); $i++): ?>
-                                    <li class="<?php if($i == 0) echo "active" ?>"><a data-toggle="tab" href="#page-<?php echo $i+1 ?>">Page <?= $i+1 ?></a></li>
+                                    <li class="<?php if($i == 0) echo "active" ?>">
+                                        <a data-toggle="tab" href="#page-<?php echo $i+1 ?>">
+                                            <span>Page <?= $i+1 ?></span>
+                                            <span class="glyphicon glyphicon-pencil text-muted edit"></span>
+                                        </a>
+                                    </li>
                                 <?php endfor; ?>
                             </ul>
 

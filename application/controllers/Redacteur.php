@@ -6,11 +6,13 @@ class Redacteur extends SCRIB_Controller
     private $nni;
     var $tables = 'L_PERIMETER';
     var $key = 'PER_ID';
+    var $pathRefDirectory = ASSETSPATH . REFERENCE_FOLDER;
 
     public function __construct()
     {
         parent::__construct();
-        $this->nni = $this->session->userdata()['USER']['nni'];
+        if (isset($this->session->userdata()['USER']))
+            $this->nni = $this->session->userdata()['USER']['nni'];
         $this->load->library('phpword');
         $this->load->helper('download');
         $this->load->model('perimetersModel');
@@ -21,16 +23,44 @@ class Redacteur extends SCRIB_Controller
      */
     public function index()
     {
-        $pathRefDirectory = ASSETSPATH . REFERENCE_FOLDER;
+        $this->nni = "HR49EA7N";
+        $directories = [];
         if (isset($this->nni) && !empty($this->nni))
             $param ['documents'] = $this->documentModel->getAllDocumentByUser($this->nni);
         else
             $param ['documents'] = array();
-        $param ['pathRefDirectory'] = $pathRefDirectory;
-        $param ['refDirectories'] = getDirectoryContent($pathRefDirectory);
+        $param ['pathRefDirectory'] = $this->pathRefDirectory;
+        for ($i = 0; $i < sizeof(getDirectoryContent($this->pathRefDirectory)); $i++) {
+            if (!is_dir_empty($this->pathRefDirectory . SEPARATOR . getDirectoryContent($this->pathRefDirectory)[$i])) {
+                $subDirectories = getDirectoryContent($this->pathRefDirectory . SEPARATOR . getDirectoryContent($this->pathRefDirectory)[$i]);
+                $directory = $this->pathRefDirectory . SEPARATOR . getDirectoryContent($this->pathRefDirectory)[$i];
+                if($this->checkIfSubDirIsNotEmpty($subDirectories, $directory))
+                    array_push($directories, getDirectoryContent($this->pathRefDirectory)[$i]);
+            }
+        }
+
+        $param ['refDirectories'] = $directories;
         $param ['perimeters'] = $this->perimetersModel->getAllElements($this->tables, $this->key, 'PER_STATUS');
         $param ['content'] = 'pages/redacteur/vw_index';
         $this->load->view('template', $param);
+    }
+
+    /**
+     * @param $subDirectories
+     * @param $directory
+     * @return bool
+     */
+    public function checkIfSubDirIsNotEmpty($subDirectories, $directory)
+    {
+        if(sizeof($subDirectories) > 0) {
+            for ($i = 0; $i < sizeof($subDirectories); $i++) {
+                if (!is_dir_empty($directory.SEPARATOR.$subDirectories[$i])) {
+                    return true;
+                } else
+                    continue;
+            }
+        }
+        return false;
     }
 
     /**

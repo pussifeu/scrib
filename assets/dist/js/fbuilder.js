@@ -206,7 +206,12 @@ jQuery(function ($) {
 
     addPageTab.onclick = function () {
         var nextTab = document.getElementById("tabs").children.length + 1;
-        $('<li><a href="#page-' + nextTab + '" data-toggle="tab">Page ' + nextTab + '</a></li>').appendTo('#tabs');
+        $('<li>' +
+            '<a href="#page-' + nextTab + '" data-toggle="tab">' +
+            '<span>Page ' + nextTab + '</span>' +
+            '<span class="glyphicon glyphicon-pencil text-muted edit"></span>' +
+            '</a>' +
+            '</li>').appendTo('#tabs');
         $('<div class="tab-pane" id="page-' + nextTab + '"></div>').appendTo('.tab-content');
         fbOptions.formData = "";
         fbInstances.push($("#page-" + nextTab).formBuilder(fbOptions));
@@ -214,6 +219,15 @@ jQuery(function ($) {
         setTimeout(function () {
             $(".lots-wrap label").hide();
         }, 500);
+        var editHandler = function() {
+            var t = $(this);
+            t.css("visibility", "hidden");
+            $(this).prev().attr("contenteditable", "true").focusout(function() {
+                $(this).removeAttr("contenteditable").off("focusout");
+                t.css("visibility", "visible");
+            });
+        };
+        $(".edit").click(editHandler);
     };
 
     if (JSONDATA.length == 0 || JSONDATA == 'null' || JSONDATA == null || JSONDATA == undefined) {

@@ -184,7 +184,6 @@ function reloadLots(elem) {
     }
 }
 
-
 function serachLotInArray(lotsToSet, lotId) {
     if(lotsToSet != undefined) {
         if (lotsToSet.length > 0) {
@@ -228,6 +227,13 @@ function onchangeReference(element) {
     else {
         $("#MATRICES_SS_REFERENCE_DIV").hide();
     }
+}
+
+
+function changePageName(e) {
+    $($(e).parent("a").attr("href")).attr("contenteditable", "true").focusout(function() {
+        $(e).removeAttr("contenteditable").off("focusout");
+    });
 }
 
 function loadLotsByPerimeter(perimeter_id, fieldId) {
